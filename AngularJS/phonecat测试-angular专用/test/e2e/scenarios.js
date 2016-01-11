@@ -4,8 +4,8 @@
 
 describe('PhoneCat App', function() {
 
-  it('should redirect index.html to index.html#/phones', function() {           //预期是打开index。html跳转到index。html#、phones
-    browser.get('app/index.html');                          //让浏览器打开app/index.html这个页面
+  it('should redirect index1.html to index1.html#/phones', function() {           //预期是打开index。html跳转到index。html#、phones
+    browser.get('app/index1.html');                          //让浏览器打开app/index.html这个页面
     browser.getLocationAbsUrl().then(function(url) {        //获得当前网址
         expect(url.split('#')[1]).toBe('/phones');          //查看是否跳转到了/phones页
       });
@@ -15,7 +15,7 @@ describe('PhoneCat App', function() {
   describe('Phone list view', function() {
 
     beforeEach(function() {
-      browser.get('app/index.html#/phones');
+      browser.get('app/index1.html#/phones');
     });
 
 
@@ -76,7 +76,7 @@ describe('PhoneCat App', function() {
   describe('Phone detail view', function() {
 
     beforeEach(function() {
-      browser.get('app/index.html#/phones/nexus-s');
+      browser.get('app/index1.html#/phones/nexus-s');
     });
 
 

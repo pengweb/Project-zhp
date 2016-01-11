@@ -2,11 +2,11 @@
  * Created by zhangpeng on 2016/1/8.
  */
 module.exports = function (app) {
-    app.set('views', './iScroll');
-    app.get('/iScroll', function (req, res) {
+    app.set('views','./dropload/client/pages');
+    app.get('/dropload', function (req, res) {
         res.render('index')
     })
-    app.get('/iScroll-json1', function (req, res) {
+    app.get('/data-json1', function (req, res) {
         res.json({
             all_row: [
                 {row: 'Ajax1'},
@@ -82,42 +82,5 @@ module.exports = function (app) {
             ]
         })
     });
-    app.get('/iScroll-json2', function (req, res) {
-        res.json({
-            all_row:[
-                {row: '第二页80'},
-                {row: '第二页81'},
-                {row: '第二页82'},
-                {row: '第二页83'},
-                {row: '第二页84'},
-                {row: '第二页85'},
-                {row: '第二页86'},
-                {row: '第二页87'},
-                {row: '第二页88'},
-                {row: '第二页89'},
-                {row: '第二页90'},
-                {row: '第二页91'},
-                {row: '第二页92'},
-                {row: '第二页93'},
-                {row: '第二页94'},
-                {row: '第二页95'},
-                {row: '第二页96'},
-                {row: '第二页97'},
-                {row: '第二页98'},
-                {row: '第二页99'},
-                {row: '第二页100'},
-                {row: '第二页101'},
-                {row: '第二页102'},
-                {row: '第二页103'},
-                {row: '第二页104'},
-                {row: '第二页105'},
-                {row: '第二页106'},
-                {row: '第二页107'},
-                {row: '第二页108'},
-                {row: '第二页109'},
-                {row: '第二页100'}
-            ]
-        })
-    })
 
 }

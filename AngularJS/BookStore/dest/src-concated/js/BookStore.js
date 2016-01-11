@@ -32,7 +32,7 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/index',
             views: {
                 '': {
-                    templateUrl: 'tpls3/index.html'
+                    templateUrl: 'tpls3/index1.html'
                 },
                 'topbar@index': {
                     templateUrl: 'tpls3/topbar.html'

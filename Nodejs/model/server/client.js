@@ -7,7 +7,7 @@ var http = require('http');
 var options = {
     host: 'localhost',
     port: '8081',
-    path: '/index.html'
+    path: '/index1.html'
 };
 
 // 处理响应的回调函数

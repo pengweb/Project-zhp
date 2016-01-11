@@ -25,11 +25,13 @@
     "jade": "^1.11.0",
     "jquery": "^2.1.4",
     "lodash": "2.4.1",
+    "moment": "^2.11.1",
     "mongoose": "^4.3.0",
     "multer": "^1.1.0",
     "underscore": "^1.8.3",
-    "webpack": "file:webpack",
-    "yog2-kernel": "0.3.6"
+    "webpack": "^1.12.10",
+    "yog2-kernel": "0.3.6",
+    "zhp-dropload": "^1.0.0"
   },
   "devDependencies": {
     "gulp": "^3.9.0",

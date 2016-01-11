@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dropdown</title>
+    <style>
+      *{
+        margin: 0;
+        padding:0;
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
+        -webkit-text-size-adjust:none;
+      }
+      html{
+        font-size:10px;
+      }
+      body{
+        background-color: #f5f5f5;
+        font-size: 1.2em;
+      }
+      .content{
+        padding-bottom: 40px;
+        background-color: #fff;
+      }
+      .opacity{
+        -webkit-animation: opacity 0.5s linear;
+        animation: opacity 0.5s linear;
+      }
+      @-webkit-keyframes opacity {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+      }
+      @keyframes opacity {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+      }
+      .dropload-up,.dropload-down{
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        font-size: 12px;
+        /* 开启硬件加速 */
+        -webkit-transform:translateZ(0);
+        transform:translateZ(0);
+      }
+      .dropload-down{
+        height: 50px;
+      }
+      .dropload-refresh,.dropload-update,.dropload-load,.dropload-noData{
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+      }
+      .dropload-load .loading{
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 100%;
+        margin: 6px;
+        border: 2px solid #666;
+        border-bottom-color: transparent;
+        vertical-align: middle;
+        -webkit-animation: rotate 0.75s linear infinite;
+        animation: rotate 0.75s linear infinite;
+      }
+      @-webkit-keyframes rotate {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        50% {
+          -webkit-transform: rotate(180deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .lists{
+        margin:0;
+        padding:0;
+      }
+      .lists li{
+        list-style-type:none;
+        padding: 0 10px;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #fff;
+        background-color: #fafafa;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul class="lists">
+        <li>0</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+        <li>32</li>
+        <li>33</li>
+        <li>34</li>
+        <li>35</li>
+        <li>36</li>
+        <li>37</li>
+        <li>38</li>
+        <li>39</li>
+        <li>40</li>
+        <li>41</li>
+        <li>42</li>
+        <li>43</li>
+        <li>44</li>
+        <li>45</li>
+        <li>46</li>
+        <li>47</li>
+        <li>48</li>
+        <li>49</li>
+        <li>50</li>
+        <li>51</li>
+        <li>52</li>
+        <li>53</li>
+        <li>54</li>
+        <li>55</li>
+        <li>56</li>
+        <li>57</li>
+        <li>58</li>
+        <li>59</li>
+        <li>60</li>
+        <li>61</li>
+        <li>62</li>
+        <li>63</li>
+        <li>64</li>
+        <li>65</li>
+        <li>66</li>
+        <li>67</li>
+        <li>68</li>
+        <li>69</li>
+      </ul>
+    </div>
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../node_modules/zhp-dropload/dropload.js"></script>
+  <script>
+    $(function(){
+      var counter = 0;
+      // 每页展示4个
+      var num = 10;
+      var pageStart = 0,pageEnd = 0;
+
+      // dropload
+      $('.content').dropload({
+        scrollArea : window,
+        domUp : {
+          domClass   : 'dropload-up',
+          domRefresh : '<div class="dropload-refresh">↓下拉刷新-自定义内容</div>',
+          domUpdate  : '<div class="dropload-update">↑释放更新-自定义内容</div>',
+          domLoad    : '<div class="dropload-load"><span class="loading"></span>加载中-自定义内容...</div>'
+        },
+        domDown : {
+          domClass   : 'dropload-down',
+          domRefresh : '<div class="dropload-refresh">↑上拉加载更多-自定义内容</div>',
+          domLoad    : '<div class="dropload-load"><span class="loading"></span>加载中-自定义内容...</div>',
+          domNoData  : '<div class="dropload-noData">暂无数据-自定义内容</div>'
+        },
+        loadUpFn : function(me){
+          $.ajax({
+            type: 'GET',
+            url: '/data-json1',
+            dataType: 'json',
+            success: function(data){
+              var result = '';
+              $('.lists').remove();
+              for(var i=0; i<20;i++){
+                result += "'<li>'"+data.all_row[i].row+"'</li>'"
+              }
+              $('.lists').html(result);
+              me.resetload();
+              /*for(var i = 0; i < data.lists.length; i++){
+                result +=   '<a class="item opacity" href="'+data.lists[i].link+'">'
+                        +'<img src="'+data.lists[i].pic+'" alt="">'
+                        +'<h3>'+data.lists[i].title+'</h3>'
+                        +'<span class="date">'+data.lists[i].date+'</span>'
+                        +'</a>';
+              }*/
+              // 为了测试，延迟1秒加载
+              /*setTimeout(function(){
+                $('.lists').html(result);
+                // 每次数据加载完，必须重置
+                me.resetload();
+              },1000);*/
+            },
+            error: function(xhr, type){
+              alert('Ajax error!');
+              // 即使加载出错，也得重置
+              me.resetload();
+            }
+          });
+        },
+        loadDownFn : function(me){
+          $.ajax({
+            type: 'GET',
+            url: '/data-json1',
+            dataType: 'json',
+            success: function(data){
+              var result = '';
+              counter++;
+              pageEnd = num * counter;
+              pageStart = pageEnd - num;
+
+              for(var i = pageStart; i < pageEnd; i++){
+
+                result +=   "'<li>'"+data.all_row[i].row+"'</li>'"
+
+                if((i + 1) >= Math.ceil(data.length/num)){
+                  // 锁定
+                  me.lock();
+                  // 无数据
+                  me.noData();
+                  break;
+                }
+              }
+                $('.lists').append(result);
+                // 每次数据加载完，必须重置
+                me.resetload();
+              // 为了测试，延迟1秒加载
+//              setTimeout(function(){
+//              },1000);
+            },
+            error: function(xhr, type){
+              alert('Ajax error!');
+              // 即使加载出错，也得重置
+              me.resetload();
+            }
+          });
+        },
+        threshold : 50
+      });
+    });
+  </script>
+  </body>
+</html>

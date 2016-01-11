@@ -20,7 +20,6 @@
     <orderEntry type="library" name="angular" level="application" />
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="project-zhp node_modules" level="project" />
-    <orderEntry type="library" name="node-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="jade-DefinitelyTyped" level="application" />
   </component>
 </module>

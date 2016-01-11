@@ -2,11 +2,7 @@
  * Created by zhangpeng on 2016/1/8.
  */
 module.exports = function (app) {
-    app.set('views', './iScroll');
-    app.get('/iScroll', function (req, res) {
-        res.render('index')
-    })
-    app.get('/iScroll-json1', function (req, res) {
+    app.get('/data-json1', function (req, res) {
         res.json({
             all_row: [
                 {row: 'Ajax1'},
@@ -82,42 +78,80 @@ module.exports = function (app) {
             ]
         })
     });
-    app.get('/iScroll-json2', function (req, res) {
+    app.get('/data-json2', function (req, res) {
         res.json({
-            all_row:[
-                {row: '第二页80'},
-                {row: '第二页81'},
-                {row: '第二页82'},
-                {row: '第二页83'},
-                {row: '第二页84'},
-                {row: '第二页85'},
-                {row: '第二页86'},
-                {row: '第二页87'},
-                {row: '第二页88'},
-                {row: '第二页89'},
-                {row: '第二页90'},
-                {row: '第二页91'},
-                {row: '第二页92'},
-                {row: '第二页93'},
-                {row: '第二页94'},
-                {row: '第二页95'},
-                {row: '第二页96'},
-                {row: '第二页97'},
-                {row: '第二页98'},
-                {row: '第二页99'},
-                {row: '第二页100'},
-                {row: '第二页101'},
-                {row: '第二页102'},
-                {row: '第二页103'},
-                {row: '第二页104'},
-                {row: '第二页105'},
-                {row: '第二页106'},
-                {row: '第二页107'},
-                {row: '第二页108'},
-                {row: '第二页109'},
-                {row: '第二页100'}
+            all_row: [
+                {row: 'Top1'},
+                {row: 'Top2'},
+                {row: 'Top3'},
+                {row: 'Top4'},
+                {row: 'Top5'},
+                {row: 'Top6'},
+                {row: 'Top7'},
+                {row: 'Top8'},
+                {row: 'Top9'},
+                {row: 'Top10'},
+                {row: 'Top11'},
+                {row: 'Top12'},
+                {row: 'Top13'},
+                {row: 'Top14'},
+                {row: 'Top15'},
+                {row: 'Top16'},
+                {row: 'Top17'},
+                {row: 'Top18'},
+                {row: 'Top19'},
+                {row: 'Top20'},
+                {row: 'Top21'},
+                {row: 'Top22'},
+                {row: 'Top23'},
+                {row: 'Top24'},
+                {row: 'Top25'},
+                {row: 'Top26'},
+                {row: 'Top27'},
+                {row: 'Top28'},
+                {row: 'Top29'},
+                {row: 'Top30'},
+                {row: 'Top31'},
+                {row: 'Top32'},
+                {row: 'Top33'},
+                {row: 'Top34'},
+                {row: 'Top35'},
+                {row: 'Top36'},
+                {row: 'Top36'},
+                {row: 'Top38'},
+                {row: 'Top39'},
+                {row: 'Top40'},
+                {row: 'Top41'},
+                {row: 'Top42'},
+                {row: 'Top43'},
+                {row: 'Top44'},
+                {row: 'Top45'},
+                {row: 'Top46'},
+                {row: 'Top47'},
+                {row: 'Top48'},
+                {row: 'Top49'},
+                {row: 'Top50'},
+                {row: 'Top51'},
+                {row: 'Top52'},
+                {row: 'Top53'},
+                {row: 'Top54'},
+                {row: 'Top55'},
+                {row: 'Top56'},
+                {row: 'Top57'},
+                {row: 'Top58'},
+                {row: 'Top59'},
+                {row: 'Top60'},
+                {row: 'Top61'},
+                {row: 'Top62'},
+                {row: 'Top63'},
+                {row: 'Top64'},
+                {row: 'Top65'},
+                {row: 'Top66'},
+                {row: 'Top67'},
+                {row: 'Top68'},
+                {row: 'Top69'},
+                {row: 'Top70'}
             ]
         })
-    })
-
-}
+    });
+};

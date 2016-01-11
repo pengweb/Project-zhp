@@ -1,0 +1,27 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/Dropload/webpack.config-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Dropload/server/router-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Dropload/client/js/zepto.min-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Dropload/demo/js/zepto.min-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Dropload/client/js/jquery.min-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Dropload/demo/js/jquery.min-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Dropload/client/js/main-compiled.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/Dropload/client/js/main-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Dropload/webpack.config-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Dropload/server/router-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Dropload/client/js/zepto.min-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Dropload/demo/js/zepto.min-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Dropload/client/js/jquery.min-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Dropload/demo/js/jquery.min-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Dropload/client/js/main-compiled.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -71,5 +71,8 @@ app.listen(port);
 console.log("服务已启动");
 var Movie = require('./cinema/server/model/movie');    //模块内为数据库操作
 
+//require('./Data/router')(app);
 require('./cinema/server/router')(app,Movie,_);
 require('./iScroll/router')(app);
+require('./dropload/server/router')(app);
+

@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 // 创建 application/x-www-form-urlencoded 编码解析
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
-app.get('/index.html', function (req, res) {
+app.get('/index1.html', function (req, res) {
     res.sendFile( __dirname + "/" + "index.html" );
 })
 

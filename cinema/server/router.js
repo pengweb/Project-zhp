@@ -2,7 +2,7 @@ module.exports = function(app){
     app.set('views','./cinema/client/page/ejs');
 //首页路由请求
     app.get('/',function(res,req){
-        req.render('index');
+        res.render('index');
     })
 //首页json数据返回
     app.get('/index-json', function (req, res) {
