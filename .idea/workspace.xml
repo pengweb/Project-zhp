@@ -2,49 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cecd3bd3-a7b2-4a37-9800-70389fd6d39f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dropload/demo/examples/load-bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dropload/demo/examples/load-top-bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dropload/demo/examples/product-list.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/router.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dropload/client/js/dropload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dropload/client/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dropload/client/styles/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dropload/demo/dist/dropload.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dropload/demo/dist/dropload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dropload/demo/dist/dropload.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dropload/demo/examples/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dropload/demo/examples/js/zepto.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dropload/demo/examples/json/more.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dropload/demo/examples/json/update.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dropload/demo/examples/load-bottom.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dropload/demo/examples/load-top-bottom.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dropload/demo/examples/product-list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dropload/server/router.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Dropload/webpack.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/project_zhp_node_modules.xml" afterPath="$PROJECT_DIR$/.idea/libraries/project_zhp_node_modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/project-zhp.iml" afterPath="$PROJECT_DIR$/.idea/project-zhp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/more.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/update.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Dropload/client/styles/main.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularJS/BookStore/dest/release/js/BookStore.min.js" afterPath="$PROJECT_DIR$/AngularJS/BookStore/dest/release/js/BookStore.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularJS/BookStore/dest/src-concated/js/BookStore.js" afterPath="$PROJECT_DIR$/AngularJS/BookStore/dest/src-concated/js/BookStore.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularJS/BookStore/dest/src-min/js/app_bak.min.js" afterPath="$PROJECT_DIR$/AngularJS/BookStore/dest/src-min/js/app_bak.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularJS/BookStore/src/framework/angular-1.3.0.14/angular-route.js" afterPath="$PROJECT_DIR$/AngularJS/BookStore/src/framework/angular-1.3.0.14/angular-route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularJS/Service与Provider例子/framework/angular-1.3.0.14/angular-route.js" afterPath="$PROJECT_DIR$/AngularJS/Service与Provider例子/framework/angular-1.3.0.14/angular-route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularJS/phonecat测试-angular专用/test/e2e/scenarios.js" afterPath="$PROJECT_DIR$/AngularJS/phonecat测试-angular专用/test/e2e/scenarios.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularJS/指令例子/framework/angular-1.3.0.14/angular-route.js" afterPath="$PROJECT_DIR$/AngularJS/指令例子/framework/angular-1.3.0.14/angular-route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Nodejs/model/Express/GET-POST/GET.js" afterPath="$PROJECT_DIR$/Nodejs/model/Express/GET-POST/GET.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Nodejs/model/Express/GET-POST/POST.js" afterPath="$PROJECT_DIR$/Nodejs/model/Express/GET-POST/POST.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Nodejs/model/server/client.js" afterPath="$PROJECT_DIR$/Nodejs/model/server/client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Nodejs/movie-慕课/public/libs/bootstrap/Gruntfile.js" afterPath="$PROJECT_DIR$/Nodejs/movie-慕课/public/libs/bootstrap/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dropload/client/pages/index.html" afterPath="$PROJECT_DIR$/Dropload/client/pages/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dropload/demo/examples/load-top-bottom.html" afterPath="$PROJECT_DIR$/Dropload/demo/examples/load-top-bottom.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dropload/server/router.js" afterPath="$PROJECT_DIR$/Dropload/server/router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cinema/server/router.js" afterPath="$PROJECT_DIR$/cinema/server/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dest/webpack-demo/main.css" afterPath="$PROJECT_DIR$/dest/webpack-demo/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dropload/client/pages/index.html" afterPath="$PROJECT_DIR$/dropload/client/pages/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iScroll/router.js" afterPath="$PROJECT_DIR$/iScroll/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng-router/bower_components/angular-ui-router/README.md" afterPath="$PROJECT_DIR$/ng-router/bower_components/angular-ui-router/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/iScroll/分页参考代码.html" afterPath="$PROJECT_DIR$/分页/分页参考代码.html" />
     </list>
     <ignored path="project-zhp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,34 +33,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dropload/client/pages/index.html">
+        <entry file="file://$PROJECT_DIR$/Dropload/client/pages/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.315369">
-              <caret line="115" column="18" selection-start-line="115" selection-start-column="18" selection-end-line="115" selection-end-column="18" />
+            <state vertical-scroll-proportion="7.017271">
+              <caret line="239" column="19" selection-start-line="239" selection-start-column="19" selection-end-line="239" selection-end-column="19" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dropload.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dropload/demo/dist/dropload.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="load-top-bottom.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dropload/demo/examples/load-top-bottom.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="147.11539">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1451005506000" expanded="true" signature="7673:7969" placeholder="..." />
-                <marker date="1451005506000" expanded="true" signature="8965:9261" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -103,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -151,7 +94,6 @@
         <option value="$PROJECT_DIR$/iScroll/iscroll-probe.js" />
         <option value="$PROJECT_DIR$/iScroll/right/slideUpDownRefresh.html" />
         <option value="$PROJECT_DIR$/iScroll/ajax.html" />
-        <option value="$PROJECT_DIR$/iScroll/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="D:/3/zhp-generator/README.md" />
         <option value="$PROJECT_DIR$/zhp-generator/bin/generateStructure-project.js" />
@@ -169,22 +111,23 @@
         <option value="$PROJECT_DIR$/zhp-generator/bin/project/README.md" />
         <option value="$PROJECT_DIR$/zhp-generator/README.md" />
         <option value="$PROJECT_DIR$/zhp-generator/package.json" />
-        <option value="$PROJECT_DIR$/Dropload/demo/examples/load-top-bottom.html" />
         <option value="$PROJECT_DIR$/Data/router.js" />
-        <option value="$PROJECT_DIR$/Dropload/client/pages/index.html" />
         <option value="$PROJECT_DIR$/Dropload/index1.html" />
         <option value="$PROJECT_DIR$/dDopload/demo - 自己/router.js" />
         <option value="$PROJECT_DIR$/Dropload/router.js" />
         <option value="$PROJECT_DIR$/Dropload/index.html" />
         <option value="$PROJECT_DIR$/Dropload/client/index.html" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/Dropload/server/router.js" />
         <option value="$PROJECT_DIR$/dropload/index.html" />
         <option value="$PROJECT_DIR$/dropload/client/index.html" />
         <option value="$PROJECT_DIR$/iScroll/router.js" />
         <option value="$PROJECT_DIR$/cinema/server/router.js" />
         <option value="$PROJECT_DIR$/dropload/server/router.js" />
         <option value="$PROJECT_DIR$/dropload/client/pages/index.html" />
+        <option value="$PROJECT_DIR$/iScroll/index.html" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/Dropload/demo/examples/load-top-bottom.html" />
+        <option value="$PROJECT_DIR$/Dropload/server/router.js" />
+        <option value="$PROJECT_DIR$/Dropload/client/pages/index.html" />
       </list>
     </option>
   </component>
@@ -201,10 +144,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="101" />
-    <option name="y" value="26" />
-    <option name="width" value="1109" />
-    <option name="height" value="666" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -231,9 +174,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -276,7 +216,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dropload" />
+              <option name="myItemId" value="Dropload" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -290,7 +230,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dropload" />
+              <option name="myItemId" value="Dropload" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -308,99 +248,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dropload" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examples" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project-zhp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project-zhp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dropload" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project-zhp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project-zhp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dropload" />
+              <option name="myItemId" value="Dropload" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project-zhp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project-zhp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dropload" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project-zhp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project-zhp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dropload" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -418,111 +270,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project-zhp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project-zhp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cinema" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project-zhp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project-zhp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cinema" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project-zhp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project-zhp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cinema" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project-zhp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project-zhp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cinema" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project-zhp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project-zhp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cinema" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ejs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="D:/YNET/OlympicStatic" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -543,19 +300,19 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project-zhp\Data" />
+      <recent name="D:\GITHUB\Project-zhp\dropload" />
+      <recent name="D:\GITHUB\Project-zhp\Dropload\client\js" />
+      <recent name="D:\GITHUB\Project-zhp\Dropload" />
+      <recent name="D:\GITHUB\Project-zhp\dDopload" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\GITHUB\Project-zhp\dropload\client\pages" />
       <recent name="D:\GITHUB\Project-zhp\dropload\client" />
       <recent name="D:\GITHUB\Project-zhp\dropload" />
       <recent name="D:\GITHUB\Project-zhp\Dropload\client" />
       <recent name="D:\GITHUB\Project-zhp\Dropload" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GITHUB\Project-zhp\dropload" />
-      <recent name="D:\GITHUB\Project-zhp\Dropload\client\js" />
-      <recent name="D:\GITHUB\Project-zhp\Dropload" />
-      <recent name="D:\GITHUB\Project-zhp\dDopload" />
-      <recent name="D:\GITHUB\Project-zhp" />
     </key>
   </component>
   <component name="RunManager">
@@ -1094,6 +851,8 @@
       <workItem from="1452415713153" duration="6113000" />
       <workItem from="1452433387040" duration="2668000" />
       <workItem from="1452481191494" duration="19545000" />
+      <workItem from="1452515352421" duration="222000" />
+      <workItem from="1452515600371" duration="14204000" />
     </task>
     <task id="LOCAL-00001" summary="完成h5页面">
       <created>1447495148369</created>
@@ -1105,7 +864,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="411104000" />
+    <option name="totallyTimeSpent" value="425530000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1117,23 +876,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="101" y="26" width="1109" height="666" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4258675" sideWeight="0.17789166" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42446044" sideWeight="0.17789166" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58203125" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4258675" sideWeight="0.8221083" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.76498425" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26715463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2137628" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32014388" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31861198" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2492971" sideWeight="0.4921875" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1175,6 +934,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dest/webpack-demo/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0332681">
@@ -1277,7 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1334,7 +1100,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1342,7 +1107,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1350,7 +1114,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1358,7 +1121,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1366,7 +1128,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1374,7 +1135,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1392,7 +1152,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1400,7 +1159,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.7984031">
           <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1408,7 +1166,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.61290324">
           <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1416,54 +1173,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/分页/分页参考代码.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41105354">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding>
-            <marker date="1452479896763" expanded="true" signature="3362:3428" placeholder="..." />
-            <marker date="1452479896763" expanded="true" signature="3458:3519" placeholder="..." />
-            <marker date="1452479896763" expanded="true" signature="3549:3612" placeholder="..." />
-            <marker date="1452479896763" expanded="true" signature="3642:3704" placeholder="..." />
-            <marker date="1452479896763" expanded="true" signature="3734:3799" placeholder="..." />
-            <marker date="1452479896763" expanded="true" signature="3829:3890" placeholder="..." />
-            <marker date="1452479896763" expanded="true" signature="4323:4389" placeholder="..." />
-            <marker date="1452479896763" expanded="true" signature="4419:4480" placeholder="..." />
-            <marker date="1452479896763" expanded="true" signature="4510:4573" placeholder="..." />
-            <marker date="1452479896763" expanded="true" signature="4603:4665" placeholder="..." />
-            <marker date="1452479896763" expanded="true" signature="4695:4760" placeholder="..." />
-            <marker date="1452479896763" expanded="true" signature="4790:4851" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="83" column="30" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
-          <folding>
-            <element signature="e#126#2500#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dropload/client/js/jquery.min.js">
+    <entry file="file://$PROJECT_DIR$/Dropload/client/js/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dropload/client/js/dropload.js">
+    <entry file="file://$PROJECT_DIR$/Dropload/client/js/dropload.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1471,7 +1194,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1479,64 +1201,117 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="122" column="1" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/分页/分页参考代码.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0938123">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
           <folding>
-            <element signature="e#245#2619#0" expanded="false" />
-            <element signature="e#2672#3747#0" expanded="false" />
+            <marker date="1452514086965" expanded="true" signature="3362:3428" placeholder="..." />
+            <marker date="1452514086965" expanded="true" signature="3458:3519" placeholder="..." />
+            <marker date="1452514086965" expanded="true" signature="3549:3612" placeholder="..." />
+            <marker date="1452514086965" expanded="true" signature="3642:3704" placeholder="..." />
+            <marker date="1452514086965" expanded="true" signature="3734:3799" placeholder="..." />
+            <marker date="1452514086965" expanded="true" signature="3829:3890" placeholder="..." />
+            <marker date="1452514086965" expanded="true" signature="4323:4389" placeholder="..." />
+            <marker date="1452514086965" expanded="true" signature="4419:4480" placeholder="..." />
+            <marker date="1452514086965" expanded="true" signature="4510:4573" placeholder="..." />
+            <marker date="1452514086965" expanded="true" signature="4603:4665" placeholder="..." />
+            <marker date="1452514086965" expanded="true" signature="4695:4760" placeholder="..." />
+            <marker date="1452514086965" expanded="true" signature="4790:4851" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dropload/demo/dist/dropload.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dropload/demo/examples/json/more.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dropload/demo/examples/json/update.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/more.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/iScroll/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.730769">
-          <caret line="55" column="9" selection-start-line="42" selection-start-column="8" selection-end-line="55" selection-end-column="9" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-7.2366147">
+          <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dropload/demo/dist/dropload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44347826">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dropload/demo/dist/dropload.js">
+    <entry file="file://$PROJECT_DIR$/Dropload/server/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.19669421">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dropload/demo/examples/load-top-bottom.html">
+    <entry file="file://$PROJECT_DIR$/Data/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="147.11539">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-1.2198347">
+          <caret line="83" column="30" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dropload/demo/examples/load-top-bottom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16062176">
+          <caret line="235" column="31" selection-start-line="235" selection-start-column="31" selection-end-line="235" selection-end-column="31" />
           <folding>
-            <marker date="1451005506000" expanded="true" signature="7673:7969" placeholder="..." />
-            <marker date="1451005506000" expanded="true" signature="8965:9261" placeholder="..." />
+            <marker date="1452531294471" expanded="true" signature="7671:7967" placeholder="..." />
+            <marker date="1452531294471" expanded="true" signature="8964:9260" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dropload/server/router.js">
+    <entry file="file://$PROJECT_DIR$/Dropload/client/pages/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29032257">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding>
-            <element signature="e#256#2630#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dropload/client/pages/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.315369">
-          <caret line="115" column="18" selection-start-line="115" selection-start-column="18" selection-end-line="115" selection-end-column="18" />
+        <state vertical-scroll-proportion="7.017271">
+          <caret line="239" column="19" selection-start-line="239" selection-start-column="19" selection-end-line="239" selection-end-column="19" />
           <folding />
         </state>
       </provider>

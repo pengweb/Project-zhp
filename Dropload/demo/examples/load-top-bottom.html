@@ -233,7 +233,7 @@ $(function(){
         loadUpFn : function(me){
             $.ajax({
                 type: 'GET',
-                url: 'json/update.json',
+                url: 'json/more.json',
                 dataType: 'json',
                 success: function(data){
                     var result = '';
@@ -268,6 +268,7 @@ $(function(){
                     counter++;
                     pageEnd = num * counter;
                     pageStart = pageEnd - num;
+
 
                     for(var i = pageStart; i < pageEnd; i++){
                         result +=   '<a class="item opacity" href="'+data.lists[i].link+'">'
