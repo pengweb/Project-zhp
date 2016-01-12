@@ -2,7 +2,7 @@ var path = require('path');
 var HtmlwebpackPlugin = require('html-webpack-plugin');
 //定义了一些文件夹的路径
 var ROOT_PATH = path.resolve(__dirname);
-var APP_PATH = path.resolve(ROOT_PATH, 'webpack-demo-自己');
+var APP_PATH = path.resolve(ROOT_PATH, 'webpack-demo');
 var BUILD_PATH = path.resolve(ROOT_PATH, 'dest/webpack-demo');
 
 module.exports = {
@@ -20,7 +20,7 @@ module.exports = {
             { test: /\.css$/, loader: 'style-loader!css-loader' },
             { test: /\.js$/, loader: 'jsx-loader?harmony' },
             { test: /\.scss$/, loader: 'style!css!sass?sourceMap'},
-            { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'}    //图片小于8192的时候
+            { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'}
         ]
     },*/
     module: {
@@ -40,5 +40,5 @@ module.exports = {
         hot: true,
         inline: true,
         progress: true,
-      }
+      },
 };
