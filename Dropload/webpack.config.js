@@ -8,29 +8,28 @@ var BUILD_PATH = path.resolve(ROOT_PATH, 'dist/dropload');  //根目录下的dis
 
 module.exports = {
     //项目的文件夹 可以直接用文件夹名称 默认会找index.js 也可以确定是哪个文件名字
-    entry:APP_PATH+"/pages/index" ,
+    entry:{
+        dropload:APP_PATH+"/js/dropload.js",
+        style:APP_PATH+"/style/style.less"
+    },
     //输出的文件名 合并以后的js会命名为bundle.js
     output: {
         path: BUILD_PATH,
-        filename: 'bundle.js'
+        filename: '[name].js'
     },
     module: {
         //加载器配置
         loaders: [
             //.jsx文件解析，同时转换es6和react
-            //{test: /\.jsx?$/,loader: 'babel',query: {presets: ['es2015', 'react']}},
-            //.js文件解析
-            {test:/\.js$/,loader:'jsx-loader?harmony'},
+            {test: /\.jsx?$/,loader: 'babel',query: {presets: ['es2015', 'react']}},
             //.less文件解析
-            {test:/\.less$/,loader:'style!css!less?sourceMap'}
-            //.sass文件解析
-            //{test:/\.sass$/,loader:'style!css!sass?sourceMap'},
+            { test: /\.less$/,loader:'style!css!less'},
             //.css文件解析
-            //{test:/\.css$/,loader:'style-loader!css-loader'}
+            {test:/\.css$/,loader:'style-loader!css-loader'}
         ]
-    },
-    plugins: [
+    }
+    /*plugins: [
         //new CommonsChunkPlugin("admin-commons.js", ["ap1", "ap2"]),
         //new CommonsChunkPlugin("commons.js", ["p1", "p2", "admin-commons.js"])
-    ]
+    ]*/
 };
