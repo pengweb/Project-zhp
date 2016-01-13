@@ -25,6 +25,7 @@
     "cookie-parser": "^1.4.0",
     "css-loader": "^0.23.1",
     "debuglog": "1.0.1",
+    "del": "^2.2.0",
     "ejs": "^2.3.4",
     "express": "^4.13.3",
     "handlebars": "^4.0.5",
