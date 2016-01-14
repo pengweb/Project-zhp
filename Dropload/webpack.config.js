@@ -21,7 +21,7 @@ module.exports = {
         //加载器配置
         loaders: [
             //.jsx文件解析，同时转换es6和react
-            {test: /\.jsx?$/,loader: 'babel',query: {presets: ['es2015', 'react']}},
+            {test: /\.js[x]?$/,exclude: /node_modules/,loader: 'babel-loader?presets[]=es2015&presets[]=react'},
             //.less文件解析
             { test: /\.less$/,loader:'style!css!less'},
             //.css文件解析
