@@ -2,73 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cecd3bd3-a7b2-4a37-9800-70389fd6d39f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Nodejs/示例一/concat/demo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Nodejs/示例一/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Nodejs/示例一/server.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Nodejs/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Nodejs/router.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Nodejs/目录/head.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Nodejs/目录/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Nodejs/目录/package.json" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/冒泡/冒泡事件.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/语言精粹/函数/获取异常.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/语言精粹/函数/返回.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/语言精粹/继承/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EJS/server/ejs-1.0.0/ejs.js" afterPath="$PROJECT_DIR$/EJS/server/ejs-1.0.0/ejs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EJS/server/ejs-1.0.0/ejs.min.js" afterPath="$PROJECT_DIR$/EJS/server/ejs-1.0.0/ejs.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EJS/server/ejs-1.0.0/support/compile.js" afterPath="$PROJECT_DIR$/EJS/server/ejs-1.0.0/support/compile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Webpack/webpack-ruan/demo15/webpack.config.js" afterPath="$PROJECT_DIR$/Webpack/webpack-ruan/demo15/webpack.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Webpack/webpack-ruan/demo16/webpack.config.js" afterPath="$PROJECT_DIR$/Webpack/webpack-ruan/demo16/webpack.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng-router/client/page/index.html" afterPath="$PROJECT_DIR$/ng-router/client/page/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/Express/GET-POST/GET.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/Express/GET-POST/GET.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/Express/GET-POST/POST.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/Express/GET-POST/POST.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/Express/GET-POST/index.html" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/Express/GET-POST/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/Express/QQ图片20151202145405.png" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/Express/QQ图片20151202145405.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/Express/cookie.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/Express/cookie.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/Express/delete.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/Express/delete.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/Express/demo.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/Express/demo.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/Express/file.html" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/Express/file.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/Express/file.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/Express/file.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/Express/public/img/1.png" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/Express/public/img/1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/Express/route.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/Express/route.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/Express/static.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/Express/static.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/GET-POST/GET.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/GET-POST/GET.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/GET-POST/POST.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/GET-POST/POST.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/RESTful/server-get.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/RESTful/server-get.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/RESTful/server-post.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/RESTful/server-post.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/RESTful/users.json" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/RESTful/users.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/anonymous.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/anonymous.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/buffer.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/buffer.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/child_process/exec.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/child_process/exec.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/child_process/fork.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/child_process/fork.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/child_process/spawn.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/child_process/spawn.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/child_process/support.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/child_process/support.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/event.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/event.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/filename.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/filename.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/fs.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/fs.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/fs/file.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/fs/file.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/fs/mkdir.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/fs/mkdir.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/fs/rmdir.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/fs/rmdir.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/fs/struncate.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/fs/struncate.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/index.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/input.txt" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/input.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/module-hello.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/module-hello.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/module-main.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/module-main.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/moudle/dns.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/moudle/dns.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/moudle/domain.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/moudle/domain.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/moudle/os.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/moudle/os.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/moudle/path.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/moudle/path.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/server/client.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/server/client.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/server/index.html" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/server/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/server/server.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/server/server.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/setTimeout-clear.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/setTimeout-clear.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/setTimeout.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/setTimeout.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/stream-chained-compress.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/stream-chained-compress.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/stream-chained-decompress.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/stream-chained-decompress.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/stream-pipe.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/stream-pipe.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/stream-read.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/stream-read.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/stream-write.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/stream-write.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/model/util/inspect.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/util/inspect.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/route/index.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/route/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/route/router.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/route/router.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Nodejs/route/server.js" afterPath="$PROJECT_DIR$/Nodejs/model-笔记/route/server.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/继承/index.html" afterPath="$PROJECT_DIR$/语言精粹/上下文/index.html" />
     </list>
     <ignored path="project-zhp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,31 +29,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Nodejs/示例一/server.js">
+      <file leaf-file-name="获取异常.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/语言精粹/函数/获取异常.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6610738">
-              <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nodejs/示例一/config.json">
+      <file leaf-file-name="返回.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/语言精粹/函数/返回.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zhp-generator/package.json">
+      <file leaf-file-name="冒泡事件.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/冒泡/冒泡事件.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+              <caret line="29" column="61" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/语言精粹/继承/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.3461539">
+              <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/语言精粹/上下文/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.58721936">
+              <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -129,8 +88,8 @@
         <option value="Jade File" />
         <option value="CSS File" />
         <option value="Less File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -145,12 +104,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Data/router.js" />
-        <option value="$PROJECT_DIR$/Dropload/index1.html" />
-        <option value="$PROJECT_DIR$/dDopload/demo - 自己/router.js" />
-        <option value="$PROJECT_DIR$/Dropload/router.js" />
-        <option value="$PROJECT_DIR$/Dropload/index.html" />
-        <option value="$PROJECT_DIR$/Dropload/client/index.html" />
         <option value="$PROJECT_DIR$/dropload/index.html" />
         <option value="$PROJECT_DIR$/dropload/client/index.html" />
         <option value="$PROJECT_DIR$/iScroll/router.js" />
@@ -196,6 +149,12 @@
         <option value="$PROJECT_DIR$/Nodejs/示例一/index.js" />
         <option value="$PROJECT_DIR$/Nodejs/示例一/config.json" />
         <option value="$PROJECT_DIR$/Nodejs/示例一/server.js" />
+        <option value="$PROJECT_DIR$/语言精粹/函数.html" />
+        <option value="$PROJECT_DIR$/语言精粹/获取异常.html" />
+        <option value="$PROJECT_DIR$/语言精粹/函数/返回.html" />
+        <option value="$PROJECT_DIR$/冒泡/冒泡事件.html" />
+        <option value="$PROJECT_DIR$/继承/index.html" />
+        <option value="$PROJECT_DIR$/语言精粹/上下文/index.html" />
       </list>
     </option>
   </component>
@@ -212,9 +171,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="676" />
-    <option name="width" value="697" />
-    <option name="height" value="735" />
+    <option name="x" value="-12" />
+    <option name="y" value="75" />
+    <option name="width" value="1370" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -227,7 +187,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -240,10 +200,98 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project-zhp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project-zhp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-zhp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project-zhp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-zhp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="语言精粹" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project-zhp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-zhp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="语言精粹" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="继承" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project-zhp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-zhp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="语言精粹" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="上下文" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project-zhp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project-zhp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="冒泡" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/YNET/Scorecard" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -266,11 +314,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GITHUB\Project-zhp\语言精粹\继承" />
+      <recent name="D:\GITHUB\Project-zhp\语言精粹\函数" />
       <recent name="D:\GITHUB\Project-zhp\Nodejs\model" />
       <recent name="D:\GITHUB\Project-zhp\Nodejs\cat\lib" />
       <recent name="D:\GITHUB\Project-zhp\React\React-zhp" />
-      <recent name="D:\GITHUB\Project-zhp\dropload\client\pages" />
-      <recent name="D:\GITHUB\Project-zhp\dropload\client" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GITHUB\Project-zhp\Nodejs\cat" />
@@ -842,6 +890,13 @@
       <workItem from="1453428481369" duration="5873000" />
       <workItem from="1453689907894" duration="14336000" />
       <workItem from="1453772245211" duration="644000" />
+      <workItem from="1453879772994" duration="2930000" />
+      <workItem from="1453949156617" duration="172000" />
+      <workItem from="1453952768700" duration="4153000" />
+      <workItem from="1454030614962" duration="3081000" />
+      <workItem from="1454050908749" duration="61000" />
+      <workItem from="1454292644775" duration="11057000" />
+      <workItem from="1454320752189" duration="978000" />
     </task>
     <task id="LOCAL-00001" summary="完成h5页面">
       <created>1447495148369</created>
@@ -853,7 +908,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="495604000" />
+    <option name="totallyTimeSpent" value="518036000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -865,8 +920,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="676" y="0" width="697" height="735" extended-state="0" />
-    <editor active="true" />
+    <frame x="-12" y="75" width="1370" height="744" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -875,24 +930,24 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42382812" sideWeight="0.17789166" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58203125" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42578125" sideWeight="0.8221083" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.76498425" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36857563" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17503692" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2492971" sideWeight="0.4921875" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2492971" sideWeight="0.5078125" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42578125" sideWeight="0.8221083" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3152" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -923,43 +978,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Nodejs/示例一/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhp-generator/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dropload-好的/client/pages/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5">
-          <caret line="145" column="2" selection-start-line="145" selection-start-column="2" selection-end-line="145" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dropload-好的/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8447205">
-          <caret line="42" column="8" selection-start-line="37" selection-start-column="4" selection-end-line="42" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dropload/client/js/dropload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.209713">
-          <caret line="170" column="0" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1263,7 +1281,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="48" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1271,14 +1288,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Nodejs/示例一/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6610738">
-          <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/语言精粹/函数/获取异常.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/语言精粹/函数/返回.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/冒泡/冒泡事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="61" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/语言精粹/继承/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3461539">
+          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/语言精粹/上下文/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58721936">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
           <folding />
         </state>
       </provider>
