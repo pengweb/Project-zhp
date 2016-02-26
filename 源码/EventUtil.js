@@ -9,7 +9,7 @@ var EventUtil = {
             element["on" + type] = handler;
         }
     },
-
+    
     getButton: function(event){
         if (document.implementation.hasFeature("MouseEvents", "2.0")){
             return event.button;
@@ -28,7 +28,7 @@ var EventUtil = {
             }
         }
     },
-
+    
     getCharCode: function(event){
         if (typeof event.charCode == "number"){
             return event.charCode;
@@ -36,16 +36,16 @@ var EventUtil = {
             return event.keyCode;
         }
     },
-
+    
     getClipboardText: function(event){
         var clipboardData =  (event.clipboardData || window.clipboardData);
         return clipboardData.getData("text");
     },
-
+    
     getEvent: function(event){
         return event ? event : window.event;
     },
-
+    
     getRelatedTarget: function(event){
         if (event.relatedTarget){
             return event.relatedTarget;
@@ -56,13 +56,13 @@ var EventUtil = {
         } else {
             return null;
         }
-
+    
     },
-
+    
     getTarget: function(event){
         return event.target || event.srcElement;
     },
-
+    
     getWheelDelta: function(event){
         if (event.wheelDelta){
             return (client.engine.opera && client.engine.opera < 9.5 ? -event.wheelDelta : event.wheelDelta);
@@ -70,7 +70,7 @@ var EventUtil = {
             return -event.detail * 40;
         }
     },
-
+    
     preventDefault: function(event){
         if (event.preventDefault){
             event.preventDefault();
@@ -88,7 +88,7 @@ var EventUtil = {
             element["on" + type] = null;
         }
     },
-
+    
     setClipboardText: function(event, value){
         if (event.clipboardData){
             event.clipboardData.setData("text/plain", value);
@@ -96,7 +96,7 @@ var EventUtil = {
             window.clipboardData.setData("text", value);
         }
     },
-
+    
     stopPropagation: function(event){
         if (event.stopPropagation){
             event.stopPropagation();
