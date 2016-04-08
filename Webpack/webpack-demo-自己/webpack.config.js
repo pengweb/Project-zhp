@@ -20,7 +20,12 @@ module.exports = {
             { test: /\.css$/, loader: 'style-loader!css-loader' },
             { test: /\.js$/, loader: 'jsx-loader?harmony' },
             { test: /\.scss$/, loader: 'style!css!sass?sourceMap'},
-            { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'}    //图片小于8192的时候
+            { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'},    //图片小于8192的时候
+            {
+              test: /\.js[x]?$/,
+              exclude: /node_modules/,
+              loader: 'babel-loader?presets[]=es2015&presets[]=react'
+            }
         ]
     },*/
     module: {
