@@ -17,11 +17,25 @@ var Hello = React.createClass({
     },
     componentDidMount:function () {       //真实DOM插入完成
         var that = this;
-        window.setTimeout(function(){
+        window.setTimeout(function(){     //setTimeout导致this指向window
             that.setState({
                 fontSize:'28px'
             })
         },1000)
     }
 });
-ReactDom.render(<Hello name="zp" />,document.getElementById("haha"));
+var ChildNotesList = React.createClass({
+    render:function(){
+        return (         //不能直接插入{}，要插入带标签的元素
+            <ol>
+                {
+                    React.Children.map(this.props.children,function(child){
+                        return <li>{child}</li>
+                })}
+            </ol>
+        );
+
+    }
+});
+ReactDom.render(<div><Hello name="zp" /></div>,document.getElementById("haha"));    //同一个位置不能插入多个标签
+ReactDom.render(<ChildNotesList><span>hello</span><span>world</span></ChildNotesList>,document.getElementById("hehe"));
