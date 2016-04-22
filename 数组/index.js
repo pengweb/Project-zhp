@@ -11,4 +11,18 @@ for (i = len; i--;) {
         arrsTemp.push(arrs[i])
     }
 }
-console.log(arrsTemp);
+//console.log(arrsTemp);
+
+//2.对象键值对法
+//下边这个方法不好
+var obj = {};
+for(i=len;i--;){
+    obj[arrs[i]] = typeof arrs[i];
+}
+var subArr = [];
+for(x in obj){
+    subArr.push(x)
+}
+console.log(subArr);
+
+//3.数组下标法
