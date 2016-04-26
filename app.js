@@ -69,10 +69,10 @@ app.locals.moment = require('moment');
 app.listen(port);
 
 console.log("服务已启动");
-var Movie = require('./cinema/server/model/movie');    //模块内为数据库操作
+var Movie = require('./Nodejs/cinema/server/model/movie');    //模块内为数据库操作
 
 require('./Data/router')(app);
-require('./cinema/server/router')(app,Movie,_);
-require('./iScroll/router')(app);
-require('./dropload/server/router')(app);
+require('./Nodejs/cinema/server/router')(app,Movie,_);
+require('./组件练习/iScroll/router')(app);
+require('./组件练习/dropload/server/router')(app);
 

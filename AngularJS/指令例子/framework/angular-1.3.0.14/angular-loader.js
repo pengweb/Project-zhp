@@ -346,10 +346,10 @@ function setupModuleLoader(window) {
            * @ngdoc method
            * @name angular.Module#config
            * @module ng
-           * @param {Function} configFn Execute this function on module load. Useful for service
+           * @param {Function} configFn Execute This function on module load. Useful for service
            *    configuration.
            * @description
-           * Use this method to register work which needs to be performed on module loading.
+           * Use This method to register work which needs to be performed on module loading.
            * For more about how to configure services, see
            * {@link providers#providers_provider-recipe Provider Recipe}.
            */
@@ -359,10 +359,10 @@ function setupModuleLoader(window) {
            * @ngdoc method
            * @name angular.Module#run
            * @module ng
-           * @param {Function} initializationFn Execute this function after injector creation.
+           * @param {Function} initializationFn Execute This function after injector creation.
            *    Useful for application initialization.
            * @description
-           * Use this method to register work which should be performed when the injector is done
+           * Use This method to register work which should be performed when the injector is done
            * loading all modules.
            */
           run: function(block) {

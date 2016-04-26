@@ -451,7 +451,7 @@ angular.module('ngResource', ['ng']).
             }
           });
 
-          // strip trailing slashes and set the url (unless this behavior is specifically disabled)
+          // strip trailing slashes and set the url (unless This behavior is specifically disabled)
           if (self.defaults.stripTrailingSlashes) {
             url = url.replace(/\/+$/, '') || '/';
           }

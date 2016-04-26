@@ -7,7 +7,7 @@
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 /* jshint browser: true */
@@ -43,7 +43,7 @@ function transformReact(source, options) {
   // Force the sourcemaps option manually. We don't want to use it if it will
   // break (see above note about supportsAccessors). We'll only override the
   // value here if sourceMap was specified and is truthy. This guarantees that
-  // we won't override any user intent (since this method is exposed publicly).
+  // we won't override any user intent (since This method is exposed publicly).
   if (options.sourceMap) {
     options.sourceMap = supportsAccessors;
   }
@@ -68,7 +68,7 @@ function exec(source, options) {
  * are also shown in a readable way.
  *
  * Example:
- * ... x', overflow:'scroll'}} id={} onScroll={this.scroll} class=" ...
+ * ... x', overflow:'scroll'}} id={} onScroll={This.scroll} class=" ...
  * ^
  *
  * @param {string} code The full string of code
@@ -128,7 +128,7 @@ function transformCode(code, url, options) {
     e.message += '\n    at ';
     if (url) {
       if ('fileName' in e) {
-        // We set `fileName` if it's supported by this error object and
+        // We set `fileName` if it's supported by This error object and
         // a `url` was provided.
         // The error will correctly point to `url` in Firefox.
         e.fileName = url;
@@ -344,7 +344,7 @@ module.exports = {
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 
@@ -450,7 +450,7 @@ var isArray = _dereq_('is-array')
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
 exports.INSPECT_MAX_BYTES = 50
-Buffer.poolSize = 8192 // not used by this implementation
+Buffer.poolSize = 8192 // not used by This implementation
 
 var kMaxLength = 0x3fffffff
 var rootParent = {}
@@ -531,9 +531,9 @@ function Buffer (subject, encoding, noZero) {
   var self = this
   if (Buffer.TYPED_ARRAY_SUPPORT) {
     // Preferred: Return an augmented `Uint8Array` instance for best performance
-    /*eslint-disable consistent-this */
+    /*eslint-disable consistent-This */
     self = Buffer._augment(new Uint8Array(length))
-    /*eslint-enable consistent-this */
+    /*eslint-enable consistent-This */
   } else {
     // Fallback: Return THIS instance of Buffer (created by `new`)
     self.length = length
@@ -1541,7 +1541,7 @@ Buffer.prototype.toArrayBuffer = function toArrayBuffer () {
       return buf.buffer
     }
   } else {
-    throw new TypeError('Buffer.toArrayBuffer not supported in this browser')
+    throw new TypeError('Buffer.toArrayBuffer not supported in This browser')
   }
 }
 
@@ -1731,7 +1731,7 @@ function utf8ToBytes (string, units) {
 function asciiToBytes (str) {
   var byteArray = []
   for (var i = 0; i < str.length; i++) {
-    // Node's code seems to be doing this and not & 0x7F..
+    // Node's code seems to be doing This and not & 0x7F..
     byteArray.push(str.charCodeAt(i) & 0xFF)
   }
   return byteArray
@@ -1820,7 +1820,7 @@ var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 		// if there are two placeholders, than the two characters before it
 		// represent one byte
 		// if there is only one, then the three characters before it represent 2 bytes
-		// this is just a cheap hack to not do indexOf twice
+		// This is just a cheap hack to not do indexOf twice
 		var len = b64.length
 		placeHolders = '=' === b64.charAt(len - 2) ? 2 : '=' === b64.charAt(len - 1) ? 1 : 0
 
@@ -2025,14 +2025,14 @@ module.exports = isArray || function (val) {
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the
+// copy of This software and associated documentation files (the
 // "Software"), to deal in the Software without restriction, including
 // without limitation the rights to use, copy, modify, merge, publish,
 // distribute, sublicense, and/or sell copies of the Software, and to permit
 // persons to whom the Software is furnished to do so, subject to the
 // following conditions:
 //
-// The above copyright notice and this permission notice shall be included
+// The above copyright notice and This permission notice shall be included
 // in all copies or substantial portions of the Software.
 //
 // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
@@ -2101,7 +2101,7 @@ exports.resolve = function() {
     resolvedAbsolute = path.charAt(0) === '/';
   }
 
-  // At this point the path should be resolved to a full absolute path, but
+  // At This point the path should be resolved to a full absolute path, but
   // handle relative paths to be safe (might happen when process.cwd() fails)
 
   // Normalize the path
@@ -2217,7 +2217,7 @@ exports.dirname = function(path) {
 
 exports.basename = function(path, ext) {
   var f = splitPath(path)[2];
-  // TODO: make this comparison case-insensitive on windows?
+  // TODO: make This comparison case-insensitive on windows?
   if (ext && f.substr(-1 * ext.length) === ext) {
     f = f.substr(0, f.length - ext.length);
   }
@@ -2324,9 +2324,9 @@ process.umask = function() { return 0; };
   modification, are permitted provided that the following conditions are met:
 
     * Redistributions of source code must retain the above copyright
-      notice, this list of conditions and the following disclaimer.
+      notice, This list of conditions and the following disclaimer.
     * Redistributions in binary form must reproduce the above copyright
-      notice, this list of conditions and the following disclaimer in the
+      notice, This list of conditions and the following disclaimer in the
       documentation and/or other materials provided with the distribution.
 
   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
@@ -2617,7 +2617,7 @@ process.umask = function() { return 0; };
     // Ensure the condition is true, otherwise throw an error.
     // This is only to have a better contract semantic, i.e. another safety net
     // to catch a logic error. The condition shall be fulfilled in normal case.
-    // Do NOT use this to enforce a certain condition on any user input.
+    // Do NOT use This to enforce a certain condition on any user input.
 
     function assert(condition, message) {
         /* istanbul ignore if */
@@ -3768,7 +3768,7 @@ process.umask = function() { return 0; };
             throwError({}, Messages.InvalidRegExp);
         }
 
-        // Return a regular expression object for this pattern-flag pair, or
+        // Return a regular expression object for This pattern-flag pair, or
         // `null` in case the current environment doesn't support the flags it
         // uses.
         try {
@@ -5358,7 +5358,7 @@ process.umask = function() { return 0; };
                         throwError({}, Messages.ElementAfterSpreadElement);
                     }
                 } else if (!(match(']') || matchKeyword('for') || matchKeyword('if'))) {
-                    expect(','); // this lexes.
+                    expect(','); // This lexes.
                     possiblecomprehension = false;
                 }
             }
@@ -6443,7 +6443,7 @@ process.umask = function() { return 0; };
         }
 
         if (matchAsync()) {
-            // We can't be completely sure that this 'async' token is
+            // We can't be completely sure that This 'async' token is
             // actually a contextual keyword modifying a function
             // expression, so we might have to un-lex() it later by
             // calling rewind(backtrackToken).
@@ -6909,7 +6909,7 @@ process.umask = function() { return 0; };
                 ));
             case '(':
                 lex();
-                // Check to see if this is actually a grouped type
+                // Check to see if This is actually a grouped type
                 if (!match(')') && !match('...')) {
                     if (lookahead.type === Token.Identifier) {
                         token = lookahead2();
@@ -8014,7 +8014,7 @@ process.umask = function() { return 0; };
             sourceElement = parseSourceElement();
             sourceElements.push(sourceElement);
             if (sourceElement.expression.type !== Syntax.Literal) {
-                // this is not directive
+                // This is not directive
                 break;
             }
             directive = source.slice(token.range[0] + 1, token.range[1] - 1);
@@ -8769,7 +8769,7 @@ process.umask = function() { return 0; };
             sourceElement = parseProgramElement();
             sourceElements.push(sourceElement);
             if (sourceElement.expression.type !== Syntax.Literal) {
-                // this is not directive
+                // This is not directive
                 break;
             }
             directive = source.slice(token.range[0] + 1, token.range[1] - 1);
@@ -10089,7 +10089,7 @@ define(function (_dereq_, exports, module) {
   };
 
   /**
-   * Add the given string to this set.
+   * Add the given string to This set.
    *
    * @param String aStr
    */
@@ -10105,7 +10105,7 @@ define(function (_dereq_, exports, module) {
   };
 
   /**
-   * Is the given string a member of this set?
+   * Is the given string a member of This set?
    *
    * @param String aStr
    */
@@ -10139,8 +10139,8 @@ define(function (_dereq_, exports, module) {
   };
 
   /**
-   * Returns the array representation of this set (which has the proper indices
-   * indicated by indexOf). Note that this is a copy of the internal array used
+   * Returns the array representation of This set (which has the proper indices
+   * indicated by indexOf). Note that This is a copy of the internal array used
    * for storing the members so that no one can mess with internal state.
    */
   ArraySet.prototype.toArray = function ArraySet_toArray() {
@@ -10167,14 +10167,14 @@ define(function (_dereq_, exports, module) {
  * met:
  *
  *  * Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
+ *    notice, This list of conditions and the following disclaimer.
  *  * Redistributions in binary form must reproduce the above
- *    copyright notice, this list of conditions and the following
+ *    copyright notice, This list of conditions and the following
  *    disclaimer in the documentation and/or other materials provided
  *    with the distribution.
  *  * Neither the name of Google Inc. nor the names of its
  *    contributors may be used to endorse or promote products derived
- *    from this software without specific prior written permission.
+ *    from This software without specific prior written permission.
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -10199,7 +10199,7 @@ define(function (_dereq_, exports, module) {
   // length quantities we use in the source map spec, the first bit is the sign,
   // the next four bits are the actual value, and the 6th bit is the
   // continuation bit. The continuation bit tells us whether there are more
-  // digits in this value following this digit.
+  // digits in This value following This digit.
   //
   //   Continuation
   //   |    Sign
@@ -10257,7 +10257,7 @@ define(function (_dereq_, exports, module) {
       digit = vlq & VLQ_BASE_MASK;
       vlq >>>= VLQ_BASE_SHIFT;
       if (vlq > 0) {
-        // There are still more digits in this value, so we must make sure the
+        // There are still more digits in This value, so we must make sure the
         // continuation bit is marked.
         digit |= VLQ_CONTINUATION_BIT;
       }
@@ -10395,7 +10395,7 @@ define(function (_dereq_, exports, module) {
         // The element is in the lower half.
         return recursiveSearch(aLow, mid, aNeedle, aHaystack, aCompare);
       }
-      // The exact needle element was not found in this haystack. Determine if
+      // The exact needle element was not found in This haystack. Determine if
       // we are in termination case (2) or (3) and return the appropriate thing.
       return aLow < 0
         ? null
@@ -10450,13 +10450,13 @@ define(function (_dereq_, exports, module) {
    * already parsed to an object). According to the spec, source maps have the
    * following attributes:
    *
-   *   - version: Which version of the source map spec this map is following.
+   *   - version: Which version of the source map spec This map is following.
    *   - sources: An array of URLs to the original source files.
    *   - names: An array of identifiers which can be referrenced by individual mappings.
    *   - sourceRoot: Optional. The URL root from which all sources are relative.
    *   - sourcesContent: Optional. An array of contents of the original source files.
    *   - mappings: A string of base64 VLQs which contain the actual mappings.
-   *   - file: The generated file this source map is associated with.
+   *   - file: The generated file This source map is associated with.
    *
    * Here is an example source map, taken from the source map spec[0]:
    *
@@ -10561,13 +10561,13 @@ define(function (_dereq_, exports, module) {
   //     {
   //       generatedLine: The line number in the generated code,
   //       generatedColumn: The column number in the generated code,
-  //       source: The path to the original source file that generated this
+  //       source: The path to the original source file that generated This
   //               chunk of code,
   //       originalLine: The line number in the original source that
-  //                     corresponds to this chunk of generated code,
+  //                     corresponds to This chunk of generated code,
   //       originalColumn: The column number in the original source that
-  //                       corresponds to this chunk of generated code,
-  //       name: The name of the original symbol which generated this chunk of
+  //                       corresponds to This chunk of generated code,
+  //       name: The name of the original symbol which generated This chunk of
   //             code.
   //     }
   //
@@ -10606,8 +10606,8 @@ define(function (_dereq_, exports, module) {
 
   /**
    * Parse the mappings in a string in to a data structure which we can easily
-   * query (the ordered arrays in the `this.__generatedMappings` and
-   * `this.__originalMappings` properties).
+   * query (the ordered arrays in the `This.__generatedMappings` and
+   * `This.__originalMappings` properties).
    */
   SourceMapConsumer.prototype._parseMappings =
     function SourceMapConsumer_parseMappings(aStr, aSourceRoot) {
@@ -10851,12 +10851,12 @@ define(function (_dereq_, exports, module) {
 
   /**
    * Iterate over each mapping between an original source/line/column and a
-   * generated line/column in this source map.
+   * generated line/column in This source map.
    *
    * @param Function aCallback
    *        The function that is called with each mapping.
    * @param Object aContext
-   *        Optional. If specified, this object will be the value of `this` every
+   *        Optional. If specified, This object will be the value of `This` every
    *        time that `aCallback` is called.
    * @param aOrder
    *        Either `SourceMapConsumer.GENERATED_ORDER` or
@@ -10925,7 +10925,7 @@ define(function (_dereq_, exports, module) {
    * with the following properties:
    *
    *   - file: The filename of the generated source.
-   *   - sourceRoot: An optional root for all URLs in this source map.
+   *   - sourceRoot: An optional root for all URLs in This source map.
    */
   function SourceMapGenerator(aArgs) {
     this._file = util.getArg(aArgs, 'file');
@@ -10987,13 +10987,13 @@ define(function (_dereq_, exports, module) {
 
   /**
    * Add a single mapping from original source line and column to the generated
-   * source's line and column for this source map being created. The mapping
+   * source's line and column for This source map being created. The mapping
    * object should have the following properties:
    *
    *   - generated: An object with the generated line and column positions.
    *   - original: An object with the original line and column positions.
    *   - source: The original source file (relative to the sourceRoot).
-   *   - name: An optional original token name for this mapping.
+   *   - name: An optional original token name for This mapping.
    */
   SourceMapGenerator.prototype.addMapping =
     function SourceMapGenerator_addMapping(aArgs) {
@@ -11053,7 +11053,7 @@ define(function (_dereq_, exports, module) {
    * Applies the mappings of a sub-source-map for a specific source file to the
    * source map being generated. Each mapping to the supplied source file is
    * rewritten using the supplied source map. Note: The resolution for the
-   * resulting mappings is the minimium of this map and the supplied map.
+   * resulting mappings is the minimium of This map and the supplied map.
    *
    * @param aSourceMapConsumer The source map to be applied.
    * @param aSourceFile Optional. The filename of the source file.
@@ -11335,7 +11335,7 @@ define(function (_dereq_, exports, module) {
       var node = new SourceNode();
 
       // The generated code
-      // Processed fragments are removed from this array.
+      // Processed fragments are removed from This array.
       var remainingLines = aGeneratedCode.split('\n');
 
       // We need to remember the position of "remainingLines"
@@ -11426,7 +11426,7 @@ define(function (_dereq_, exports, module) {
     };
 
   /**
-   * Add a chunk of generated JS to this source node.
+   * Add a chunk of generated JS to This source node.
    *
    * @param aChunk A string snippet of generated JS code, another instance of
    *        SourceNode, or an array where each member is one of those things.
@@ -11451,7 +11451,7 @@ define(function (_dereq_, exports, module) {
   };
 
   /**
-   * Add a chunk of generated JS to the beginning of this source node.
+   * Add a chunk of generated JS to the beginning of This source node.
    *
    * @param aChunk A string snippet of generated JS code, another instance of
    *        SourceNode, or an array where each member is one of those things.
@@ -11474,7 +11474,7 @@ define(function (_dereq_, exports, module) {
   };
 
   /**
-   * Walk over the tree of JS snippets in this node and its children. The
+   * Walk over the tree of JS snippets in This node and its children. The
    * walking function is called once for each snippet of JS and is passed that
    * snippet and the its original associated source's line/column location.
    *
@@ -11500,7 +11500,7 @@ define(function (_dereq_, exports, module) {
 
   /**
    * Like `String.prototype.join` except for SourceNodes. Inserts `aStr` between
-   * each of `this.children`.
+   * each of `This.children`.
    *
    * @param aSep The separator.
    */
@@ -11574,7 +11574,7 @@ define(function (_dereq_, exports, module) {
     };
 
   /**
-   * Return the string representation of this source node. Walks over the tree
+   * Return the string representation of This source node. Walks over the tree
    * and concatenates all the various snippets together to one string.
    */
   SourceNode.prototype.toString = function SourceNode_toString() {
@@ -11586,7 +11586,7 @@ define(function (_dereq_, exports, module) {
   };
 
   /**
-   * Returns the string representation of this source node along with a source
+   * Returns the string representation of This source node along with a source
    * map.
    */
   SourceNode.prototype.toStringWithSourceMap = function SourceNode_toStringWithSourceMap(aArgs) {
@@ -11677,7 +11677,7 @@ define(function (_dereq_, exports, module) {
    * @param args The object we are extracting values from
    * @param name The name of the property we are getting.
    * @param defaultValue An optional value to return if the property is missing
-   * from the object. If this is not specified and the property is missing, an
+   * from the object. If This is not specified and the property is missing, an
    * error will be thrown.
    */
   function getArg(aArgs, aName, aDefaultValue) {
@@ -11900,8 +11900,8 @@ function amdefine(module, requireFn) {
      * It will keep a leading path segment if a .. will become
      * the first path segment, to help with module name lookups,
      * which act like paths, but can be remapped. But the end result,
-     * all paths that use this function should look normalized.
-     * NOTE: this method MODIFIES the input array.
+     * all paths that use This function should look normalized.
+     * NOTE: This method MODIFIES the input array.
      * @param {Array} ary the array of path segments.
      */
     function trimDots(ary) {
@@ -11966,7 +11966,7 @@ function amdefine(module, requireFn) {
         load.fromText = function (id, text) {
             //This one is difficult because the text can/probably uses
             //define, and any relative paths and requires should be relative
-            //to that id was it would be found on disk. But this would require
+            //to that id was it would be found on disk. But This would require
             //bootstrapping a module/require fairly deeply from node core.
             //Not sure how best to go about that yet.
             throw new Error('amdefine does not implement load.fromText');
@@ -12133,9 +12133,9 @@ function amdefine(module, requireFn) {
             deps = ['require', 'exports', 'module'];
         }
 
-        //Set up properties for this module. If an ID, then use
+        //Set up properties for This module. If an ID, then use
         //internal cache. If no ID, then use the external variables
-        //for this node module.
+        //for This node module.
         if (id) {
             //Put the module in deep freeze until there is a
             //require call for it.
@@ -12173,7 +12173,7 @@ module.exports = amdefine;
  * Copyright 2013 Facebook, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
+ * you may not use This file except in compliance with the License.
  * You may obtain a copy of the License at
  *
  * http://www.apache.org/licenses/LICENSE-2.0
@@ -12261,7 +12261,7 @@ exports.parseAsObject = parseAsObject;
  * Copyright 2013 Facebook, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
+ * you may not use This file except in compliance with the License.
  * You may obtain a copy of the License at
  *
  * http://www.apache.org/licenses/LICENSE-2.0
@@ -12324,7 +12324,7 @@ function _nodeIsBlockScopeBoundary(node, parentNode) {
  */
 function traverse(node, path, state) {
   /*jshint -W004*/
-  // Create a scope stack entry if this is the first node we've encountered in
+  // Create a scope stack entry if This is the first node we've encountered in
   // its local scope
   var startIndex = null;
   var parentNode = path[0];
@@ -12395,7 +12395,7 @@ function traverse(node, path, state) {
         }
       }
 
-      // Traverse and find all local identifiers in this closure first to
+      // Traverse and find all local identifiers in This closure first to
       // account for function/variable declaration hoisting
       collectClosureIdentsAndTraverse(node, path, state);
     }
@@ -12562,7 +12562,7 @@ exports.Syntax = Syntax;
  * Copyright 2013 Facebook, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
+ * you may not use This file except in compliance with the License.
  * You may obtain a copy of the License at
  *
  * http://www.apache.org/licenses/LICENSE-2.0
@@ -12657,7 +12657,7 @@ function createState(source, rootNode, transformOptions) {
        *   info than what jsxmin can provide.
        *
        *   For example, the ES6 class transform will minify munged private
-       *   variables if this flag is set.
+       *   variables if This flag is set.
        */
       opts: transformOptions,
       /**
@@ -13272,7 +13272,7 @@ exports.updateState = updateState;
  * Copyright 2013 Facebook, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
+ * you may not use This file except in compliance with the License.
  * You may obtain a copy of the License at
  *
  * http://www.apache.org/licenses/LICENSE-2.0
@@ -13288,8 +13288,8 @@ exports.updateState = updateState;
 
 /**
  * Desugars ES6 Arrow functions to ES3 function expressions.
- * If the function contains `this` expression -- automatically
- * binds the function to current value of `this`.
+ * If the function contains `This` expression -- automatically
+ * binds the function to current value of `This`.
  *
  * Single parameter, simple expression:
  *
@@ -13299,13 +13299,13 @@ exports.updateState = updateState;
  *
  * Several parameters, complex block:
  *
- * this.users.forEach((user, idx) => {
- *   return this.isActive(idx) && this.send(user);
+ * This.users.forEach((user, idx) => {
+ *   return This.isActive(idx) && This.send(user);
  * });
  *
- * this.users.forEach(function(user, idx) {
- *   return this.isActive(idx) && this.send(user);
- * }.bind(this));
+ * This.users.forEach(function(user, idx) {
+ *   return This.isActive(idx) && This.send(user);
+ * }.bind(This));
  *
  */
 var restParamVisitors = _dereq_('./es6-rest-param-visitors');
@@ -13340,7 +13340,7 @@ function visitArrowFunction(traverse, node, path, state) {
   renderBody(traverse, node, path, state);
   path.shift();
 
-  // Bind the function only if `this` value is used
+  // Bind the function only if `This` value is used
   // inside it or inside any sub-expression.
   var containsBindingSyntax =
     utils.containsChildMatching(node.body, function(node) {
@@ -13350,7 +13350,7 @@ function visitArrowFunction(traverse, node, path, state) {
     });
 
   if (containsBindingSyntax) {
-    utils.append('.bind(this)', state);
+    utils.append('.bind(This)', state);
   }
 
   utils.catchupWhiteSpace(node.range[1], state);
@@ -13541,7 +13541,7 @@ exports.visitorList = [
  * Copyright 2013 Facebook, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
+ * you may not use This file except in compliance with the License.
  * You may obtain a copy of the License at
  *
  * http://www.apache.org/licenses/LICENSE-2.0
@@ -13924,7 +13924,7 @@ function _renderClassBody(traverse, node, path, state) {
     if (superClass.name) {
       utils.append(
         'if(' + superClass.name + '!==null){' +
-        superClass.name + '.apply(this,arguments);}',
+        superClass.name + '.apply(This,arguments);}',
         state
       );
     }
@@ -14131,7 +14131,7 @@ exports.visitorList = [
  * Copyright 2014 Facebook, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
+ * you may not use This file except in compliance with the License.
  * You may obtain a copy of the License at
  *
  * http://www.apache.org/licenses/LICENSE-2.0
@@ -14413,7 +14413,7 @@ exports.renderDestructuredComponents = renderDestructuredComponents;
  * Copyright 2013 Facebook, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
+ * you may not use This file except in compliance with the License.
  * You may obtain a copy of the License at
  *
  * http://www.apache.org/licenses/LICENSE-2.0
@@ -14484,7 +14484,7 @@ exports.visitorList = [
  * Copyright 2013 Facebook, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
+ * you may not use This file except in compliance with the License.
  * You may obtain a copy of the License at
  *
  * http://www.apache.org/licenses/LICENSE-2.0
@@ -14539,7 +14539,7 @@ exports.visitorList = [
  * Copyright 2013 Facebook, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
+ * you may not use This file except in compliance with the License.
  * You may obtain a copy of the License at
  *
  * http://www.apache.org/licenses/LICENSE-2.0
@@ -14647,7 +14647,7 @@ exports.visitorList = [
  * Copyright 2013 Facebook, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
+ * you may not use This file except in compliance with the License.
  * You may obtain a copy of the License at
  *
  * http://www.apache.org/licenses/LICENSE-2.0
@@ -14805,7 +14805,7 @@ exports.visitorList = [
  * Copyright 2013 Facebook, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
+ * you may not use This file except in compliance with the License.
  * You may obtain a copy of the License at
  *
  * http://www.apache.org/licenses/LICENSE-2.0
@@ -14956,7 +14956,7 @@ function visitObjectLiteralSpread(traverse, node, path, state) {
 
   // Strip any non-whitespace between the last item and the end.
   // We only catch up on whitespace so that we ignore any trailing commas which
-  // are stripped out for IE8 support. Unfortunately, this also strips out any
+  // are stripped out for IE8 support. Unfortunately, This also strips out any
   // trailing comments.
   utils.catchupWhiteSpace(node.range[1] - 1, state);
 
@@ -14997,7 +14997,7 @@ exports.visitorList = [
  * Copyright 2014 Facebook, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
+ * you may not use This file except in compliance with the License.
  * You may obtain a copy of the License at
  *
  * http://www.apache.org/licenses/LICENSE-2.0
@@ -15073,7 +15073,7 @@ exports.isES3ReservedWord = function(word) {
  * Copyright 2014 Facebook, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
+ * you may not use This file except in compliance with the License.
  * You may obtain a copy of the License at
  *
  * http://www.apache.org/licenses/LICENSE-2.0
@@ -15318,7 +15318,7 @@ exports.visitorList = [
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 /*global exports:true*/
@@ -15431,7 +15431,7 @@ exports.trimLeft = trimLeft;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 /*global exports:true*/
@@ -15489,7 +15489,7 @@ function visitReactTag(traverse, object, path, state) {
     utils.append('"' + nameObject.name + '"', state);
     utils.move(nameObject.range[1], state);
   } else {
-    // Use utils.catchup in this case so we can easily handle
+    // Use utils.catchup in This case so we can easily handle
     // JSXMemberExpressions which look like Foo.Bar.Baz. This also handles
     // JSXIdentifiers that aren't fallback tags.
     utils.move(nameObject.range[0], state);
@@ -15551,7 +15551,7 @@ function visitReactTag(traverse, object, path, state) {
       return;
     }
 
-    // If the next attribute is a spread, we're effective last in this object
+    // If the next attribute is a spread, we're effective last in This object
     if (!isLast) {
       isLast = attributesObject[index + 1].type === Syntax.JSXSpreadAttribute;
     }
@@ -15675,7 +15675,7 @@ exports.visitorList = [
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 /*global exports:true*/
@@ -15897,7 +15897,7 @@ exports.transformVisitors = transformVisitors;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 

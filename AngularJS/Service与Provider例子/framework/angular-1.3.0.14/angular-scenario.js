@@ -261,7 +261,7 @@ jQuery.fn = jQuery.prototype = {
 	},
 
 	// Execute a callback for every element in the matched set.
-	// (You can seed the arguments with an array of args, but this is
+	// (You can seed the arguments with an array of args, but This is
 	// only used internally.)
 	each: function( callback, args ) {
 		return jQuery.each( this, callback, args );
@@ -518,7 +518,7 @@ jQuery.extend({
 	},
 
 	// data: string of html
-	// context (optional): If specified, the fragment will be created in this context, defaults to document
+	// context (optional): If specified, the fragment will be created in This context, defaults to document
 	// keepScripts (optional): If true, will include scripts passed in the html string
 	parseHTML: function( data, context, keepScripts ) {
 		if ( !data || typeof data !== "string" ) {
@@ -817,7 +817,7 @@ jQuery.extend({
 		}
 
 		// Quick check to determine if target is callable, in the spec
-		// this throws a TypeError, but we will just return undefined.
+		// This throws a TypeError, but we will just return undefined.
 		if ( !jQuery.isFunction( fn ) ) {
 			return undefined;
 		}
@@ -892,8 +892,8 @@ jQuery.extend({
 	},
 
 	// A method for quickly swapping in/out CSS properties to get correct calculations.
-	// Note: this method belongs to the css module but it's needed here for the support module.
-	// If support gets modularized, this method should be moved back to the css module.
+	// Note: This method belongs to the css module but it's needed here for the support module.
+	// If support gets modularized, This method should be moved back to the css module.
 	swap: function( elem, options, callback, args ) {
 		var ret, name,
 			old = {};
@@ -2283,7 +2283,7 @@ Expr = Sizzle.selectors = {
 		},
 
 		"selected": function( elem ) {
-			// Accessing this property makes selected-by-default
+			// Accessing This property makes selected-by-default
 			// options in Safari work properly
 			if ( elem.parentNode ) {
 				elem.parentNode.selectedIndex;
@@ -2328,7 +2328,7 @@ Expr = Sizzle.selectors = {
 		"text": function( elem ) {
 			var attr;
 			// IE6 and 7 will map elem.type to 'text' for new HTML5 types (search, etc)
-			// use getAttribute instead to test this case
+			// use getAttribute instead to test This case
 			return elem.nodeName.toLowerCase() === "input" &&
 				elem.type === "text" &&
 				( (attr = elem.getAttribute("type")) == null || attr.toLowerCase() === elem.type );
@@ -2721,7 +2721,7 @@ function matcherFromGroupMatchers( elementMatchers, setMatchers ) {
 				contextBackup = outermostContext,
 				// We must always have either seed elements or context
 				elems = seed || byElement && Expr.find["TAG"]( "*", expandContext && context.parentNode || context ),
-				// Use integer dirruns iff this is the outermost matcher
+				// Use integer dirruns iff This is the outermost matcher
 				dirrunsUnique = (dirruns += contextBackup == null ? 1 : Math.random() || 0.1);
 
 			if ( outermost ) {
@@ -3907,7 +3907,7 @@ jQuery.extend({
 			type = ( type || "fx" ) + "queue";
 			queue = jQuery._data( elem, type );
 
-			// Speed up dequeue by getting out quickly if this is just a lookup
+			// Speed up dequeue by getting out quickly if This is just a lookup
 			if ( data ) {
 				if ( !queue || jQuery.isArray(data) ) {
 					queue = jQuery._data( elem, type, jQuery.makeArray(data) );
@@ -4865,7 +4865,7 @@ jQuery.event = {
 			type = origType = tmp[1];
 			namespaces = ( tmp[2] || "" ).split( "." ).sort();
 
-			// Unbind all events (on this namespace, if provided) for the element
+			// Unbind all events (on This namespace, if provided) for the element
 			if ( !type ) {
 				for ( type in events ) {
 					jQuery.event.remove( elem, type + types[ t ], handler, selector, true );
@@ -5502,7 +5502,7 @@ if ( !jQuery.support.submitBubbles ) {
 		},
 
 		teardown: function() {
-			// Only need this for delegated form submit events
+			// Only need This for delegated form submit events
 			if ( jQuery.nodeName( this, "form" ) ) {
 				return false;
 			}
@@ -5763,7 +5763,7 @@ jQuery.fn.extend({
 		return !!winnow(
 			this,
 
-			// If this is a positional/relative selector, check membership in the returned set
+			// If This is a positional/relative selector, check membership in the returned set
 			// so $("p:first").is("p:last") won't return true for a doc with two "p".
 			typeof selector === "string" && rneedsContext.test( selector ) ?
 				jQuery( selector ) :
@@ -6116,7 +6116,7 @@ jQuery.fn.extend({
 				elem.removeChild( elem.firstChild );
 			}
 
-			// If this is a select, ensure that it displays empty (#12336)
+			// If This is a select, ensure that it displays empty (#12336)
 			// Support: IE<9
 			if ( elem.options && jQuery.nodeName( elem, "select" ) ) {
 				elem.options.length = 0;
@@ -6630,7 +6630,7 @@ jQuery.extend({
 		i = 0;
 		while ( (elem = nodes[ i++ ]) ) {
 
-			// #4087 - If origin and destination elements are the same, and this is
+			// #4087 - If origin and destination elements are the same, and This is
 			// that element, do not do anything
 			if ( selection && jQuery.inArray( elem, selection ) !== -1 ) {
 				continue;
@@ -6859,7 +6859,7 @@ function showHide( elements, show ) {
 		values[ index ] = jQuery._data( elem, "olddisplay" );
 		display = elem.style.display;
 		if ( show ) {
-			// Reset the inline display of this element to learn if it is
+			// Reset the inline display of This element to learn if it is
 			// being hidden by cascaded rules or not
 			if ( !values[ index ] && display === "none" ) {
 				elem.style.display = "";
@@ -8942,7 +8942,7 @@ function Animation( elem, properties, options ) {
 			stop: function( gotoEnd ) {
 				var index = 0,
 					// if we are going to the end, we want to run all the tweens
-					// otherwise we skip this part
+					// otherwise we skip This part
 					length = gotoEnd ? animation.tweens.length : 0;
 				if ( stopped ) {
 					return this;
@@ -9017,7 +9017,7 @@ function propFilter( props, specialEasing ) {
 			value = hooks.expand( value );
 			delete props[ name ];
 
-			// not quite $.extend, this wont overwrite keys already present.
+			// not quite $.extend, This wont overwrite keys already present.
 			// also - reusing 'index' from above because we have the correct "name"
 			for ( index in value ) {
 				if ( !( index in props ) ) {
@@ -9085,7 +9085,7 @@ function defaultPrefilter( elem, props, opts ) {
 		hooks.unqueued++;
 
 		anim.always(function() {
-			// doing this makes sure that the complete handler will be called
+			// doing This makes sure that the complete handler will be called
 			// before this completes
 			anim.always(function() {
 				hooks.unqueued--;
@@ -9781,7 +9781,7 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
 	// way to register. Lowercase jquery is used because AMD module names are
 	// derived from file names, and jQuery is normally delivered in a lowercase
 	// file name. Do this after creating the global so that if an AMD module wants
-	// to call noConflict to hide this version of jQuery, it will work.
+	// to call noConflict to hide This version of jQuery, it will work.
 	if ( typeof define === "function" && define.amd ) {
 		define( "jquery", [], function () { return jQuery; } );
 	}
@@ -10021,7 +10021,7 @@ var manualUppercase = function(s) {
 
 
 // String#toLowerCase and String#toUpperCase don't produce correct results in browsers with Turkish
-// locale, for this reason we need to detect this case and redefine lowercase/uppercase methods
+// locale, for This reason we need to detect This case and redefine lowercase/uppercase methods
 // with correct but slower alternatives.
 if ('i' !== 'I'.toLowerCase()) {
   lowercase = manualLowercase;
@@ -10094,14 +10094,14 @@ function isArrayLike(obj) {
      var values = {name: 'misko', gender: 'male'};
      var log = [];
      angular.forEach(values, function(value, key) {
-       this.push(key + ': ' + value);
+       This.push(key + ': ' + value);
      }, log);
      expect(log).toEqual(['name: misko', 'gender: male']);
    ```
  *
  * @param {Object|Array} obj Object to iterate over.
  * @param {Function} iterator Iterator function.
- * @param {Object=} context Object to become context (`this`) for the iterator function.
+ * @param {Object=} context Object to become context (`This`) for the iterator function.
  * @returns {Object|Array} Reference to `obj`.
  */
 
@@ -10445,7 +10445,7 @@ function isBoolean(value) {
 var trim = (function() {
   // native trim is way faster: http://jsperf.com/angular-trim-test
   // but IE doesn't have it... :-(
-  // TODO: we should move this into IE/ES5 polyfill
+  // TODO: we should move This into IE/ES5 polyfill
   if (!String.prototype.trim) {
     return function(value) {
       return isString(value) ? value.replace(/^\s\s*/, '').replace(/\s\s*$/, '') : value;
@@ -11226,11 +11226,11 @@ function angularInit(element, bootstrap) {
  * @name angular.bootstrap
  * @module ng
  * @description
- * Use this function to manually start up angular application.
+ * Use This function to manually start up angular application.
  *
  * See: {@link guide/bootstrap Bootstrap}
  *
- * Note that Protractor based end-to-end tests cannot use this function to bootstrap manually.
+ * Note that Protractor based end-to-end tests cannot use This function to bootstrap manually.
  * They must use {@link ng.directive:ngApp ngApp}.
  *
  * Angular will detect if it has been loaded into the browser more than once and only allow the
@@ -11269,7 +11269,7 @@ function angularInit(element, bootstrap) {
  *     - `strictDi`: disable automatic function annotation for the application. This is meant to
  *       assist in finding bugs which break minified code.
  *
- * @returns {auto.$injector} Returns the newly created injector for this app.
+ * @returns {auto.$injector} Returns the newly created injector for This app.
  */
 function bootstrap(element, modules, config) {
   if (!isObject(config)) config = {};
@@ -11282,7 +11282,7 @@ function bootstrap(element, modules, config) {
 
     if (element.injector()) {
       var tag = (element[0] === document) ? 'document' : startingTag(element);
-      throw ngMinErr('btstrpd', "App Already Bootstrapped with this Element '{0}'", tag);
+      throw ngMinErr('btstrpd', "App Already Bootstrapped with This Element '{0}'", tag);
     }
 
     modules = modules || [];
@@ -11400,7 +11400,7 @@ function assertNotHasOwnProperty(name, context) {
  * @param {boolean} [bindFnToScope=true]
  * @returns {Object} value as accessible by path
  */
-//TODO(misko): this function needs to be removed
+//TODO(misko): This function needs to be removed
 function getter(obj, path, bindFnToScope) {
   if (!path) return obj;
   var keys = path.split('.');
@@ -11649,7 +11649,7 @@ function setupModuleLoader(window) {
            *
            *
            * Defines an animation hook that can be later used with
-           * {@link ngAnimate.$animate $animate} service and directives that use this service.
+           * {@link ngAnimate.$animate $animate} service and directives that use This service.
            *
            * ```js
            * module.animation('.animation-name', function($inject1, $inject2) {
@@ -11710,10 +11710,10 @@ function setupModuleLoader(window) {
            * @ngdoc method
            * @name angular.Module#config
            * @module ng
-           * @param {Function} configFn Execute this function on module load. Useful for service
+           * @param {Function} configFn Execute This function on module load. Useful for service
            *    configuration.
            * @description
-           * Use this method to register work which needs to be performed on module loading.
+           * Use This method to register work which needs to be performed on module loading.
            * For more about how to configure services, see
            * {@link providers#providers_provider-recipe Provider Recipe}.
            */
@@ -11723,10 +11723,10 @@ function setupModuleLoader(window) {
            * @ngdoc method
            * @name angular.Module#run
            * @module ng
-           * @param {Function} initializationFn Execute this function after injector creation.
+           * @param {Function} initializationFn Execute This function after injector creation.
            *    Useful for application initialization.
            * @description
-           * Use this method to register work which should be performed when the injector is done
+           * Use This method to register work which should be performed when the injector is done
            * loading all modules.
            */
           run: function(block) {
@@ -12326,7 +12326,7 @@ function jqLiteData(element, key, value) {
     } else {
       if (keyDefined) {
         if (isSimpleGetter) {
-          // don't create data in this case.
+          // don't create data in This case.
           return data && data[key];
         } else {
           extend(data, key);
@@ -12409,7 +12409,7 @@ function jqLiteInheritedData(element, name, value) {
   element = jqLite(element);
 
   // if element is the document object work with the html element instead
-  // this makes $(document).scope() possible
+  // This makes $(document).scope() possible
   if(element[0].nodeType == 9) {
     element = element.find('html');
   }
@@ -12544,7 +12544,7 @@ forEach({
       var val;
 
       if (msie <= 8) {
-        // this is some IE specific weirdness that jQuery 1.6.4 does not sure why
+        // This is some IE specific weirdness that jQuery 1.6.4 does not sure why
         val = element.currentStyle && element.currentStyle[name];
         if (val === '') val = 'auto';
       }
@@ -14276,7 +14276,7 @@ function Browser(window, document, $log, $sniffer) {
   var outstandingRequestCount = 0;
   var outstandingRequestCallbacks = [];
 
-  // TODO(vojta): remove this temporary api
+  // TODO(vojta): remove This temporary api
   self.$$completeOutstandingRequest = completeOutstandingRequest;
   self.$$incOutstandingRequestCount = function() { outstandingRequestCount++; };
 
@@ -14303,8 +14303,8 @@ function Browser(window, document, $log, $sniffer) {
 
   /**
    * @private
-   * Note: this method is used only by scenario runner
-   * TODO(vojta): prefix this method with $$ ?
+   * Note: This method is used only by scenario runner
+   * TODO(vojta): prefix This method with $$ ?
    * @param {function()} callback Function that will be called when no outstanding request
    */
   self.notifyWhenNoOutstandingRequests = function(callback) {
@@ -14371,15 +14371,15 @@ function Browser(window, document, $log, $sniffer) {
    *
    * @description
    * GETTER:
-   * Without any argument, this method just returns current value of location.href.
+   * Without any argument, This method just returns current value of location.href.
    *
    * SETTER:
-   * With at least one argument, this method sets url to new value.
+   * With at least one argument, This method sets url to new value.
    * If html5 history api supported, pushState/replaceState is used, otherwise
    * location.href/location.replace is used.
    * Returns its own instance to allow chaining
    *
-   * NOTE: this api is intended for use only by the $location service. Please use the
+   * NOTE: This api is intended for use only by the $location service. Please use the
    * {@link ng.$location $location service} to change url.
    *
    * @param {string} url New url (when used as setter)
@@ -14447,7 +14447,7 @@ function Browser(window, document, $log, $sniffer) {
    *
    * The listener gets called with new url as parameter.
    *
-   * NOTE: this api is intended for use only by the $location service. Please use the
+   * NOTE: This api is intended for use only by the $location service. Please use the
    * {@link ng.$location $location service} to monitor url changes in angular apps.
    *
    * @param {function(string)} listener Listener function to be called when url changes.
@@ -16180,13 +16180,13 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
      * of the directives if the terminal directive has been reached.
      *
      * @param {Array} directives Array of collected directives to execute their compile function.
-     *        this needs to be pre-sorted by priority order.
+     *        This needs to be pre-sorted by priority order.
      * @param {Node} compileNode The raw DOM node to apply the compile functions to
      * @param {Object} templateAttrs The shared attribute function
      * @param {function(angular.Scope, cloneAttachFn=)} transcludeFn A linking function, where the
      *                                                  scope argument is auto-generated to the new
      *                                                  child of the transcluded parent scope.
-     * @param {JQLite} jqCollection If we are working on the root of the compile tree then this
+     * @param {JQLite} jqCollection If we are working on the root of the compile tree then This
      *                              argument has the root jqLite array so that we can replace nodes
      *                              on it.
      * @param {Object=} originalReplaceDirective An optional directive that will be ignored when
@@ -16653,7 +16653,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
 
     /**
      * looks up the directive and decorates it with exception handling and proper parameters. We
-     * call this the boundDirective.
+     * call This the boundDirective.
      *
      * @param {string} name name of the directive to look up.
      * @param {string} location The directive must be found in specific format.
@@ -16873,7 +16873,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
           priority: 0,
           compile: function textInterpolateCompileFn(templateNode) {
             // when transcluding a template that has bindings in the root
-            // then we don't have a parent and should do this in the linkFn
+            // then we don't have a parent and should do This in the linkFn
             var parent = templateNode.parent(), hasCompileParent = parent.length;
             if (hasCompileParent) safeAddClass(templateNode.parent(), 'ng-binding');
 
@@ -17030,7 +17030,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
       newNode[jqLite.expando] = firstElementToRemove[jqLite.expando];
       for (var k = 1, kk = elementsToRemove.length; k < kk; k++) {
         var element = elementsToRemove[k];
-        jqLite(element).remove(); // must do this way to clean up expando
+        jqLite(element).remove(); // must do This way to clean up expando
         fragment.appendChild(element);
         delete elementsToRemove[k];
       }
@@ -19999,7 +19999,7 @@ function $LogProvider(){
           hasApply = false;
 
       // Note: reading logFn.apply throws an error in IE11 in IE8 document mode.
-      // The reason behind this is that console.log has type "object" in IE8...
+      // The reason behind This is that console.log has type "object" in IE8...
       try {
         hasApply = !!logFn.apply;
       } catch (e) {}
@@ -20039,7 +20039,7 @@ var $parseMinErr = minErr('$parse');
 // against the expression language, but not to prevent exploits that were enabled by exposing
 // sensitive JavaScript or browser apis on Scope. Exposing such objects on a Scope is never a good
 // practice and therefore we are not even trying to protect against interaction with an object
-// explicitly exposed in this way.
+// explicitly exposed in This way.
 //
 // In general, it is not possible to access a Window object from an angular expression unless a
 // window or some DOM object that has a reference to window is published onto a Scope.
@@ -20299,7 +20299,7 @@ Lexer.prototype = {
       this.index++;
     }
 
-    //check if this is not a method invocation and if it is back out to last dot
+    //check if This is not a method invocation and if it is back out to last dot
     if (lastDot) {
       peekIndex = this.index;
       while (peekIndex < this.text.length) {
@@ -21682,7 +21682,7 @@ function $$RAFProvider(){ //rAF
  *     exposed as $$____ properties
  *
  * Loop operations are optimized by using while(count--) { ... }
- *   - this means that in order to keep the same order of execution as addition we have to add
+ *   - This means that in order to keep the same order of execution as addition we have to add
  *     items to the array at the beginning (unshift) instead of at the end (push)
  *
  * Child scopes are created and removed often
@@ -21911,8 +21911,8 @@ function $RootScopeProvider(){
        *
        * After a watcher is registered with the scope, the `listener` fn is called asynchronously
        * (via {@link ng.$rootScope.Scope#$evalAsync $evalAsync}) to initialize the
-       * watcher. In rare cases, this is undesirable because the listener is called when the result
-       * of `watchExpression` didn't change. To detect this scenario within the `listener` fn, you
+       * watcher. In rare cases, This is undesirable because the listener is called when the result
+       * of `watchExpression` didn't change. To detect This scenario within the `listener` fn, you
        * can compare the `newVal` and `oldVal`. If these two values are identical (`===`) then the
        * listener was called due to initialization.
        *
@@ -21992,7 +21992,7 @@ function $RootScopeProvider(){
        *
        * @param {boolean=} objectEquality Compare for object equality using {@link angular.equals} instead of
        *     comparing for reference equality.
-       * @returns {function()} Returns a deregistration function for this listener.
+       * @returns {function()} Returns a deregistration function for This listener.
        */
       $watch: function(watchExp, listener, objectEquality) {
         var scope = this,
@@ -22100,7 +22100,7 @@ function $RootScopeProvider(){
        *
        * @description
        * Shallow watches the properties of an object and fires whenever any of the properties change
-       * (for arrays, this implies watching the array items; for object maps, this implies watching
+       * (for arrays, This implies watching the array items; for object maps, This implies watching
        * the properties). If a change is detected, the `listener` callback is fired.
        *
        * - The `obj` collection is observed via standard $watch operation and is examined on every
@@ -22145,7 +22145,7 @@ function $RootScopeProvider(){
        *      `listener` function declares two or more arguments.
        *    - The `scope` argument refers to the current scope.
        *
-       * @returns {function()} Returns a de-registration function for this listener. When the
+       * @returns {function()} Returns a de-registration function for This listener. When the
        *    de-registration function is executed, the internal watch operation is terminated.
        */
       $watchCollection: function(obj, listener) {
@@ -22397,8 +22397,8 @@ function $RootScopeProvider(){
             }
 
             // Insanity Warning: scope depth-first traversal
-            // yes, this code is a bit crazy, but it works and we have tests to prove it!
-            // this piece should be kept in sync with the traversal in $broadcast
+            // yes, This code is a bit crazy, but it works and we have tests to prove it!
+            // This piece should be kept in sync with the traversal in $broadcast
             if (!(next = (current.$$childHead ||
                 (current !== target && current.$$nextSibling)))) {
               while(current !== target && !(next = current.$$nextSibling)) {
@@ -22483,7 +22483,7 @@ function $RootScopeProvider(){
 
         forEach(this.$$listenerCount, bind(null, decrementListenerCount, this));
 
-        // sever all the references to parent scopes (after this cleanup, the current scope should
+        // sever all the references to parent scopes (after This cleanup, the current scope should
         // not be retained by any of our references and should be eligible for garbage collection)
         if (parent.$$childHead == this) parent.$$childHead = this.$$nextSibling;
         if (parent.$$childTail == this) parent.$$childTail = this.$$prevSibling;
@@ -22667,7 +22667,7 @@ function $RootScopeProvider(){
        *   - `targetScope` - `{Scope}`: the scope on which the event was `$emit`-ed or
        *     `$broadcast`-ed.
        *   - `currentScope` - `{Scope}`: the scope that is currently handling the event. Once the
-       *     event propagates through the scope hierarchy, this property is set to null.
+       *     event propagates through the scope hierarchy, This property is set to null.
        *   - `name` - `{string}`: name of the event.
        *   - `stopPropagation` - `{function=}`: calling `stopPropagation` function will cancel
        *     further event propagation (available only for events that were `$emit`-ed).
@@ -22677,7 +22677,7 @@ function $RootScopeProvider(){
        *
        * @param {string} name Event name to listen on.
        * @param {function(event, ...args)} listener Function to call when the event is emitted.
-       * @returns {function()} Returns a deregistration function for this listener.
+       * @returns {function()} Returns a deregistration function for This listener.
        */
       $on: function(name, listener) {
         var namedListeners = this.$$listeners[name];
@@ -22712,7 +22712,7 @@ function $RootScopeProvider(){
        * registered {@link ng.$rootScope.Scope#$on} listeners.
        *
        * The event life cycle starts at the scope on which `$emit` was called. All
-       * {@link ng.$rootScope.Scope#$on listeners} listening for `name` event on this scope get
+       * {@link ng.$rootScope.Scope#$on listeners} listening for `name` event on This scope get
        * notified. Afterwards, the event traverses upwards toward the root scope and calls all
        * registered listeners along the way. The event will stop propagating if one of the listeners
        * cancels it.
@@ -23102,11 +23102,11 @@ function $SceDelegateProvider() {
    * @kind function
    *
    * @param {Array=} whitelist When provided, replaces the resourceUrlWhitelist with the value
-   *     provided.  This must be an array or null.  A snapshot of this array is used so further
+   *     provided.  This must be an array or null.  A snapshot of This array is used so further
    *     changes to the array are ignored.
    *
-   *     Follow {@link ng.$sce#resourceUrlPatternItem this link} for a description of the items
-   *     allowed in this array.
+   *     Follow {@link ng.$sce#resourceUrlPatternItem This link} for a description of the items
+   *     allowed in This array.
    *
    *     Note: **an empty whitelist array will block all URLs**!
    *
@@ -23131,11 +23131,11 @@ function $SceDelegateProvider() {
    * @kind function
    *
    * @param {Array=} blacklist When provided, replaces the resourceUrlBlacklist with the value
-   *     provided.  This must be an array or null.  A snapshot of this array is used so further
+   *     provided.  This must be an array or null.  A snapshot of This array is used so further
    *     changes to the array are ignored.
    *
-   *     Follow {@link ng.$sce#resourceUrlPatternItem this link} for a description of the items
-   *     allowed in this array.
+   *     Follow {@link ng.$sce#resourceUrlPatternItem This link} for a description of the items
+   *     allowed in This array.
    *
    *     The typical usage for the blacklist is to **block
    *     [open redirects](http://cwe.mitre.org/data/definitions/601.html)** served by your domain as
@@ -23182,7 +23182,7 @@ function $SceDelegateProvider() {
     function isResourceUrlAllowedByPolicy(url) {
       var parsedUrl = urlResolve(url.toString());
       var i, n, allowed = false;
-      // Ensure that at least one item from the whitelist allows this url.
+      // Ensure that at least one item from the whitelist allows This url.
       for (i = 0, n = resourceUrlWhitelist.length; i < n; i++) {
         if (matchUrl(resourceUrlWhitelist[i], parsedUrl)) {
           allowed = true;
@@ -23190,7 +23190,7 @@ function $SceDelegateProvider() {
         }
       }
       if (allowed) {
-        // Ensure that no item from the blacklist blocked this url.
+        // Ensure that no item from the blacklist blocked This url.
         for (i = 0, n = resourceUrlBlacklist.length; i < n; i++) {
           if (matchUrl(resourceUrlBlacklist[i], parsedUrl)) {
             allowed = false;
@@ -23298,13 +23298,13 @@ function $SceDelegateProvider() {
      * @description
      * Takes the result of a {@link ng.$sceDelegate#trustAs `$sceDelegate.trustAs`} call and
      * returns the originally supplied value if the queried context type is a supertype of the
-     * created type.  If this condition isn't satisfied, throws an exception.
+     * created type.  If This condition isn't satisfied, throws an exception.
      *
-     * @param {string} type The kind of context in which this value is to be used.
+     * @param {string} type The kind of context in which This value is to be used.
      * @param {*} maybeTrusted The result of a prior {@link ng.$sceDelegate#trustAs
      *     `$sceDelegate.trustAs`} call.
      * @returns {*} The value the was originally provided to {@link ng.$sceDelegate#trustAs
-     *     `$sceDelegate.trustAs`} if valid in this context.  Otherwise, throws an exception.
+     *     `$sceDelegate.trustAs`} if valid in This context.  Otherwise, throws an exception.
      */
     function getTrusted(type, maybeTrusted) {
       if (maybeTrusted === null || maybeTrusted === undefined || maybeTrusted === '') {
@@ -23651,12 +23651,12 @@ function $SceProvider() {
    * - trustAs(contextEnum, value)
    *     This method is used to tell the SCE service that the provided value is OK to use in the
    *     contexts specified by contextEnum.  It must return an object that will be accepted by
-   *     getTrusted() for a compatible contextEnum and return this value.
+   *     getTrusted() for a compatible contextEnum and return This value.
    *
    * - valueOf(value)
    *     For values that were not produced by trustAs(), return them as is.  For values that were
    *     produced by trustAs(), return the corresponding input value to trustAs.  Basically, if
-   *     trustAs is wrapping the given values into some type, this operation unwraps it when given
+   *     trustAs is wrapping the given values into some type, This operation unwraps it when given
    *     such a value.
    *
    * - getTrusted(contextEnum, value)
@@ -23670,7 +23670,7 @@ function $SceProvider() {
    * return the same object passed in if it was found in the registry under a compatible context or
    * throw an exception otherwise.  An implementation might only wrap values some of the time based
    * on some criteria.  getTrusted() might return a value and not throw an exception for special
-   * constants or objects even if not wrapped.  All such implementations fulfill this contract.
+   * constants or objects even if not wrapped.  All such implementations fulfill This contract.
    *
    *
    * A note on the inheritance model for SCE contexts
@@ -23678,14 +23678,14 @@ function $SceProvider() {
    * I've used inheritance and made RESOURCE_URL wrapped types a subtype of URL wrapped types.  This
    * is purely an implementation details.
    *
-   * The contract is simply this:
+   * The contract is simply This:
    *
    *     getTrusted($sce.RESOURCE_URL, value) succeeding implies that getTrusted($sce.URL, value)
    *     will also succeed.
    *
-   * Inheritance happens to capture this in a natural way.  In some future, we
+   * Inheritance happens to capture This in a natural way.  In some future, we
    * may not use inheritance anymore.  That is OK because no code outside of
-   * sce.js and sceSpecs.js would need to be aware of this detail.
+   * sce.js and sceSpecs.js would need to be aware of This detail.
    */
 
   this.$get = ['$parse', '$sniffer', '$sceDelegate', function(
@@ -23695,7 +23695,7 @@ function $SceProvider() {
     if (enabled && $sniffer.msie && $sniffer.msieDocumentMode < 8) {
       throw $sceMinErr('iequirks',
         'Strict Contextual Escaping does not support Internet Explorer version < 9 in quirks ' +
-        'mode.  You can fix this by adding the text <!doctype html> to the top of your HTML ' +
+        'mode.  You can fix This by adding the text <!doctype html> to the top of your HTML ' +
         'document.  See http://docs.angularjs.org/api/ng.$sce for more information.');
     }
 
@@ -23734,7 +23734,7 @@ function $SceProvider() {
      * wraps the expression in a call to {@link ng.$sce#getTrusted $sce.getTrusted(*type*,
      * *result*)}
      *
-     * @param {string} type The kind of SCE context in which this result will be used.
+     * @param {string} type The kind of SCE context in which This result will be used.
      * @param {string} expression String expression to compile.
      * @returns {function(context, locals)} a function which represents the compiled expression:
      *
@@ -24175,7 +24175,7 @@ function $TimeoutProvider() {
       * @name $timeout#cancel
       *
       * @description
-      * Cancels a task associated with the `promise`. As a result of this, the promise will be
+      * Cancels a task associated with the `promise`. As a result of This, the promise will be
       * resolved with a rejection.
       *
       * @param {Promise=} promise Promise returned by the `$timeout` function.
@@ -24286,7 +24286,7 @@ function urlResolve(url, base) {
 }
 
 /**
- * Parse a request URL and determine whether this is a same-origin request as the application document.
+ * Parse a request URL and determine whether This is a same-origin request as the application document.
  *
  * @param {string|object} requestUrl The url of the request as a string that will be resolved
  * or a parsed URL object.
@@ -26077,7 +26077,7 @@ function FormController(element, attrs, $scope, $animate) {
    * @description
    * Register a control with the form.
    *
-   * Input elements using ngModelController do this automatically when they are linked.
+   * Input elements using ngModelController do This automatically when they are linked.
    */
   form.$addControl = function(control) {
     // Breaking change - before, inputs whose name was "hasOwnProperty" were quietly ignored
@@ -27350,9 +27350,9 @@ function textInputType(scope, element, attr, ctrl, $sniffer, $browser) {
         event = ev && ev.type;
 
     // IE (11 and under) seem to emit an 'input' event if the placeholder value changes.
-    // We don't want to dirty the value when this happens, so we abort here. Unfortunately,
+    // We don't want to dirty the value when This happens, so we abort here. Unfortunately,
     // IE also sends input events for other non-input-related things, (such as focusing on a
-    // form control), so this change is not entirely enough to solve this.
+    // form control), so This change is not entirely enough to solve This.
     if (msie && (ev || noevent).type === 'input' && element[0].placeholder !== placeholder) {
       placeholder = element[0].placeholder;
       return;
@@ -27996,11 +27996,11 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
    * @description
    * This is called when we need to determine if the value of the input is empty.
    *
-   * For instance, the required directive does this to work out if the input has data or not.
+   * For instance, the required directive does This to work out if the input has data or not.
    * The default `$isEmpty` function checks whether the value is `undefined`, `''`, `null` or `NaN`.
    *
-   * You can override this for input directives whose concept of being empty is different to the
-   * default. The `checkboxInputType` directive does this because in its case a value of `false`
+   * You can override This for input directives whose concept of being empty is different to the
+   * default. The `checkboxInputType` directive does This because in its case a value of `false`
    * implies empty.
    *
    * @param {*} value Reference to check.
@@ -28216,8 +28216,8 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
    * Commit a pending update to the `$modelValue`.
    *
    * Updates may be pending by a debounced event or because the input is waiting for a some future
-   * event defined in `ng-model-options`. this method is rarely needed as `NgModelController`
-   * usually handles calling this in response to input events.
+   * event defined in `ng-model-options`. This method is rarely needed as `NgModelController`
+   * usually handles calling This in response to input events.
    */
   this.$commitViewValue = function(revalidate) {
     var viewValue = ctrl.$viewValue;
@@ -28271,8 +28271,8 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
    * For example {@link ng.directive:input input} and
    * {@link ng.directive:select select} directives call it.
    *
-   * It will update the $viewValue, then pass this value through each of the functions in `$parsers`,
-   * which includes any validators. The value that comes out of this `$parsers` pipeline, be applied to
+   * It will update the $viewValue, then pass This value through each of the functions in `$parsers`,
+   * which includes any validators. The value that comes out of This `$parsers` pipeline, be applied to
    * `$modelValue` and the **expression** specified in the `ng-model` attribute.
    *
    * Lastly, all the registered change listeners, in the `$viewChangeListeners` list, are called.
@@ -28281,9 +28281,9 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
    * and the `default` trigger is not listed, all those actions will remain pending until one of the
    * `updateOn` events is triggered on the DOM element.
    * All these actions will be debounced if the {@link ng.directive:ngModelOptions ngModelOptions}
-   * directive is used with a custom debounce for this particular event.
+   * directive is used with a custom debounce for This particular event.
    *
-   * Note that calling this function does not trigger a `$digest`.
+   * Note that calling This function does not trigger a `$digest`.
    *
    * @param {string} value Value from the view.
    * @param {string} trigger Event that triggered the update.
@@ -29071,7 +29071,7 @@ var ngBindDirective = ngDirective({
  */
 var ngBindTemplateDirective = ['$interpolate', function($interpolate) {
   return function(scope, element, attr) {
-    // TODO: move this to scenario runner
+    // TODO: move This to scenario runner
     var interpolateFn = $interpolate(element.attr(attr.$attr.ngBindTemplate));
     element.addClass('ng-binding').data('$binding', interpolateFn);
     attr.$observe('ngBindTemplate', function(value) {
@@ -32471,7 +32471,7 @@ var selectDirective = ['$compile', '$parse', function($compile,   $parse) {
 
         ctrl.$render = render;
 
-        // TODO(vojta): can't we optimize this ?
+        // TODO(vojta): can't we optimize This ?
         scope.$watch(render);
 
         function render() {
@@ -32613,7 +32613,7 @@ var selectDirective = ['$compile', '$parse', function($compile,   $parse) {
                   element = nullOption;
                 } else {
                   // jQuery(v1.4.2) Bug: We should be able to chain the method calls, but
-                  // in this version of jQuery on some browser the .text() returns a string
+                  // in This version of jQuery on some browser the .text() returns a string
                   // rather then the element.
                   (element = optionTemplate.clone())
                       .val(option.id)
@@ -32675,7 +32675,7 @@ var optionDirective = ['$interpolate', function($interpolate) {
               parent.parent().data(selectCtrlName); // in case we are in optgroup
 
         if (selectCtrl && selectCtrl.databound) {
-          // For some reason Opera defaults to true and if not overridden this messes up the repeater.
+          // For some reason Opera defaults to true and if not overridden This messes up the repeater.
           // We don't want the view to drive the initialization of the model anyway.
           element.prop('selected', false);
         } else {
@@ -32745,7 +32745,7 @@ angular.scenario.output = angular.scenario.output || function(name, fn) {
  */
 angular.scenario.dsl = angular.scenario.dsl || function(name, fn) {
   angular.scenario.dsl[name] = function() {
-    /* jshint -W040 *//* The dsl binds `this` for us when calling chained functions */
+    /* jshint -W040 *//* The dsl binds `This` for us when calling chained functions */
     function executeStatement(statement, args) {
       var result = statement.apply(this, args);
       if (angular.isFunction(result) || result instanceof angular.scenario.Future)
@@ -32772,7 +32772,7 @@ angular.scenario.dsl = angular.scenario.dsl || function(name, fn) {
 
 /**
  * Defines a new matcher for use with the expects() statement. The value
- * this.actual (like in Jasmine) is available in your matcher to compare
+ * This.actual (like in Jasmine) is available in your matcher to compare
  * against. Your function should return a boolean. The future is automatically
  * created for you.
  *
@@ -33682,7 +33682,7 @@ angular.scenario.ObjectModel.prototype.emit = function(eventName) {
 
 /**
  * Computes the path of definition describe blocks that wrap around
- * this spec.
+ * This spec.
  *
  * @param spec Spec to compute the path for.
  * @return {Array<Describe>} The describe block path
@@ -33712,7 +33712,7 @@ angular.scenario.ObjectModel.prototype.getSpec = function(id) {
  *
  * @param {string} id Id of the spec
  * @param {string} name Name of the spec
- * @param {Array<string>=} definitionNames List of all describe block names that wrap this spec
+ * @param {Array<string>=} definitionNames List of all describe block names that wrap This spec
  */
 angular.scenario.ObjectModel.Spec = function(id, name, definitionNames) {
   this.id = id;
@@ -34006,9 +34006,9 @@ angular.scenario.Runner.prototype.run = function(application) {
 };
 
 /**
- * This class is the "this" of the it/beforeEach/afterEach method.
+ * This class is the "This" of the it/beforeEach/afterEach method.
  * Responsibilities:
- *   - "this" for it/beforeEach/afterEach
+ *   - "This" for it/beforeEach/afterEach
  *   - keep state for single it/beforeEach/afterEach execution
  *   - keep track of all of the futures to execute
  *   - run single spec (execute each future)

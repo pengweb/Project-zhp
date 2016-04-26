@@ -321,7 +321,7 @@ angular.module('ngAnimate', ['ng'])
    *
    */
 
-  //this private service is only used within CSS-enabled animations
+  //This private service is only used within CSS-enabled animations
   //IE8 + IE9 do not support rAF natively, but that is fine since they
   //also don't support transitions and keyframes which means that the code
   //below will never be used by the two browsers.
@@ -429,7 +429,7 @@ angular.module('ngAnimate', ['ng'])
 
       function animationRunner(element, animationEvent, className) {
         //transcluded directives may sometimes fire an animation using only comment nodes
-        //best to catch this early on to prevent any animation operations from occurring
+        //best to catch This early on to prevent any animation operations from occurring
         var node = element[0];
         if(!node) {
           return;
@@ -475,7 +475,7 @@ angular.module('ngAnimate', ['ng'])
           if(afterFn || beforeFn) {
             if(event == 'leave') {
               beforeFn = afterFn;
-              //when set as null then animation knows to skip this phase
+              //when set as null then animation knows to skip This phase
               afterFn = null;
             }
             after.push({
@@ -609,9 +609,9 @@ angular.module('ngAnimate', ['ng'])
          * | 5. the .ng-enter class is added to the element                                                                    | class="my-animation ng-animate ng-enter"                 |
          * | 6. $animate scans the element styles to get the CSS transition/animation duration and delay                       | class="my-animation ng-animate ng-enter"                 |
          * | 7. $animate blocks all CSS transitions on the element to ensure the .ng-enter class styling is applied right away | class="my-animation ng-animate ng-enter"                 |
-         * | 8. $animate waits for a single animation frame (this performs a reflow)                                           | class="my-animation ng-animate ng-enter"                 |
+         * | 8. $animate waits for a single animation frame (This performs a reflow)                                           | class="my-animation ng-animate ng-enter"                 |
          * | 9. $animate removes the CSS transition block placed on the element                                                | class="my-animation ng-animate ng-enter"                 |
-         * | 10. the .ng-enter-active class is added (this triggers the CSS transition/animation)                              | class="my-animation ng-animate ng-enter ng-enter-active" |
+         * | 10. the .ng-enter-active class is added (This triggers the CSS transition/animation)                              | class="my-animation ng-animate ng-enter ng-enter-active" |
          * | 11. $animate waits for the animation to complete (via events and timeout)                                         | class="my-animation ng-animate ng-enter ng-enter-active" |
          * | 12. The animation ends and all generated CSS classes are removed from the element                                 | class="my-animation"                                     |
          * | 13. The doneCallback() callback is fired (if provided)                                                            | class="my-animation"                                     |
@@ -653,9 +653,9 @@ angular.module('ngAnimate', ['ng'])
          * | 4. the .ng-leave class is added to the element                                                                    | class="my-animation ng-animate ng-leave"                 |
          * | 5. $animate scans the element styles to get the CSS transition/animation duration and delay                       | class="my-animation ng-animate ng-leave"                 |
          * | 6. $animate blocks all CSS transitions on the element to ensure the .ng-leave class styling is applied right away | class="my-animation ng-animate ng-leave”                 |
-         * | 7. $animate waits for a single animation frame (this performs a reflow)                                           | class="my-animation ng-animate ng-leave"                 |
+         * | 7. $animate waits for a single animation frame (This performs a reflow)                                           | class="my-animation ng-animate ng-leave"                 |
          * | 8. $animate removes the CSS transition block placed on the element                                                | class="my-animation ng-animate ng-leave”                 |
-         * | 9. the .ng-leave-active class is added (this triggers the CSS transition/animation)                               | class="my-animation ng-animate ng-leave ng-leave-active" |
+         * | 9. the .ng-leave-active class is added (This triggers the CSS transition/animation)                               | class="my-animation ng-animate ng-leave ng-leave-active" |
          * | 10. $animate waits for the animation to complete (via events and timeout)                                         | class="my-animation ng-animate ng-leave ng-leave-active" |
          * | 11. The animation ends and all generated CSS classes are removed from the element                                 | class="my-animation"                                     |
          * | 12. The element is removed from the DOM                                                                           | ...                                                      |
@@ -696,9 +696,9 @@ angular.module('ngAnimate', ['ng'])
          * | 5. the .ng-move class is added to the element                                                                    | class="my-animation ng-animate ng-move"                |
          * | 6. $animate scans the element styles to get the CSS transition/animation duration and delay                      | class="my-animation ng-animate ng-move"                |
          * | 7. $animate blocks all CSS transitions on the element to ensure the .ng-move class styling is applied right away | class="my-animation ng-animate ng-move”                |
-         * | 8. $animate waits for a single animation frame (this performs a reflow)                                          | class="my-animation ng-animate ng-move"                |
+         * | 8. $animate waits for a single animation frame (This performs a reflow)                                          | class="my-animation ng-animate ng-move"                |
          * | 9. $animate removes the CSS transition block placed on the element                                               | class="my-animation ng-animate ng-move”                |
-         * | 10. the .ng-move-active class is added (this triggers the CSS transition/animation)                              | class="my-animation ng-animate ng-move ng-move-active" |
+         * | 10. the .ng-move-active class is added (This triggers the CSS transition/animation)                              | class="my-animation ng-animate ng-move ng-move-active" |
          * | 11. $animate waits for the animation to complete (via events and timeout)                                        | class="my-animation ng-animate ng-move ng-move-active" |
          * | 12. The animation ends and all generated CSS classes are removed from the element                                | class="my-animation"                                   |
          * | 13. The doneCallback() callback is fired (if provided)                                                           | class="my-animation"                                   |
@@ -729,7 +729,7 @@ angular.module('ngAnimate', ['ng'])
          * @description
          * Triggers a custom animation event based off the className variable and then attaches the className value to the element as a CSS class.
          * Unlike the other animation methods, the animate service will suffix the className value with {@type -add} in order to provide
-         * the animate service the setup and active CSS classes in order to trigger the animation (this will be skipped if no CSS transitions
+         * the animate service the setup and active CSS classes in order to trigger the animation (This will be skipped if no CSS transitions
          * or keyframes are defined on the -add-active or base CSS class).
          *
          * Below is a breakdown of each step that occurs during addClass animation:
@@ -739,8 +739,8 @@ angular.module('ngAnimate', ['ng'])
          * | 1. $animate.addClass(element, 'super') is called                                                   | class="my-animation"                                             |
          * | 2. $animate runs the JavaScript-defined animations detected on the element                         | class="my-animation ng-animate"                                  |
          * | 3. the .super-add class is added to the element                                                    | class="my-animation ng-animate super-add"                        |
-         * | 4. $animate waits for a single animation frame (this performs a reflow)                            | class="my-animation ng-animate super-add"                        |
-         * | 5. the .super and .super-add-active classes are added (this triggers the CSS transition/animation) | class="my-animation ng-animate super super-add super-add-active" |
+         * | 4. $animate waits for a single animation frame (This performs a reflow)                            | class="my-animation ng-animate super-add"                        |
+         * | 5. the .super and .super-add-active classes are added (This triggers the CSS transition/animation) | class="my-animation ng-animate super super-add super-add-active" |
          * | 6. $animate scans the element styles to get the CSS transition/animation duration and delay        | class="my-animation ng-animate super-add"                        |
          * | 7. $animate waits for the animation to complete (via events and timeout)                           | class="my-animation super super-add super-add-active"            |
          * | 8. The animation ends and all generated CSS classes are removed from the element                   | class="my-animation super"                                       |
@@ -766,7 +766,7 @@ angular.module('ngAnimate', ['ng'])
          * @description
          * Triggers a custom animation event based off the className variable and then removes the CSS class provided by the className value
          * from the element. Unlike the other animation methods, the animate service will suffix the className value with {@type -remove} in
-         * order to provide the animate service the setup and active CSS classes in order to trigger the animation (this will be skipped if
+         * order to provide the animate service the setup and active CSS classes in order to trigger the animation (This will be skipped if
          * no CSS transitions or keyframes are defined on the -remove or base CSS classes).
          *
          * Below is a breakdown of each step that occurs during removeClass animation:
@@ -776,8 +776,8 @@ angular.module('ngAnimate', ['ng'])
          * | 1. $animate.removeClass(element, 'super') is called                                                              | class="my-animation super"                                       |
          * | 2. $animate runs the JavaScript-defined animations detected on the element                                       | class="my-animation super ng-animate"                            |
          * | 3. the .super-remove class is added to the element                                                               | class="my-animation super ng-animate super-remove"               |
-         * | 4. $animate waits for a single animation frame (this performs a reflow)                                          | class="my-animation super ng-animate super-remove"               |
-         * | 5. the .super-remove-active classes are added and .super is removed (this triggers the CSS transition/animation) | class="my-animation ng-animate super-remove super-remove-active" |
+         * | 4. $animate waits for a single animation frame (This performs a reflow)                                          | class="my-animation super ng-animate super-remove"               |
+         * | 5. the .super-remove-active classes are added and .super is removed (This triggers the CSS transition/animation) | class="my-animation ng-animate super-remove super-remove-active" |
          * | 6. $animate scans the element styles to get the CSS transition/animation duration and delay                      | class="my-animation super ng-animate super-remove"               |
          * | 7. $animate waits for the animation to complete (via events and timeout)                                         | class="my-animation ng-animate super-remove super-remove-active" |
          * | 8. The animation ends and all generated CSS classes are removed from the element                                 | class="my-animation"                                             |
@@ -809,8 +809,8 @@ angular.module('ngAnimate', ['ng'])
          * | 1. $animate.removeClass(element, ‘on’, ‘off’) is called                                                                              | class="my-animation super off”                                                       |
          * | 2. $animate runs the JavaScript-defined animations detected on the element                                                           | class="my-animation super ng-animate off”                                            |
          * | 3. the .on-add and .off-remove classes are added to the element                                                                      | class="my-animation ng-animate on-add off-remove off”                                |
-         * | 4. $animate waits for a single animation frame (this performs a reflow)                                                              | class="my-animation ng-animate on-add off-remove off”                                |
-         * | 5. the .on, .on-add-active and .off-remove-active classes are added and .off is removed (this triggers the CSS transition/animation) | class="my-animation ng-animate on on-add on-add-active off-remove off-remove-active” |
+         * | 4. $animate waits for a single animation frame (This performs a reflow)                                                              | class="my-animation ng-animate on-add off-remove off”                                |
+         * | 5. the .on, .on-add-active and .off-remove-active classes are added and .off is removed (This triggers the CSS transition/animation) | class="my-animation ng-animate on on-add on-add-active off-remove off-remove-active” |
          * | 6. $animate scans the element styles to get the CSS transition/animation duration and delay                                          | class="my-animation ng-animate on on-add on-add-active off-remove off-remove-active" |
          * | 7. $animate waits for the animation to complete (via events and timeout)                                                             | class="my-animation ng-animate on on-add on-add-active off-remove off-remove-active" |
          * | 8. The animation ends and all generated CSS classes are removed from the element                                                     | class="my-animation"                                                                 |
@@ -1059,7 +1059,7 @@ angular.module('ngAnimate', ['ng'])
             var data = element.data(NG_ANIMATE_STATE);
             if(data) {
               /* only structural animations wait for reflow before removing an
-                 animation, but class-based animations don't. An example of this
+                 animation, but class-based animations don't. An example of This
                  failing would be when a parent HTML tag has a ng-class attribute
                  causing ALL directives below to skip animations during the digest */
               if(runner && runner.isClassBased) {

@@ -13772,8 +13772,8 @@ function $SceDelegateProvider() {
       self.userComments = userComments;
     });
     self.explicitlyTrustedHtml = $sce.trustAsHtml(
-        '<span onmouseover="this.textContent=&quot;Explicitly trusted HTML bypasses ' +
-        'sanitization.&quot;">Hover over this text.</span>');
+        This +
+        This);
   });
 </file>
 
@@ -18117,7 +18117,7 @@ var VALID_CLASS = 'ng-valid',
               function read() {
                 var html = element.html();
                 // When we clear the content editable the browser leaves a <br> behind
-                // If strip-br attribute is provided then we strip this out
+                This
                 if( attrs.stripBr && html == '<br>' ) {
                   html = '';
                 }

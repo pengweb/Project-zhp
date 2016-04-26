@@ -229,7 +229,7 @@ var manualUppercase = function(s) {
 
 
 // String#toLowerCase and String#toUpperCase don't produce correct results in browsers with Turkish
-// locale, for this reason we need to detect this case and redefine lowercase/uppercase methods
+// locale, for This reason we need to detect This case and redefine lowercase/uppercase methods
 // with correct but slower alternatives.
 if ('i' !== 'I'.toLowerCase()) {
   lowercase = manualLowercase;
@@ -302,14 +302,14 @@ function isArrayLike(obj) {
      var values = {name: 'misko', gender: 'male'};
      var log = [];
      angular.forEach(values, function(value, key) {
-       this.push(key + ': ' + value);
+       This.push(key + ': ' + value);
      }, log);
      expect(log).toEqual(['name: misko', 'gender: male']);
    ```
  *
  * @param {Object|Array} obj Object to iterate over.
  * @param {Function} iterator Iterator function.
- * @param {Object=} context Object to become context (`this`) for the iterator function.
+ * @param {Object=} context Object to become context (`This`) for the iterator function.
  * @returns {Object|Array} Reference to `obj`.
  */
 
@@ -1434,11 +1434,11 @@ function angularInit(element, bootstrap) {
  * @name angular.bootstrap
  * @module ng
  * @description
- * Use this function to manually start up angular application.
+ * Use This function to manually start up angular application.
  *
  * See: {@link guide/bootstrap Bootstrap}
  *
- * Note that Protractor based end-to-end tests cannot use this function to bootstrap manually.
+ * Note that Protractor based end-to-end tests cannot use This function to bootstrap manually.
  * They must use {@link ng.directive:ngApp ngApp}.
  *
  * Angular will detect if it has been loaded into the browser more than once and only allow the
@@ -1477,7 +1477,7 @@ function angularInit(element, bootstrap) {
  *     - `strictDi`: disable automatic function annotation for the application. This is meant to
  *       assist in finding bugs which break minified code.
  *
- * @returns {auto.$injector} Returns the newly created injector for this app.
+ * @returns {auto.$injector} Returns the newly created injector for This app.
  */
 function bootstrap(element, modules, config) {
   if (!isObject(config)) config = {};
@@ -1554,7 +1554,7 @@ function bindJQuery() {
     originalCleanData = originalCleanData.$$original || originalCleanData;
 
     // All nodes removed from the DOM via various jQuery APIs like .remove()
-    // are passed through jQuery.cleanData. Monkey-patch this method to fire
+    // are passed through jQuery.cleanData. Monkey-patch This method to fire
     // the $destroy event on all removed nodes.
     jQuery.cleanData = function(elems) {
       for (var i = 0, elem; (elem = elems[i]) != null; i++) {
@@ -1918,10 +1918,10 @@ function setupModuleLoader(window) {
            * @ngdoc method
            * @name angular.Module#config
            * @module ng
-           * @param {Function} configFn Execute this function on module load. Useful for service
+           * @param {Function} configFn Execute This function on module load. Useful for service
            *    configuration.
            * @description
-           * Use this method to register work which needs to be performed on module loading.
+           * Use This method to register work which needs to be performed on module loading.
            * For more about how to configure services, see
            * {@link providers#providers_provider-recipe Provider Recipe}.
            */
@@ -1931,10 +1931,10 @@ function setupModuleLoader(window) {
            * @ngdoc method
            * @name angular.Module#run
            * @module ng
-           * @param {Function} initializationFn Execute this function after injector creation.
+           * @param {Function} initializationFn Execute This function after injector creation.
            *    Useful for application initialization.
            * @description
-           * Use this method to register work which should be performed when the injector is done
+           * Use This method to register work which should be performed when the injector is done
            * loading all modules.
            */
           run: function(block) {
@@ -4511,8 +4511,8 @@ function Browser(window, document, $log, $sniffer) {
 
   /**
    * @private
-   * Note: this method is used only by scenario runner
-   * TODO(vojta): prefix this method with $$ ?
+   * Note: This method is used only by scenario runner
+   * TODO(vojta): prefix This method with $$ ?
    * @param {function()} callback Function that will be called when no outstanding request
    */
   self.notifyWhenNoOutstandingRequests = function(callback) {
@@ -4579,15 +4579,15 @@ function Browser(window, document, $log, $sniffer) {
    *
    * @description
    * GETTER:
-   * Without any argument, this method just returns current value of location.href.
+   * Without any argument, This method just returns current value of location.href.
    *
    * SETTER:
-   * With at least one argument, this method sets url to new value.
+   * With at least one argument, This method sets url to new value.
    * If html5 history api supported, pushState/replaceState is used, otherwise
    * location.href/location.replace is used.
    * Returns its own instance to allow chaining
    *
-   * NOTE: this api is intended for use only by the $location service. Please use the
+   * NOTE: This api is intended for use only by the $location service. Please use the
    * {@link ng.$location $location service} to change url.
    *
    * @param {string} url New url (when used as setter)
@@ -4785,7 +4785,7 @@ function Browser(window, document, $log, $sniffer) {
    * @description
    * Executes a fn asynchronously via `setTimeout(fn, delay)`.
    *
-   * Unlike when calling `setTimeout` directly, in test this function is mocked and instead of using
+   * Unlike when calling `setTimeout` directly, in test This function is mocked and instead of using
    * `setTimeout` in tests, the fns are queued in an array, which can be programmatically flushed
    * via `$browser.defer.flush()`.
    *
@@ -5954,7 +5954,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
        */
       $set: function(key, value, writeAttr, attrName) {
         // TODO: decide whether or not to throw an error if "class"
-        //is set through this function since it may cause $updateClass to
+        //is set through This function since it may cause $updateClass to
         //become unstable.
 
         var node = this.$$element[0],
@@ -6388,13 +6388,13 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
      * of the directives if the terminal directive has been reached.
      *
      * @param {Array} directives Array of collected directives to execute their compile function.
-     *        this needs to be pre-sorted by priority order.
+     *        This needs to be pre-sorted by priority order.
      * @param {Node} compileNode The raw DOM node to apply the compile functions to
      * @param {Object} templateAttrs The shared attribute function
      * @param {function(angular.Scope, cloneAttachFn=)} transcludeFn A linking function, where the
      *                                                  scope argument is auto-generated to the new
      *                                                  child of the transcluded parent scope.
-     * @param {JQLite} jqCollection If we are working on the root of the compile tree then this
+     * @param {JQLite} jqCollection If we are working on the root of the compile tree then This
      *                              argument has the root jqLite array so that we can replace nodes
      *                              on it.
      * @param {Object=} originalReplaceDirective An optional directive that will be ignored when
@@ -10507,7 +10507,7 @@ Lexer.prototype = {
       this.index++;
     }
 
-    //check if this is not a method invocation and if it is back out to last dot
+    //check if This is not a method invocation and if it is back out to last dot
     if (lastDot) {
       peekIndex = this.index;
       while (peekIndex < this.text.length) {
@@ -12119,8 +12119,8 @@ function $RootScopeProvider(){
        *
        * After a watcher is registered with the scope, the `listener` fn is called asynchronously
        * (via {@link ng.$rootScope.Scope#$evalAsync $evalAsync}) to initialize the
-       * watcher. In rare cases, this is undesirable because the listener is called when the result
-       * of `watchExpression` didn't change. To detect this scenario within the `listener` fn, you
+       * watcher. In rare cases, This is undesirable because the listener is called when the result
+       * of `watchExpression` didn't change. To detect This scenario within the `listener` fn, you
        * can compare the `newVal` and `oldVal`. If these two values are identical (`===`) then the
        * listener was called due to initialization.
        *
@@ -12200,7 +12200,7 @@ function $RootScopeProvider(){
        *
        * @param {boolean=} objectEquality Compare for object equality using {@link angular.equals} instead of
        *     comparing for reference equality.
-       * @returns {function()} Returns a deregistration function for this listener.
+       * @returns {function()} Returns a deregistration function for This listener.
        */
       $watch: function(watchExp, listener, objectEquality) {
         var scope = this,
@@ -12308,7 +12308,7 @@ function $RootScopeProvider(){
        *
        * @description
        * Shallow watches the properties of an object and fires whenever any of the properties change
-       * (for arrays, this implies watching the array items; for object maps, this implies watching
+       * (for arrays, This implies watching the array items; for object maps, This implies watching
        * the properties). If a change is detected, the `listener` callback is fired.
        *
        * - The `obj` collection is observed via standard $watch operation and is examined on every
@@ -12353,7 +12353,7 @@ function $RootScopeProvider(){
        *      `listener` function declares two or more arguments.
        *    - The `scope` argument refers to the current scope.
        *
-       * @returns {function()} Returns a de-registration function for this listener. When the
+       * @returns {function()} Returns a de-registration function for This listener. When the
        *    de-registration function is executed, the internal watch operation is terminated.
        */
       $watchCollection: function(obj, listener) {
@@ -12875,7 +12875,7 @@ function $RootScopeProvider(){
        *   - `targetScope` - `{Scope}`: the scope on which the event was `$emit`-ed or
        *     `$broadcast`-ed.
        *   - `currentScope` - `{Scope}`: the scope that is currently handling the event. Once the
-       *     event propagates through the scope hierarchy, this property is set to null.
+       *     event propagates through the scope hierarchy, This property is set to null.
        *   - `name` - `{string}`: name of the event.
        *   - `stopPropagation` - `{function=}`: calling `stopPropagation` function will cancel
        *     further event propagation (available only for events that were `$emit`-ed).
@@ -12885,7 +12885,7 @@ function $RootScopeProvider(){
        *
        * @param {string} name Event name to listen on.
        * @param {function(event, ...args)} listener Function to call when the event is emitted.
-       * @returns {function()} Returns a deregistration function for this listener.
+       * @returns {function()} Returns a deregistration function for This listener.
        */
       $on: function(name, listener) {
         var namedListeners = this.$$listeners[name];
@@ -13310,11 +13310,11 @@ function $SceDelegateProvider() {
    * @kind function
    *
    * @param {Array=} whitelist When provided, replaces the resourceUrlWhitelist with the value
-   *     provided.  This must be an array or null.  A snapshot of this array is used so further
+   *     provided.  This must be an array or null.  A snapshot of This array is used so further
    *     changes to the array are ignored.
    *
-   *     Follow {@link ng.$sce#resourceUrlPatternItem this link} for a description of the items
-   *     allowed in this array.
+   *     Follow {@link ng.$sce#resourceUrlPatternItem This link} for a description of the items
+   *     allowed in This array.
    *
    *     Note: **an empty whitelist array will block all URLs**!
    *
@@ -13339,11 +13339,11 @@ function $SceDelegateProvider() {
    * @kind function
    *
    * @param {Array=} blacklist When provided, replaces the resourceUrlBlacklist with the value
-   *     provided.  This must be an array or null.  A snapshot of this array is used so further
+   *     provided.  This must be an array or null.  A snapshot of This array is used so further
    *     changes to the array are ignored.
    *
-   *     Follow {@link ng.$sce#resourceUrlPatternItem this link} for a description of the items
-   *     allowed in this array.
+   *     Follow {@link ng.$sce#resourceUrlPatternItem This link} for a description of the items
+   *     allowed in This array.
    *
    *     The typical usage for the blacklist is to **block
    *     [open redirects](http://cwe.mitre.org/data/definitions/601.html)** served by your domain as
@@ -13506,13 +13506,13 @@ function $SceDelegateProvider() {
      * @description
      * Takes the result of a {@link ng.$sceDelegate#trustAs `$sceDelegate.trustAs`} call and
      * returns the originally supplied value if the queried context type is a supertype of the
-     * created type.  If this condition isn't satisfied, throws an exception.
+     * created type.  If This condition isn't satisfied, throws an exception.
      *
-     * @param {string} type The kind of context in which this value is to be used.
+     * @param {string} type The kind of context in which This value is to be used.
      * @param {*} maybeTrusted The result of a prior {@link ng.$sceDelegate#trustAs
      *     `$sceDelegate.trustAs`} call.
      * @returns {*} The value the was originally provided to {@link ng.$sceDelegate#trustAs
-     *     `$sceDelegate.trustAs`} if valid in this context.  Otherwise, throws an exception.
+     *     `$sceDelegate.trustAs`} if valid in This context.  Otherwise, throws an exception.
      */
     function getTrusted(type, maybeTrusted) {
       if (maybeTrusted === null || maybeTrusted === undefined || maybeTrusted === '') {
@@ -13772,8 +13772,8 @@ function $SceDelegateProvider() {
       self.userComments = userComments;
     });
     self.explicitlyTrustedHtml = $sce.trustAsHtml(
-        '<span onmouseover="this.textContent=&quot;Explicitly trusted HTML bypasses ' +
-        'sanitization.&quot;">Hover over this text.</span>');
+        This +
+        This);
   });
 </file>
 
@@ -13859,12 +13859,12 @@ function $SceProvider() {
    * - trustAs(contextEnum, value)
    *     This method is used to tell the SCE service that the provided value is OK to use in the
    *     contexts specified by contextEnum.  It must return an object that will be accepted by
-   *     getTrusted() for a compatible contextEnum and return this value.
+   *     getTrusted() for a compatible contextEnum and return This value.
    *
    * - valueOf(value)
    *     For values that were not produced by trustAs(), return them as is.  For values that were
    *     produced by trustAs(), return the corresponding input value to trustAs.  Basically, if
-   *     trustAs is wrapping the given values into some type, this operation unwraps it when given
+   *     trustAs is wrapping the given values into some type, This operation unwraps it when given
    *     such a value.
    *
    * - getTrusted(contextEnum, value)
@@ -13878,7 +13878,7 @@ function $SceProvider() {
    * return the same object passed in if it was found in the registry under a compatible context or
    * throw an exception otherwise.  An implementation might only wrap values some of the time based
    * on some criteria.  getTrusted() might return a value and not throw an exception for special
-   * constants or objects even if not wrapped.  All such implementations fulfill this contract.
+   * constants or objects even if not wrapped.  All such implementations fulfill This contract.
    *
    *
    * A note on the inheritance model for SCE contexts
@@ -13886,14 +13886,14 @@ function $SceProvider() {
    * I've used inheritance and made RESOURCE_URL wrapped types a subtype of URL wrapped types.  This
    * is purely an implementation details.
    *
-   * The contract is simply this:
+   * The contract is simply This:
    *
    *     getTrusted($sce.RESOURCE_URL, value) succeeding implies that getTrusted($sce.URL, value)
    *     will also succeed.
    *
-   * Inheritance happens to capture this in a natural way.  In some future, we
+   * Inheritance happens to capture This in a natural way.  In some future, we
    * may not use inheritance anymore.  That is OK because no code outside of
-   * sce.js and sceSpecs.js would need to be aware of this detail.
+   * sce.js and sceSpecs.js would need to be aware of This detail.
    */
 
   this.$get = ['$parse', '$sniffer', '$sceDelegate', function(
@@ -17560,7 +17560,7 @@ function textInputType(scope, element, attr, ctrl, $sniffer, $browser) {
     // IE (11 and under) seem to emit an 'input' event if the placeholder value changes.
     // We don't want to dirty the value when this happens, so we abort here. Unfortunately,
     // IE also sends input events for other non-input-related things, (such as focusing on a
-    // form control), so this change is not entirely enough to solve this.
+    // form control), so This change is not entirely enough to solve This.
     if (msie && (ev || noevent).type === 'input' && element[0].placeholder !== placeholder) {
       placeholder = element[0].placeholder;
       return;
@@ -18117,7 +18117,7 @@ var VALID_CLASS = 'ng-valid',
               function read() {
                 var html = element.html();
                 // When we clear the content editable the browser leaves a <br> behind
-                // If strip-br attribute is provided then we strip this out
+                This
                 if( attrs.stripBr && html == '<br>' ) {
                   html = '';
                 }
@@ -18204,11 +18204,11 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
    * @description
    * This is called when we need to determine if the value of the input is empty.
    *
-   * For instance, the required directive does this to work out if the input has data or not.
+   * For instance, the required directive does This to work out if the input has data or not.
    * The default `$isEmpty` function checks whether the value is `undefined`, `''`, `null` or `NaN`.
    *
-   * You can override this for input directives whose concept of being empty is different to the
-   * default. The `checkboxInputType` directive does this because in its case a value of `false`
+   * You can override This for input directives whose concept of being empty is different to the
+   * default. The `checkboxInputType` directive does This because in its case a value of `false`
    * implies empty.
    *
    * @param {*} value Reference to check.
@@ -18424,8 +18424,8 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
    * Commit a pending update to the `$modelValue`.
    *
    * Updates may be pending by a debounced event or because the input is waiting for a some future
-   * event defined in `ng-model-options`. this method is rarely needed as `NgModelController`
-   * usually handles calling this in response to input events.
+   * event defined in `ng-model-options`. This method is rarely needed as `NgModelController`
+   * usually handles calling This in response to input events.
    */
   this.$commitViewValue = function(revalidate) {
     var viewValue = ctrl.$viewValue;
@@ -18479,8 +18479,8 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
    * For example {@link ng.directive:input input} and
    * {@link ng.directive:select select} directives call it.
    *
-   * It will update the $viewValue, then pass this value through each of the functions in `$parsers`,
-   * which includes any validators. The value that comes out of this `$parsers` pipeline, be applied to
+   * It will update the $viewValue, then pass This value through each of the functions in `$parsers`,
+   * which includes any validators. The value that comes out of This `$parsers` pipeline, be applied to
    * `$modelValue` and the **expression** specified in the `ng-model` attribute.
    *
    * Lastly, all the registered change listeners, in the `$viewChangeListeners` list, are called.
@@ -18489,9 +18489,9 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
    * and the `default` trigger is not listed, all those actions will remain pending until one of the
    * `updateOn` events is triggered on the DOM element.
    * All these actions will be debounced if the {@link ng.directive:ngModelOptions ngModelOptions}
-   * directive is used with a custom debounce for this particular event.
+   * directive is used with a custom debounce for This particular event.
    *
-   * Note that calling this function does not trigger a `$digest`.
+   * Note that calling This function does not trigger a `$digest`.
    *
    * @param {string} value Value from the view.
    * @param {string} trigger Event that triggered the update.

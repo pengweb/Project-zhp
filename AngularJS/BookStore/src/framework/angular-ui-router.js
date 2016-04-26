@@ -443,16 +443,16 @@ function $Resolve(  $q,    $injector) {
    * An invocable can either return a value directly,
    * or a `$q` promise. If a promise is returned it will be resolved and the 
    * resulting value will be used instead. Dependencies of invocables are resolved 
-   * (in this order of precedence)
+   * (in This order of precedence)
    *
    * - from the specified `locals`
-   * - from another invocable that is part of this `$resolve` call
+   * - from another invocable that is part of This `$resolve` call
    * - from an invocable that is inherited from a `parent` call to `$resolve` 
    *   (or recursively
    * - from any ancestor `$resolve` of that parent).
    *
    * The return value of `$resolve` is a promise for an object that contains 
-   * (in this order of precedence)
+   * (in This order of precedence)
    *
    * - any `locals` (if specified)
    * - the resolved return values of all injectables
@@ -470,7 +470,7 @@ function $Resolve(  $q,    $injector) {
    * to throw an error. As a special case, an injectable can depend on a parameter 
    * with the same name as the injectable, which will be fulfilled from the `parent` 
    * injectable of the same name. This allows inherited values to be decorated. 
-   * Note that in this case any other injectable in the same `$resolve` with the same
+   * Note that in This case any other injectable in the same `$resolve` with the same
    * dependency would see the decorated value, not the inherited value.
    *
    * Note that missing dependencies -- unlike cyclic dependencies -- will cause an 
@@ -489,7 +489,7 @@ function $Resolve(  $q,    $injector) {
    * `$injector` services to fetch.
    * @param {object} locals  values to make available to the injectables
    * @param {object} parent  a promise returned by another call to `$resolve`.
-   * @param {object} self  the `this` for the invoked methods
+   * @param {object} self  the `This` for the invoked methods
    * @return {object} Promise for an object that contains the resolved return value
    * of all invocables, as well as any inherited and local values.
    */
@@ -828,7 +828,7 @@ UrlMatcher.prototype.parameters = function () {
  * @methodOf ui.router.util.type:UrlMatcher
  *
  * @description
- * Creates a URL that matches this pattern by substituting the specified values
+ * Creates a URL that matches This pattern by substituting the specified values
  * for the path and search parameters. Null values for path parameters are
  * treated as empty strings.
  *
@@ -838,7 +838,7 @@ UrlMatcher.prototype.parameters = function () {
  * // returns '/user/bob?q=yes'
  * ```
  *
- * @param {Object} values  the values to substitute for the parameters in this pattern.
+ * @param {Object} values  the values to substitute for the parameters in This pattern.
  * @returns {string}  the formatted URL (path and optionally search part).
  */
 UrlMatcher.prototype.format = function (values) {
@@ -1306,7 +1306,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory,           $
       return ownParams;
     },
 
-    // Keep a full path from the root down to this state as this is needed for state activation.
+    // Keep a full path from the root down to This state as This is needed for state activation.
     path: function(state) {
       return state.parent ? state.parent.path.concat(state) : []; // exclude root from path
     },
@@ -1475,8 +1475,8 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory,           $
    *
    * In addition, users can attach custom decorators, which will generate new 
    * properties within the state's internal definition. There is currently no clear 
-   * use-case for this beyond accessing internal states (i.e. $state.$current), 
-   * however, expect this to become increasingly relevant as we introduce additional 
+   * use-case for This beyond accessing internal states (i.e. $state.$current), 
+   * however, expect This to become increasingly relevant as we introduce additional 
    * meta-programming features.
    *
    * **Warning**: Decorators should not be interdependent because the order of 
@@ -1498,11 +1498,11 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory,           $
    *   name (i.e. "viewName@stateName") and each value is the config object 
    *   (template, controller) for the view. Even when you don't use the views object 
    *   explicitly on a state config, one is still created for you internally.
-   *   So by decorating this builder function you have access to decorating template 
+   *   So by decorating This builder function you have access to decorating template 
    *   and controller properties.
    * - **ownParams** `{object}` - returns an array of params that belong to the state, 
    *   not including any params defined by ancestor states.
-   * - **path** `{string}` - returns the full path from the root down to this state. 
+   * - **path** `{string}` - returns the full path from the root down to This state. 
    *   Needed for state activation.
    * - **includes** `{object}` - returns an object that includes every state that 
    *   would pass a '$state.includes()' test.
@@ -1832,7 +1832,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory,           $
      * - **`notify`** - {boolean=true}, If `true` will broadcast $stateChangeStart and $stateChangeSuccess events.
      * - **`reload`** (v0.2.5) - {boolean=false}, If `true` will force transition even if the state or params 
      *    have not changed, aka a reload of the same state. It differs from reloadOnSearch because you'd
-     *    use this when you want to force a reload when *everything* is the same, including search params.
+     *    use This when you want to force a reload when *everything* is the same, including search params.
      *
      * @returns {promise} A promise representing the state of the new transition.
      *
@@ -1842,7 +1842,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory,           $
      *
      * <br/>Possible rejection values:
      *
-     * - 'transition superseded' - when a newer transition has been started after this one
+     * - 'transition superseded' - when a newer transition has been started after This one
      * - 'transition prevented' - when `event.preventDefault()` has been called in a `$stateChangeStart` listener
      * - 'transition aborted' - when `event.preventDefault()` has been called in a `$stateNotFound` listener or
      *   when a `$stateNotFound` `event.retry` promise errors.

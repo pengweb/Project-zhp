@@ -7,7 +7,7 @@
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule React
@@ -47,7 +47,7 @@ module.exports = React;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule AutoFocusUtils
@@ -84,7 +84,7 @@ module.exports = AutoFocusUtils;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule BeforeInputEventPlugin
@@ -200,7 +200,7 @@ function getCompositionEventType(topLevelType) {
 }
 
 /**
- * Does our fallback best-guess model think this event signifies that
+ * Does our fallback best-guess model think This event signifies that
  * composition has begun?
  *
  * @param {string} topLevelType
@@ -212,7 +212,7 @@ function isFallbackCompositionStart(topLevelType, nativeEvent) {
 }
 
 /**
- * Does our fallback mode think that this event is the end of composition?
+ * Does our fallback mode think that This event is the end of composition?
  *
  * @param {string} topLevelType
  * @param {object} nativeEvent
@@ -239,8 +239,8 @@ function isFallbackCompositionEnd(topLevelType, nativeEvent) {
 
 /**
  * Google Input Tools provides composition data via a CustomEvent,
- * with the `data` property populated in the `detail` object. If this
- * is available on the event object, use it. If not, this is a plain
+ * with the `data` property populated in the `detail` object. If This
+ * is available on the event object, use it. If not, This is a plain
  * composition event and we have nothing special to extract.
  *
  * @param {object} nativeEvent
@@ -314,7 +314,7 @@ function extractCompositionEvent(topLevelType, topLevelTarget, topLevelTargetID,
 /**
  * @param {string} topLevelType Record from `EventConstants`.
  * @param {object} nativeEvent Native browser event.
- * @return {?string} The string corresponding to this `beforeInput` event.
+ * @return {?string} The string corresponding to This `beforeInput` event.
  */
 function getNativeBeforeInputChars(topLevelType, nativeEvent) {
   switch (topLevelType) {
@@ -332,7 +332,7 @@ function getNativeBeforeInputChars(topLevelType, nativeEvent) {
        * Tracking at:
        * https://code.google.com/p/chromium/issues/detail?id=355103
        *
-       * To avoid this issue, use the keypress event as if no `textInput`
+       * To avoid This issue, use the keypress event as if no `textInput`
        * event is available.
        */
       var which = nativeEvent.which;
@@ -368,7 +368,7 @@ function getNativeBeforeInputChars(topLevelType, nativeEvent) {
  *
  * @param {string} topLevelType Record from `EventConstants`.
  * @param {object} nativeEvent Native browser event.
- * @return {?string} The fallback string for this `beforeInput` event.
+ * @return {?string} The fallback string for This `beforeInput` event.
  */
 function getFallbackBeforeInputChars(topLevelType, nativeEvent) {
   // If we are currently composing (IME) and using a fallback to do so,
@@ -397,7 +397,7 @@ function getFallbackBeforeInputChars(topLevelType, nativeEvent) {
        *
        * - `which` is the pressed key code, but no char is available.
        *   Ex: 'AltGr + d` in Polish. There is no modified character for
-       *   this key combination and no character is inserted into the
+       *   This key combination and no character is inserted into the
        *   document, but FF fires the keypress for char code `100` anyway.
        *   No `input` event will occur.
        *
@@ -490,7 +490,7 @@ module.exports = BeforeInputEventPlugin;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule CSSProperty
@@ -630,7 +630,7 @@ module.exports = CSSProperty;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule CSSPropertyOperations
@@ -806,7 +806,7 @@ module.exports = CSSPropertyOperations;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule CallbackQueue
@@ -883,7 +883,7 @@ assign(CallbackQueue.prototype, {
   },
 
   /**
-   * `PooledClass` looks for this.
+   * `PooledClass` looks for This.
    */
   destructor: function () {
     this.reset();
@@ -900,7 +900,7 @@ module.exports = CallbackQueue;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ChangeEventPlugin
@@ -965,7 +965,7 @@ function manualDispatchChangeEvent(nativeEvent) {
   //
   // Batching is necessary here in order to ensure that all event handlers run
   // before the next rerender (including event handlers attached to ancestor
-  // elements instead of directly on the input). Without this, controlled
+  // elements instead of directly on the input). Without This, controlled
   // components don't work properly in conjunction with event bubbling because
   // the component is rerendered and the value reverted before all the event
   // handlers can run. See https://github.com/facebook/react/issues/708.
@@ -1220,7 +1220,7 @@ module.exports = ChangeEventPlugin;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ClientReactRootIndex
@@ -1244,7 +1244,7 @@ module.exports = ClientReactRootIndex;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule DOMChildrenOperations
@@ -1374,7 +1374,7 @@ module.exports = DOMChildrenOperations;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule DOMProperty
@@ -1505,7 +1505,7 @@ var defaultValueCache = {};
  *   > DOMProperty.isValid['foobar']
  *   undefined
  *
- * Although this may be confusing, it performs better in general.
+ * Although This may be confusing, it performs better in general.
  *
  * @see http://jsperf.com/key-exists
  * @see http://jsperf.com/key-missing
@@ -1609,7 +1609,7 @@ module.exports = DOMProperty;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule DOMPropertyOperations
@@ -1835,7 +1835,7 @@ module.exports = DOMPropertyOperations;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule Danger
@@ -1961,7 +1961,7 @@ var Danger = {
   dangerouslyReplaceNodeWithMarkup: function (oldChild, markup) {
     !ExecutionEnvironment.canUseDOM ? "development" !== 'production' ? invariant(false, 'dangerouslyReplaceNodeWithMarkup(...): Cannot render markup in a ' + 'worker thread. Make sure `window` and `document` are available ' + 'globally before requiring React when unit testing or use ' + 'ReactDOMServer.renderToString() for server rendering.') : invariant(false) : undefined;
     !markup ? "development" !== 'production' ? invariant(false, 'dangerouslyReplaceNodeWithMarkup(...): Missing markup.') : invariant(false) : undefined;
-    !(oldChild.tagName.toLowerCase() !== 'html') ? "development" !== 'production' ? invariant(false, 'dangerouslyReplaceNodeWithMarkup(...): Cannot replace markup of the ' + '<html> node. This is because browser quirks make this unreliable ' + 'and/or slow. If you want to render to the root you must use ' + 'server rendering. See ReactDOMServer.renderToString().') : invariant(false) : undefined;
+    !(oldChild.tagName.toLowerCase() !== 'html') ? "development" !== 'production' ? invariant(false, 'dangerouslyReplaceNodeWithMarkup(...): Cannot replace markup of the ' + '<html> node. This is because browser quirks make This unreliable ' + 'and/or slow. If you want to render to the root you must use ' + 'server rendering. See ReactDOMServer.renderToString().') : invariant(false) : undefined;
 
     var newChild;
     if (typeof markup === 'string') {
@@ -1981,7 +1981,7 @@ module.exports = Danger;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule DefaultEventPluginOrder
@@ -2009,7 +2009,7 @@ module.exports = DefaultEventPluginOrder;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule EnterLeaveEventPlugin
@@ -2049,7 +2049,7 @@ var EnterLeaveEventPlugin = {
    * For almost every interaction we care about, there will be both a top-level
    * `mouseover` and `mouseout` event that occurs. Only use `mouseout` so that
    * we do not extract duplicate events. However, moving the mouse into the
-   * browser from outside will not fire a `mouseout` event. In this case, we use
+   * browser from outside will not fire a `mouseout` event. In This case, we use
    * the `mouseover` top-level event.
    *
    * @param {string} topLevelType Record from `EventConstants`.
@@ -2134,7 +2134,7 @@ module.exports = EnterLeaveEventPlugin;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule EventConstants
@@ -2227,7 +2227,7 @@ module.exports = EventConstants;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule EventPluginHub
@@ -2295,12 +2295,12 @@ function validateInstanceHandle() {
  * Event plugins can implement the following properties:
  *
  *   `extractEvents` {function(string, DOMEventTarget, string, object): *}
- *     Required. When a top-level event is fired, this method is expected to
+ *     Required. When a top-level event is fired, This method is expected to
  *     extract synthetic events that will in turn be queued and dispatched.
  *
  *   `eventTypes` {object}
  *     Optional, plugins that fire events must publish a mapping of registration
- *     names that are used to register listeners. Values of this mapping must
+ *     names that are used to register listeners. Values of This mapping must
  *     be objects that contain `registrationName` or `phasedRegistrationNames`.
  *
  *   `executeDispatch` {function(object, function, string)}
@@ -2482,7 +2482,7 @@ var EventPluginHub = {
     } else {
       forEachAccumulated(processingEventQueue, executeDispatchesAndReleaseTopLevel);
     }
-    !!eventQueue ? "development" !== 'production' ? invariant(false, 'processEventQueue(): Additional events were enqueued while processing ' + 'an event queue. Support for this has not yet been implemented.') : invariant(false) : undefined;
+    !!eventQueue ? "development" !== 'production' ? invariant(false, 'processEventQueue(): Additional events were enqueued while processing ' + 'an event queue. Support for This has not yet been implemented.') : invariant(false) : undefined;
     // This would be a good time to rethrow if any of the event handlers threw.
     ReactErrorUtils.rethrowCaughtError();
   },
@@ -2507,7 +2507,7 @@ module.exports = EventPluginHub;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule EventPluginRegistry
@@ -2728,7 +2728,7 @@ module.exports = EventPluginRegistry;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule EventPluginUtils
@@ -2931,7 +2931,7 @@ module.exports = EventPluginUtils;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule EventPropagators
@@ -2960,7 +2960,7 @@ function listenerAtPhase(id, event, propagationPhase) {
 }
 
 /**
- * Tags a `SyntheticEvent` with dispatched listeners. Creating this function
+ * Tags a `SyntheticEvent` with dispatched listeners. Creating This function
  * here, allows us to not have to bind or create functions for each event.
  * Mutating the event's members allows us to not have to create a wrapping
  * "dispatch" object that pairs the event with the listener.
@@ -3046,7 +3046,7 @@ function accumulateDirectDispatches(events) {
  * A small set of propagation patterns, each of which will accept a small amount
  * of information, and generate a set of "dispatch ready event objects" - which
  * are sets of events that have already been annotated with a set of dispatched
- * listener functions/ids. The API is designed this way to discourage these
+ * listener functions/ids. The API is designed This way to discourage these
  * propagation strategies from actually executing the dispatches, since we
  * always want to collect the entire set of dispatches before executing event a
  * single one.
@@ -3067,7 +3067,7 @@ module.exports = EventPropagators;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule FallbackCompositionState
@@ -3163,7 +3163,7 @@ module.exports = FallbackCompositionState;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule HTMLDOMPropertyConfig
@@ -3214,7 +3214,7 @@ var HTMLDOMPropertyConfig = {
     checked: MUST_USE_PROPERTY | HAS_BOOLEAN_VALUE,
     classID: MUST_USE_ATTRIBUTE,
     // To set className on SVG elements, it's necessary to use .setAttribute;
-    // this works on HTML elements too in all browsers except IE8. Conveniently,
+    // This works on HTML elements too in all browsers except IE8. Conveniently,
     // IE8 doesn't support SVG and so we can simply use the attribute in
     // browsers that support SVG and the property in browsers that don't,
     // regardless of whether the element is HTML or SVG.
@@ -3388,7 +3388,7 @@ module.exports = HTMLDOMPropertyConfig;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule LinkedValueUtils
@@ -3455,7 +3455,7 @@ function getDeclarationErrorAddendum(owner) {
 
 /**
  * Provide a linked `value` attribute for controlled forms. You should not use
- * this outside of the ReactDOM controlled form components.
+ * This outside of the ReactDOM controlled form components.
  */
 var LinkedValueUtils = {
   checkPropTypes: function (tagName, props, owner) {
@@ -3464,7 +3464,7 @@ var LinkedValueUtils = {
         var error = propTypes[propName](props, propName, tagName, ReactPropTypeLocations.prop);
       }
       if (error instanceof Error && !(error.message in loggedTypeFailures)) {
-        // Only monitor this failure once because there tends to be a lot of the
+        // Only monitor This failure once because there tends to be a lot of the
         // same error.
         loggedTypeFailures[error.message] = true;
 
@@ -3523,7 +3523,7 @@ module.exports = LinkedValueUtils;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule Object.assign
@@ -3549,8 +3549,8 @@ function assign(target, sources) {
 
     var from = Object(nextSource);
 
-    // We don't currently support accessors nor proxies. Therefore this
-    // copy cannot throw. If we ever supported this then we must handle
+    // We don't currently support accessors nor proxies. Therefore This
+    // copy cannot throw. If we ever supported This then we must handle
     // exceptions and side-effects. We don't support symbols so they won't
     // be transferred.
 
@@ -3571,7 +3571,7 @@ module.exports = assign;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule PooledClass
@@ -3584,7 +3584,7 @@ var invariant = _dereq_(143);
 /**
  * Static poolers. Several custom versions for each potential number of
  * arguments. A completely generic pooler is easy to implement, but would
- * require accessing the `arguments` object. In each of these, `this` refers to
+ * require accessing the `arguments` object. In each of these, `This` refers to
  * the Class itself, not an instance. If any others are needed, simply add them
  * here, or in their own files.
  */
@@ -3658,7 +3658,7 @@ var DEFAULT_POOLER = oneArgumentPooler;
 /**
  * Augments `CopyConstructor` to be a poolable class, augmenting only the class
  * itself (statically) not adding any prototypical fields. Any CopyConstructor
- * you give this may have a `poolSize` property, and will look for a
+ * you give This may have a `poolSize` property, and will look for a
  * prototypical `destructor` on instances (optional).
  *
  * @param {Function} CopyConstructor Constructor that can be used to reset.
@@ -3691,7 +3691,7 @@ module.exports = PooledClass;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactBrowserComponentMixin
@@ -3708,9 +3708,9 @@ var didWarnKey = '_getDOMNodeDidWarn';
 
 var ReactBrowserComponentMixin = {
   /**
-   * Returns the DOM node rendered by this component.
+   * Returns the DOM node rendered by This component.
    *
-   * @return {DOMElement} The root node of this component.
+   * @return {DOMElement} The root node of This component.
    * @final
    * @protected
    */
@@ -3728,7 +3728,7 @@ module.exports = ReactBrowserComponentMixin;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactBrowserEventEmitter
@@ -4053,7 +4053,7 @@ module.exports = ReactBrowserEventEmitter;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactChildReconciler
@@ -4153,7 +4153,7 @@ var ReactChildReconciler = {
 
   /**
    * Unmounts all rendered children. This should be used to clean up children
-   * when this component is unmounted.
+   * when This component is unmounted.
    *
    * @param {?object} renderedChildren Previously initialized set of children.
    * @internal
@@ -4176,7 +4176,7 @@ module.exports = ReactChildReconciler;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactChildren
@@ -4359,7 +4359,7 @@ module.exports = ReactChildren;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactClass
@@ -4459,7 +4459,7 @@ var ReactClassInterface = {
   statics: SpecPolicy.DEFINE_MANY,
 
   /**
-   * Definition of prop types for this component.
+   * Definition of prop types for This component.
    *
    * @type {object}
    * @optional
@@ -4467,7 +4467,7 @@ var ReactClassInterface = {
   propTypes: SpecPolicy.DEFINE_MANY,
 
   /**
-   * Definition of context types for this component.
+   * Definition of context types for This component.
    *
    * @type {object}
    * @optional
@@ -4475,7 +4475,7 @@ var ReactClassInterface = {
   contextTypes: SpecPolicy.DEFINE_MANY,
 
   /**
-   * Definition of context types this component sets for its children.
+   * Definition of context types This component sets for its children.
    *
    * @type {object}
    * @optional
@@ -4486,10 +4486,10 @@ var ReactClassInterface = {
 
   /**
    * Invoked when the component is mounted. Values in the mapping will be set on
-   * `this.props` if that prop is not specified (i.e. using an `in` check).
+   * `This.props` if that prop is not specified (i.e. using an `in` check).
    *
    * This method is invoked before `getInitialState` and therefore cannot rely
-   * on `this.state` or use `this.setState`.
+   * on `This.state` or use `This.setState`.
    *
    * @return {object}
    * @optional
@@ -4498,7 +4498,7 @@ var ReactClassInterface = {
 
   /**
    * Invoked once before the component is mounted. The return value will be used
-   * as the initial value of `this.state`.
+   * as the initial value of `This.state`.
    *
    *   getInitialState: function() {
    *     return {
@@ -4519,14 +4519,14 @@ var ReactClassInterface = {
   getChildContext: SpecPolicy.DEFINE_MANY_MERGED,
 
   /**
-   * Uses props from `this.props` and state from `this.state` to render the
+   * Uses props from `This.props` and state from `This.state` to render the
    * structure of the component.
    *
-   * No guarantees are made about when or how often this method is invoked, so
+   * No guarantees are made about when or how often This method is invoked, so
    * it must not have side effects.
    *
    *   render: function() {
-   *     var name = this.props.name;
+   *     var name = This.props.name;
    *     return <div>Hello, {name}!</div>;
    *   }
    *
@@ -4541,7 +4541,7 @@ var ReactClassInterface = {
   /**
    * Invoked when the component is initially created and about to be mounted.
    * This may have side effects, but any external subscriptions or data created
-   * by this method must be cleaned up in `componentWillUnmount`.
+   * by This method must be cleaned up in `componentWillUnmount`.
    *
    * @optional
    */
@@ -4551,7 +4551,7 @@ var ReactClassInterface = {
    * Invoked when the component has been mounted and has a DOM representation.
    * However, there is no guarantee that the DOM node is in the document.
    *
-   * Use this as an opportunity to operate on the DOM when the component has
+   * Use This as an opportunity to operate on the DOM when the component has
    * been mounted (initialized and rendered) for the first time.
    *
    * @param {DOMElement} rootNode DOM element representing the component.
@@ -4562,12 +4562,12 @@ var ReactClassInterface = {
   /**
    * Invoked before the component receives new props.
    *
-   * Use this as an opportunity to react to a prop transition by updating the
-   * state using `this.setState`. Current props are accessed via `this.props`.
+   * Use This as an opportunity to react to a prop transition by updating the
+   * state using `This.setState`. Current props are accessed via `This.props`.
    *
    *   componentWillReceiveProps: function(nextProps, nextContext) {
-   *     this.setState({
-   *       likesIncreasing: nextProps.likeCount > this.props.likeCount
+   *     This.setState({
+   *       likesIncreasing: nextProps.likeCount > This.props.likeCount
    *     });
    *   }
    *
@@ -4584,14 +4584,14 @@ var ReactClassInterface = {
    * Invoked while deciding if the component should be updated as a result of
    * receiving new props, state and/or context.
    *
-   * Use this as an opportunity to `return false` when you're certain that the
+   * Use This as an opportunity to `return false` when you're certain that the
    * transition to the new props/state/context will not require a component
    * update.
    *
    *   shouldComponentUpdate: function(nextProps, nextState, nextContext) {
-   *     return !equal(nextProps, this.props) ||
-   *       !equal(nextState, this.state) ||
-   *       !equal(nextContext, this.context);
+   *     return !equal(nextProps, This.props) ||
+   *       !equal(nextState, This.state) ||
+   *       !equal(nextContext, This.context);
    *   }
    *
    * @param {object} nextProps
@@ -4604,12 +4604,12 @@ var ReactClassInterface = {
 
   /**
    * Invoked when the component is about to update due to a transition from
-   * `this.props`, `this.state` and `this.context` to `nextProps`, `nextState`
+   * `This.props`, `This.state` and `This.context` to `nextProps`, `nextState`
    * and `nextContext`.
    *
-   * Use this as an opportunity to perform preparation before an update occurs.
+   * Use This as an opportunity to perform preparation before an update occurs.
    *
-   * NOTE: You **cannot** use `this.setState()` in this method.
+   * NOTE: You **cannot** use `This.setState()` in This method.
    *
    * @param {object} nextProps
    * @param {?object} nextState
@@ -4622,7 +4622,7 @@ var ReactClassInterface = {
   /**
    * Invoked when the component's DOM representation has been updated.
    *
-   * Use this as an opportunity to operate on the DOM when the component has
+   * Use This as an opportunity to operate on the DOM when the component has
    * been updated.
    *
    * @param {object} prevProps
@@ -4637,7 +4637,7 @@ var ReactClassInterface = {
    * Invoked when the component is about to be removed from its parent and have
    * its DOM representation destroyed.
    *
-   * Use this as an opportunity to deallocate any external resources.
+   * Use This as an opportunity to deallocate any external resources.
    *
    * NOTE: There is no `componentDidUnmount` since your component will have been
    * destroyed by that point.
@@ -4651,8 +4651,8 @@ var ReactClassInterface = {
   /**
    * Updates the component's currently mounted DOM representation.
    *
-   * By default, this implements React's rendering and reconciliation algorithm.
-   * Sophisticated clients may wish to override this.
+   * By default, This implements React's rendering and reconciliation algorithm.
+   * Sophisticated clients may wish to override This.
    *
    * @param {ReactReconcileTransaction} transaction
    * @internal
@@ -4853,7 +4853,7 @@ function mergeIntoWithNoDuplicateKeys(one, two) {
 
   for (var key in two) {
     if (two.hasOwnProperty(key)) {
-      !(one[key] === undefined) ? "development" !== 'production' ? invariant(false, 'mergeIntoWithNoDuplicateKeys(): ' + 'Tried to merge two objects with the same key: `%s`. This conflict ' + 'may be due to a mixin; in particular, this may be caused by two ' + 'getInitialState() or getDefaultProps() methods returning objects ' + 'with clashing keys.', key) : invariant(false) : undefined;
+      !(one[key] === undefined) ? "development" !== 'production' ? invariant(false, 'mergeIntoWithNoDuplicateKeys(): ' + 'Tried to merge two objects with the same key: `%s`. This conflict ' + 'may be due to a mixin; in particular, This may be caused by two ' + 'getInitialState() or getDefaultProps() methods returning objects ' + 'with clashing keys.', key) : invariant(false) : undefined;
       one[key] = two[key];
     }
   }
@@ -4921,12 +4921,12 @@ function bindAutoBindMethod(component, method) {
       }
 
       // User is trying to bind() an autobound method; we effectively will
-      // ignore the value of "this" that the user is trying to use, so
+      // ignore the value of "This" that the user is trying to use, so
       // let's warn.
       if (newThis !== component && newThis !== null) {
         "development" !== 'production' ? warning(false, 'bind(): React component methods may only be bound to the ' + 'component instance. See %s', componentName) : undefined;
       } else if (!args.length) {
-        "development" !== 'production' ? warning(false, 'bind(): You are binding a component method to the component. ' + 'React does this for you automatically in a high-performance ' + 'way, so you can safely remove this call. See %s', componentName) : undefined;
+        "development" !== 'production' ? warning(false, 'bind(): You are binding a component method to the component. ' + 'React does This for you automatically in a high-performance ' + 'way, so you can safely remove This call. See %s', componentName) : undefined;
         return boundMethod;
       }
       var reboundMethod = _bind.apply(boundMethod, arguments);
@@ -4962,7 +4962,7 @@ var ReactClassMixin = {
 
   /**
    * TODO: This will be deprecated because state should always keep a consistent
-   * type signature and the only use case for this, is to avoid that.
+   * type signature and the only use case for This, is to avoid that.
    */
   replaceState: function (newState, callback) {
     this.updater.enqueueReplaceState(this, newState);
@@ -4972,7 +4972,7 @@ var ReactClassMixin = {
   },
 
   /**
-   * Checks whether or not this composite component is mounted.
+   * Checks whether or not This composite component is mounted.
    * @return {boolean} True if mounted, false otherwise.
    * @protected
    * @final
@@ -5066,7 +5066,7 @@ var ReactClass = {
         // We allow auto-mocks to proceed as if they're returning null.
         if (typeof initialState === 'undefined' && this.getInitialState._isMockFunction) {
           // This is probably bad practice. Consider warning here and
-          // deprecating this convenience.
+          // deprecating This convenience.
           initialState = null;
         }
       }
@@ -5131,7 +5131,7 @@ module.exports = ReactClass;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactComponent
@@ -5160,11 +5160,11 @@ function ReactComponent(props, context, updater) {
 ReactComponent.prototype.isReactComponent = {};
 
 /**
- * Sets a subset of the state. Always use this to mutate
- * state. You should treat `this.state` as immutable.
+ * Sets a subset of the state. Always use This to mutate
+ * state. You should treat `This.state` as immutable.
  *
- * There is no guarantee that `this.state` will be immediately updated, so
- * accessing `this.state` after calling this method may return the old value.
+ * There is no guarantee that `This.state` will be immediately updated, so
+ * accessing `This.state` after calling This method may return the old value.
  *
  * There is no guarantee that calls to `setState` will run synchronously,
  * as they may eventually be batched together.  You can provide an optional
@@ -5174,9 +5174,9 @@ ReactComponent.prototype.isReactComponent = {};
  * When a function is provided to setState, it will be called at some point in
  * the future (not synchronously). It will be called with the up to date
  * component arguments (state, props, context). These values can be different
- * from this.* because your function may be called after receiveProps but before
- * shouldComponentUpdate, and this new state, props, and context will not yet be
- * assigned to this.
+ * from This.* because your function may be called after receiveProps but before
+ * shouldComponentUpdate, and This new state, props, and context will not yet be
+ * assigned to This.
  *
  * @param {object|function} partialState Next partial state or function to
  *        produce next partial state to be merged with current state.
@@ -5199,7 +5199,7 @@ ReactComponent.prototype.setState = function (partialState, callback) {
  * Forces an update. This should only be invoked when it is known with
  * certainty that we are **not** in a DOM transaction.
  *
- * You may want to call this when you know that some deeper aspect of the
+ * You may want to call This when you know that some deeper aspect of the
  * component's state has changed but `setState` was not called.
  *
  * This will not invoke `shouldComponentUpdate`, but it will invoke
@@ -5218,7 +5218,7 @@ ReactComponent.prototype.forceUpdate = function (callback) {
 
 /**
  * Deprecated APIs. These APIs used to exist on classic React classes but since
- * we would like to deprecate them, we're not going to move them over to this
+ * we would like to deprecate them, we're not going to move them over to This
  * modern base class. Instead, we define a getter that warns if it's accessed.
  */
 if ("development" !== 'production') {
@@ -5255,7 +5255,7 @@ module.exports = ReactComponent;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactComponentBrowserEnvironment
@@ -5269,7 +5269,7 @@ var ReactMount = _dereq_(65);
 /**
  * Abstracts away all functionality of the reconciler that requires knowledge of
  * the browser context. TODO: These callers should be refactored to avoid the
- * need for this injection.
+ * need for This injection.
  */
 var ReactComponentBrowserEnvironment = {
 
@@ -5279,7 +5279,7 @@ var ReactComponentBrowserEnvironment = {
 
   /**
    * If a particular environment requires that some resources be cleaned up,
-   * specify this in the injected Mixin. In the DOM, we would likely want to
+   * specify This in the injected Mixin. In the DOM, we would likely want to
    * purge any cached node ID lookups.
    *
    * @private
@@ -5297,7 +5297,7 @@ module.exports = ReactComponentBrowserEnvironment;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactComponentEnvironment
@@ -5314,7 +5314,7 @@ var ReactComponentEnvironment = {
   /**
    * Optionally injectable environment dependent cleanup hook. (server vs.
    * browser etc). Example: A browser system caches DOM nodes based on component
-   * ID and must remove that cache entry when this instance is unmounted.
+   * ID and must remove that cache entry when This instance is unmounted.
    */
   unmountIDFromEnvironment: null,
 
@@ -5349,7 +5349,7 @@ module.exports = ReactComponentEnvironment;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactCompositeComponent
@@ -5555,7 +5555,7 @@ var ReactCompositeComponentMixin = {
     if (inst.componentWillMount) {
       inst.componentWillMount();
       // When mounting, calls to `setState` by `componentWillMount` will set
-      // `this._pendingStateQueue` without triggering a re-render.
+      // `This._pendingStateQueue` without triggering a re-render.
       if (this._pendingStateQueue) {
         inst.state = this._processPendingState(inst.props, inst.context);
       }
@@ -5594,7 +5594,7 @@ var ReactCompositeComponentMixin = {
     this._instance = null;
 
     // Reset pending fields
-    // Even if this component is scheduled for another update in ReactUpdates,
+    // Even if This component is scheduled for another update in ReactUpdates,
     // it would still be ignored because these fields are reset.
     this._pendingStateQueue = null;
     this._pendingReplaceState = false;
@@ -5602,13 +5602,13 @@ var ReactCompositeComponentMixin = {
     this._pendingCallbacks = null;
     this._pendingElement = null;
 
-    // These fields do not really need to be reset since this object is no
+    // These fields do not really need to be reset since This object is no
     // longer accessible.
     this._context = null;
     this._rootNodeID = null;
     this._topLevelWrapper = null;
 
-    // Delete the reference from the instance to this internal representation
+    // Delete the reference from the instance to This internal representation
     // which allow the internals to be properly cleaned up even if the user
     // leaks a reference to the public instance.
     ReactInstanceMap.remove(inst);
@@ -5719,14 +5719,14 @@ var ReactCompositeComponentMixin = {
         var error;
         try {
           // This is intentionally an invariant that gets caught. It's the same
-          // behavior as without this statement except with a better message.
+          // behavior as without This statement except with a better message.
           !(typeof propTypes[propName] === 'function') ? "development" !== 'production' ? invariant(false, '%s: %s type `%s` is invalid; it must be a function, usually ' + 'from React.PropTypes.', componentName || 'React class', ReactPropTypeLocationNames[location], propName) : invariant(false) : undefined;
           error = propTypes[propName](props, propName, componentName, location);
         } catch (ex) {
           error = ex;
         }
         if (error instanceof Error) {
-          // We may want to extend this logic for similar errors in
+          // We may want to extend This logic for similar errors in
           // top-level render calls, so I'm abstracting it away into
           // a function to minimize refactoring in the future
           var addendum = getDeclarationErrorAddendum(this);
@@ -5774,8 +5774,8 @@ var ReactCompositeComponentMixin = {
    * skipped) the remaining update lifecycle methods are called and the DOM
    * representation is updated.
    *
-   * By default, this implements React's rendering and reconciliation algorithm.
-   * Sophisticated clients may wish to override this.
+   * By default, This implements React's rendering and reconciliation algorithm.
+   * Sophisticated clients may wish to override This.
    *
    * @param {ReactReconcileTransaction} transaction
    * @param {ReactElement} prevParentElement
@@ -5792,7 +5792,7 @@ var ReactCompositeComponentMixin = {
     // Distinguish between a props update versus a simple state update
     if (prevParentElement === nextParentElement) {
       // Skip checking prop types again -- we don't read inst.props to avoid
-      // warning for DOM component props in this upgrade
+      // warning for DOM component props in This upgrade
       nextProps = nextParentElement.props;
     } else {
       nextProps = this._processProps(nextParentElement.props);
@@ -5815,7 +5815,7 @@ var ReactCompositeComponentMixin = {
 
     if (shouldUpdate) {
       this._pendingForceUpdate = false;
-      // Will set `this.props`, `this.state` and `this.context`.
+      // Will set `This.props`, `This.state` and `This.context`.
       this._performComponentUpdate(nextParentElement, nextProps, nextState, nextContext, transaction, nextUnmaskedContext);
     } else {
       // If it's determined that a component should not update, we still want
@@ -5935,7 +5935,7 @@ var ReactCompositeComponentMixin = {
       // We allow auto-mocks to proceed as if they're returning null.
       if (typeof renderedComponent === 'undefined' && inst.render._isMockFunction) {
         // This is probably bad practice. Consider warning here and
-        // deprecating this convenience.
+        // deprecating This convenience.
         renderedComponent = null;
       }
     }
@@ -5974,7 +5974,7 @@ var ReactCompositeComponentMixin = {
     var publicComponentInstance = component.getPublicInstance();
     if ("development" !== 'production') {
       var componentName = component && component.getName ? component.getName() : 'a component';
-      "development" !== 'production' ? warning(publicComponentInstance != null, 'Stateless function components cannot be given refs ' + '(See ref "%s" in %s created by %s). ' + 'Attempts to access this ref will fail.', ref, componentName, this.getName()) : undefined;
+      "development" !== 'production' ? warning(publicComponentInstance != null, 'Stateless function components cannot be given refs ' + '(See ref "%s" in %s created by %s). ' + 'Attempts to access This ref will fail.', ref, componentName, this.getName()) : undefined;
     }
     var refs = inst.refs === emptyObject ? inst.refs = {} : inst.refs;
     refs[ref] = publicComponentInstance;
@@ -6005,7 +6005,7 @@ var ReactCompositeComponentMixin = {
   },
 
   /**
-   * Get the publicly accessible representation of this component - i.e. what
+   * Get the publicly accessible representation of This component - i.e. what
    * is exposed by refs and returned by render. Can be null for stateless
    * components.
    *
@@ -6044,7 +6044,7 @@ module.exports = ReactCompositeComponent;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactCurrentOwner
@@ -6075,7 +6075,7 @@ module.exports = ReactCurrentOwner;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactDOM
@@ -6143,7 +6143,7 @@ if ("development" !== 'production') {
     // information on preventing compatibility mode
     var ieCompatibilityMode = document.documentMode && document.documentMode < 8;
 
-    "development" !== 'production' ? warning(!ieCompatibilityMode, 'Internet Explorer is running in compatibility mode; please add the ' + 'following tag to your HTML to prevent this from happening: ' + '<meta http-equiv="X-UA-Compatible" content="IE=edge" />') : undefined;
+    "development" !== 'production' ? warning(!ieCompatibilityMode, 'Internet Explorer is running in compatibility mode; please add the ' + 'following tag to your HTML to prevent This from happening: ' + '<meta http-equiv="X-UA-Compatible" content="IE=edge" />') : undefined;
 
     var expectedFeatures = [
     // shims
@@ -6168,7 +6168,7 @@ module.exports = React;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactDOMButton
@@ -6219,7 +6219,7 @@ module.exports = ReactDOMButton;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactDOMComponent
@@ -6295,7 +6295,7 @@ if ("development" !== 'production') {
       enumerable: false,
       get: function () {
         var component = this._reactInternalComponent;
-        "development" !== 'production' ? warning(false, 'ReactDOMComponent: Do not access .props of a DOM node; instead, ' + 'recreate the props as `render` did originally or read the DOM ' + 'properties/attributes directly from this node (e.g., ' + 'this.refs.box.className).%s', getDeclarationErrorAddendum(component)) : undefined;
+        "development" !== 'production' ? warning(false, 'ReactDOMComponent: Do not access .props of a DOM node; instead, ' + 'recreate the props as `render` did originally or read the DOM ' + 'properties/attributes directly from This node (e.g., ' + 'this.refs.box.className).%s', getDeclarationErrorAddendum(component)) : undefined;
         return component._currentElement.props;
       }
     }
@@ -6557,7 +6557,7 @@ var voidElementTags = assign({
   'menuitem': true
 }, omittedCloseTags);
 
-// We accept any tag to be rendered but since this gets injected into arbitrary
+// We accept any tag to be rendered but since This gets injected into arbitrary
 // HTML, we want to make sure that it's a safe tag.
 // http://www.w3.org/TR/REC-xml/#NT-Name
 
@@ -6627,7 +6627,7 @@ ReactDOMComponent.Mixin = {
    * is not idempotent.
    *
    * @internal
-   * @param {string} rootID The root DOM ID for this node.
+   * @param {string} rootID The root DOM ID for This node.
    * @param {ReactReconcileTransaction|ReactServerRenderingTransaction} transaction
    * @param {object} context
    * @return {string} The computed markup.
@@ -6802,7 +6802,7 @@ ReactDOMComponent.Mixin = {
       var contentToUse = CONTENT_TYPES[typeof props.children] ? props.children : null;
       var childrenToUse = contentToUse != null ? null : props.children;
       if (contentToUse != null) {
-        // TODO: Validate that text is allowed as a child of this node
+        // TODO: Validate that text is allowed as a child of This node
         ret = escapeTextContentForBrowser(contentToUse);
       } else if (childrenToUse != null) {
         var mountImages = this.mountChildren(childrenToUse, transaction, context);
@@ -6837,7 +6837,7 @@ ReactDOMComponent.Mixin = {
       var contentToUse = CONTENT_TYPES[typeof props.children] ? props.children : null;
       var childrenToUse = contentToUse != null ? null : props.children;
       if (contentToUse != null) {
-        // TODO: Validate that text is allowed as a child of this node
+        // TODO: Validate that text is allowed as a child of This node
         setTextContent(el, contentToUse);
       } else if (childrenToUse != null) {
         var mountImages = this.mountChildren(childrenToUse, transaction, context);
@@ -6934,7 +6934,7 @@ ReactDOMComponent.Mixin = {
    *
    * TODO: Benchmark whether checking for changed values in memory actually
    *       improves performance (especially statically positioned elements).
-   * TODO: Benchmark the effects of putting this at the top since 99% of props
+   * TODO: Benchmark the effects of putting This at the top since 99% of props
    *       do not change for a given reconciliation.
    * TODO: Benchmark areas that can be improved with caching.
    *
@@ -7087,7 +7087,7 @@ ReactDOMComponent.Mixin = {
   },
 
   /**
-   * Destroys all event registrations for this instance. Does not remove from
+   * Destroys all event registrations for This instance. Does not remove from
    * the DOM. That must be done by the parent.
    *
    * @internal
@@ -7118,7 +7118,7 @@ ReactDOMComponent.Mixin = {
          * take advantage of React's reconciliation for styling and <title>
          * management. So we just document it and throw in dangerous cases.
          */
-        !false ? "development" !== 'production' ? invariant(false, '<%s> tried to unmount. Because of cross-browser quirks it is ' + 'impossible to unmount some top-level components (eg <html>, ' + '<head>, and <body>) reliably and efficiently. To fix this, have a ' + 'single top-level component that never unmounts render these ' + 'elements.', this._tag) : invariant(false) : undefined;
+        !false ? "development" !== 'production' ? invariant(false, '<%s> tried to unmount. Because of cross-browser quirks it is ' + 'impossible to unmount some top-level components (eg <html>, ' + '<head>, and <body>) reliably and efficiently. To fix This, have a ' + 'single top-level component that never unmounts render these ' + 'elements.', this._tag) : invariant(false) : undefined;
         break;
     }
 
@@ -7151,11 +7151,11 @@ ReactDOMComponent.Mixin = {
         if (canDefineProperty) {
           Object.defineProperties(node, legacyPropsDescriptor);
         } else {
-          // updateComponent will update this property on subsequent renders
+          // updateComponent will update This property on subsequent renders
           node.props = this._currentElement.props;
         }
       } else {
-        // updateComponent will update this property on subsequent renders
+        // updateComponent will update This property on subsequent renders
         node.props = this._currentElement.props;
       }
 
@@ -7180,7 +7180,7 @@ module.exports = ReactDOMComponent;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactDOMFactories
@@ -7358,7 +7358,7 @@ module.exports = ReactDOMFactories;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactDOMFeatureFlags
@@ -7377,7 +7377,7 @@ module.exports = ReactDOMFeatureFlags;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactDOMIDOperations
@@ -7472,7 +7472,7 @@ module.exports = ReactDOMIDOperations;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactDOMInput
@@ -7554,7 +7554,7 @@ var ReactDOMInput = {
   updateWrapper: function (inst) {
     var props = inst._currentElement.props;
 
-    // TODO: Shouldn't this be getChecked(props)?
+    // TODO: Shouldn't This be getChecked(props)?
     var checked = props.checked;
     if (checked != null) {
       ReactDOMIDOperations.updatePropertyByID(inst._rootNodeID, 'checked', checked || false);
@@ -7563,7 +7563,7 @@ var ReactDOMInput = {
     var value = LinkedValueUtils.getValue(props);
     if (value != null) {
       // Cast `value` to a string to ensure the value is set correctly. While
-      // browsers typically do this as necessary, jsdom doesn't.
+      // browsers typically do This as necessary, jsdom doesn't.
       ReactDOMIDOperations.updatePropertyByID(inst._rootNodeID, 'value', '' + value);
     }
   }
@@ -7609,7 +7609,7 @@ function _handleChange(event) {
       !otherID ? "development" !== 'production' ? invariant(false, 'ReactDOMInput: Mixing React and non-React radio inputs with the ' + 'same `name` is not supported.') : invariant(false) : undefined;
       var otherInstance = instancesByReactID[otherID];
       !otherInstance ? "development" !== 'production' ? invariant(false, 'ReactDOMInput: Unknown radio button ID %s.', otherID) : invariant(false) : undefined;
-      // If this is a controlled radio button group, forcing the input that
+      // If This is a controlled radio button group, forcing the input that
       // was previously checked to update will cause it to be come re-checked
       // as appropriate.
       ReactUpdates.asap(forceUpdateIfMounted, otherInstance);
@@ -7626,7 +7626,7 @@ module.exports = ReactDOMInput;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactDOMOption
@@ -7652,7 +7652,7 @@ var ReactDOMOption = {
       "development" !== 'production' ? warning(props.selected == null, 'Use the `defaultValue` or `value` props on <select> instead of ' + 'setting `selected` on <option>.') : undefined;
     }
 
-    // Look up whether this option is 'selected' via context
+    // Look up whether This option is 'selected' via context
     var selectValue = context[valueContextKey];
 
     // If context key is null (e.g., no specified value or after initial mount)
@@ -7713,7 +7713,7 @@ module.exports = ReactDOMOption;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactDOMSelect
@@ -7902,7 +7902,7 @@ module.exports = ReactDOMSelect;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactDOMSelection
@@ -7993,7 +7993,7 @@ function getModernOffsets(node) {
 
   // If the node and offset values are the same, the selection is collapsed.
   // `Selection.isCollapsed` is available natively, but IE sometimes gets
-  // this value wrong.
+  // This value wrong.
   var isSelectionCollapsed = isCollapsed(selection.anchorNode, selection.anchorOffset, selection.focusNode, selection.focusOffset);
 
   var rangeLength = isSelectionCollapsed ? 0 : currentRange.toString().length;
@@ -8115,7 +8115,7 @@ module.exports = ReactDOMSelection;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactDOMServer
@@ -8142,7 +8142,7 @@ module.exports = ReactDOMServer;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactDOMTextComponent
@@ -8197,12 +8197,12 @@ assign(ReactDOMTextComponent.prototype, {
   },
 
   /**
-   * Creates the markup for this text node. This node is not intended to have
+   * Creates the markup for This text node. This node is not intended to have
    * any features besides containing text content.
    *
    * @param {string} rootID DOM ID of the root node.
    * @param {ReactReconcileTransaction|ReactServerRenderingTransaction} transaction
-   * @return {string} Markup for this text node.
+   * @return {string} Markup for This text node.
    * @internal
    */
   mountComponent: function (rootID, transaction, context) {
@@ -8225,8 +8225,8 @@ assign(ReactDOMTextComponent.prototype, {
       var escapedText = escapeTextContentForBrowser(this._stringText);
 
       if (transaction.renderToStaticMarkup) {
-        // Normally we'd wrap this in a `span` for the reasons stated above, but
-        // since this is a situation where React won't take over (static pages),
+        // Normally we'd wrap This in a `span` for the reasons stated above, but
+        // since This is a situation where React won't take over (static pages),
         // we can simply return the text as it is.
         return escapedText;
       }
@@ -8236,7 +8236,7 @@ assign(ReactDOMTextComponent.prototype, {
   },
 
   /**
-   * Updates this component by updating the text content.
+   * Updates This component by updating the text content.
    *
    * @param {ReactText} nextText The next text content
    * @param {ReactReconcileTransaction} transaction
@@ -8247,7 +8247,7 @@ assign(ReactDOMTextComponent.prototype, {
       this._currentElement = nextText;
       var nextStringText = '' + nextText;
       if (nextStringText !== this._stringText) {
-        // TODO: Save this as pending props and use performUpdateIfNecessary
+        // TODO: Save This as pending props and use performUpdateIfNecessary
         // and/or updateComponent to do the actual update for consistency with
         // other component types?
         this._stringText = nextStringText;
@@ -8270,7 +8270,7 @@ module.exports = ReactDOMTextComponent;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactDOMTextarea
@@ -8364,7 +8364,7 @@ var ReactDOMTextarea = {
     var value = LinkedValueUtils.getValue(props);
     if (value != null) {
       // Cast `value` to a string to ensure the value is set correctly. While
-      // browsers typically do this as necessary, jsdom doesn't.
+      // browsers typically do This as necessary, jsdom doesn't.
       ReactDOMIDOperations.updatePropertyByID(inst._rootNodeID, 'value', '' + value);
     }
   }
@@ -8384,7 +8384,7 @@ module.exports = ReactDOMTextarea;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactDefaultBatchingStrategy
@@ -8436,7 +8436,7 @@ var ReactDefaultBatchingStrategy = {
 
     ReactDefaultBatchingStrategy.isBatchingUpdates = true;
 
-    // The code is written this way to avoid extra allocations
+    // The code is written This way to avoid extra allocations
     if (alreadyBatchingUpdates) {
       callback(a, b, c, d, e);
     } else {
@@ -8452,7 +8452,7 @@ module.exports = ReactDefaultBatchingStrategy;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactDefaultInjection
@@ -8488,7 +8488,7 @@ function inject() {
   if (alreadyInjected) {
     // TODO: This is currently true because these injections are shared between
     // the client and the server package. They should be built independently
-    // and not share any injection state. Then this problem will be solved.
+    // and not share any injection state. Then This problem will be solved.
     return;
   }
   alreadyInjected = true;
@@ -8550,7 +8550,7 @@ module.exports = {
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactDefaultPerf
@@ -8788,7 +8788,7 @@ module.exports = ReactDefaultPerf;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactDefaultPerfAnalysis
@@ -8988,7 +8988,7 @@ module.exports = ReactDefaultPerfAnalysis;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactElement
@@ -9022,16 +9022,16 @@ if ("development" !== 'production') {
 }
 
 /**
- * Base constructor for all React elements. This is only used to make this
- * work with a dynamic instanceof check. Nothing should live on this prototype.
+ * Base constructor for all React elements. This is only used to make This
+ * work with a dynamic instanceof check. Nothing should live on This prototype.
  *
  * @param {*} type
  * @param {*} key
  * @param {string|object} ref
- * @param {*} self A *temporary* helper to detect places where `this` is
+ * @param {*} self A *temporary* helper to detect places where `This` is
  * different from the `owner` when React.createElement is called, so that we
  * can warn. We want to get rid of owner and replace string `ref`s with arrow
- * functions, and as long as `this` and owner are the same, there will be no
+ * functions, and as long as `This` and owner are the same, there will be no
  * change in behavior.
  * @param {*} source An annotation object (added by a transpiler or otherwise)
  * indicating filename, line number, and/or other information.
@@ -9041,7 +9041,7 @@ if ("development" !== 'production') {
  */
 var ReactElement = function (type, key, ref, self, source, owner, props) {
   var element = {
-    // This tag allow us to uniquely identify this as a React Element
+    // This tag allow us to uniquely identify This as a React Element
     $$typeof: REACT_ELEMENT_TYPE,
 
     // Built-in properties that belong on the element
@@ -9050,7 +9050,7 @@ var ReactElement = function (type, key, ref, self, source, owner, props) {
     ref: ref,
     props: props,
 
-    // Record the component responsible for creating this element.
+    // Record the component responsible for creating This element.
     _owner: owner
   };
 
@@ -9153,9 +9153,9 @@ ReactElement.createFactory = function (type) {
   var factory = ReactElement.createElement.bind(null, type);
   // Expose the type on the factory and the prototype so that it can be
   // easily accessed on elements. E.g. `<Foo />.type === Foo`.
-  // This should not be named `constructor` since this may not be the function
+  // This should not be named `constructor` since This may not be the function
   // that created the element, and it may not even be a constructor.
-  // Legacy hook TODO: Warn if this is accessed
+  // Legacy hook TODO: Warn if This is accessed
   factory.type = type;
   return factory;
 };
@@ -9245,7 +9245,7 @@ module.exports = ReactElement;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactElementValidator
@@ -9347,7 +9347,7 @@ function getAddendaForKeyUse(messageType, element, parentType) {
   // property, it may be the creator of the child that's responsible for
   // assigning it a key.
   if (element && element._owner && element._owner !== ReactCurrentOwner.current) {
-    // Give the component that originally created this child.
+    // Give the component that originally created This child.
     addenda.childOwner = ' It was passed a child from ' + element._owner.getName() + '.';
   }
 
@@ -9414,7 +9414,7 @@ function checkPropTypes(componentName, propTypes, props, location) {
       // After these have been cleaned up, we'll let them throw.
       try {
         // This is intentionally an invariant that gets caught. It's the same
-        // behavior as without this statement except with a better message.
+        // behavior as without This statement except with a better message.
         !(typeof propTypes[propName] === 'function') ? "development" !== 'production' ? invariant(false, '%s: %s type `%s` is invalid; it must be a function, usually from ' + 'React.PropTypes.', componentName || 'React class', ReactPropTypeLocationNames[location], propName) : invariant(false) : undefined;
         error = propTypes[propName](props, propName, componentName, location);
       } catch (ex) {
@@ -9422,7 +9422,7 @@ function checkPropTypes(componentName, propTypes, props, location) {
       }
       "development" !== 'production' ? warning(!error || error instanceof Error, '%s: type specification of %s `%s` is invalid; the type checker ' + 'function must return `null` or an `Error` but returned a %s. ' + 'You may have forgotten to pass an argument to the type checker ' + 'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' + 'shape all require an argument).', componentName || 'React class', ReactPropTypeLocationNames[location], propName, typeof error) : undefined;
       if (error instanceof Error && !(error.message in loggedTypeFailures)) {
-        // Only monitor this failure once because there tends to be a lot of the
+        // Only monitor This failure once because there tends to be a lot of the
         // same error.
         loggedTypeFailures[error.message] = true;
 
@@ -9457,14 +9457,14 @@ var ReactElementValidator = {
 
   createElement: function (type, props, children) {
     var validType = typeof type === 'string' || typeof type === 'function';
-    // We warn in this case but don't throw. We expect the element creation to
+    // We warn in This case but don't throw. We expect the element creation to
     // succeed and there will likely be errors in render.
     "development" !== 'production' ? warning(validType, 'React.createElement: type should not be null, undefined, boolean, or ' + 'number. It should be a string (for DOM elements) or a ReactClass ' + '(for composite components).%s', getDeclarationErrorAddendum()) : undefined;
 
     var element = ReactElement.createElement.apply(this, arguments);
 
     // The result can be nullish if a mock or a custom function is used.
-    // TODO: Drop this when these are no longer allowed as the type argument.
+    // TODO: Drop This when these are no longer allowed as the type argument.
     if (element == null) {
       return element;
     }
@@ -9487,7 +9487,7 @@ var ReactElementValidator = {
 
   createFactory: function (type) {
     var validatedFactory = ReactElementValidator.createElement.bind(null, type);
-    // Legacy hook TODO: Warn if this is accessed
+    // Legacy hook TODO: Warn if This is accessed
     validatedFactory.type = type;
 
     if ("development" !== 'production') {
@@ -9528,7 +9528,7 @@ module.exports = ReactElementValidator;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactEmptyComponent
@@ -9580,7 +9580,7 @@ module.exports = ReactEmptyComponent;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactEmptyComponentRegistry
@@ -9629,7 +9629,7 @@ module.exports = ReactEmptyComponentRegistry;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactErrorUtils
@@ -9704,7 +9704,7 @@ module.exports = ReactErrorUtils;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactEventEmitterMixin
@@ -9743,7 +9743,7 @@ module.exports = ReactEventEmitterMixin;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactEventListener
@@ -9773,7 +9773,7 @@ var DOCUMENT_FRAGMENT_NODE_TYPE = 11;
  *                           is not nested.
  */
 function findParent(node) {
-  // TODO: It may be a good idea to cache this to prevent unnecessary DOM
+  // TODO: It may be a good idea to cache This to prevent unnecessary DOM
   // traversal, but caching is difficult to do correctly without using a
   // mutation observer to listen for all DOM changes.
   var nodeID = ReactMount.getID(node);
@@ -9855,7 +9855,7 @@ function handleTopLevelWithPath(bookKeeping) {
       eventsFired++;
       ReactEventListener._handleTopLevel(bookKeeping.topLevelType, currentPathElement, topLevelTargetID, bookKeeping.nativeEvent, currentNativeTarget);
 
-      // Jump to the root of this React render tree
+      // Jump to the root of This React render tree
       while (currentPathElementID !== newRootID) {
         i++;
         currentPathElement = path[i];
@@ -9955,7 +9955,7 @@ module.exports = ReactEventListener;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactInjection
@@ -9994,7 +9994,7 @@ module.exports = ReactInjection;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactInputSelection
@@ -10053,7 +10053,7 @@ var ReactInputSelection = {
   /**
    * @getSelection: Gets the selection bounds of a focused textarea, input or
    * contentEditable node.
-   * -@input: Look up selection bounds of this input
+   * -@input: Look up selection bounds of This input
    * -@return {start: selectionStart, end: selectionEnd}
    */
   getSelection: function (input) {
@@ -10087,7 +10087,7 @@ var ReactInputSelection = {
   /**
    * @setSelection: Sets the selection bounds of a textarea or input and focuses
    * the input.
-   * -@input     Set selection bounds of this input or textarea
+   * -@input     Set selection bounds of This input or textarea
    * -@offsets   Object of same form that is returned from get*
    */
   setSelection: function (input, offsets) {
@@ -10119,7 +10119,7 @@ module.exports = ReactInputSelection;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactInstanceHandles
@@ -10227,7 +10227,7 @@ function getNextDescendantID(ancestorID, destinationID) {
 /**
  * Gets the nearest common ancestor ID of two IDs.
  *
- * Using this ID scheme, the nearest common ancestor ID is the longest common
+ * Using This ID scheme, the nearest common ancestor ID is the longest common
  * prefix of the two IDs that immediately preceded a "marker" in both strings.
  *
  * @param {string} oneID
@@ -10422,7 +10422,7 @@ module.exports = ReactInstanceHandles;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactInstanceMap
@@ -10437,12 +10437,12 @@ module.exports = ReactInstanceHandles;
  * to internal methods.
  */
 
-// TODO: Replace this with ES6: var ReactInstanceMap = new Map();
+// TODO: Replace This with ES6: var ReactInstanceMap = new Map();
 var ReactInstanceMap = {
 
   /**
    * This API should be called `delete` but we'd have to make sure to always
-   * transform these to strings for IE support. When this transform is fully
+   * transform these to strings for IE support. When This transform is fully
    * supported we can rename it.
    */
   remove: function (key) {
@@ -10470,7 +10470,7 @@ module.exports = ReactInstanceMap;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactIsomorphic
@@ -10534,7 +10534,7 @@ var React = {
 
   version: ReactVersion,
 
-  // Hook for JSX spread, don't use this for anything else.
+  // Hook for JSX spread, don't use This for anything else.
   __spread: assign
 };
 
@@ -10545,7 +10545,7 @@ module.exports = React;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactMarkupChecksum
@@ -10591,7 +10591,7 @@ module.exports = ReactMarkupChecksum;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactMount
@@ -10691,7 +10691,7 @@ function getReactRootID(container) {
 /**
  * Accessing node[ATTR_NAME] or calling getAttribute(ATTR_NAME) on a form
  * element can return its control whose name or ID equals ATTR_NAME. All
- * DOM nodes support `getAttributeNode` but this can also get called on
+ * DOM nodes support `getAttributeNode` but This can also get called on
  * other objects so just return '' if we're given something other than a
  * DOM node (such as window).
  *
@@ -10827,7 +10827,7 @@ function findDeepestCachedAncestor(targetID) {
 }
 
 /**
- * Mounts this component and inserts it into the DOM.
+ * Mounts This component and inserts it into the DOM.
  *
  * @param {ReactComponent} componentInstance The instance to mount.
  * @param {string} rootID DOM ID of the root node.
@@ -10909,7 +10909,7 @@ function hasNonRootReactChild(node) {
 }
 
 /**
- * Returns the first (deepest) ancestor of a node which is rendered by this copy
+ * Returns the first (deepest) ancestor of a node which is rendered by This copy
  * of React.
  */
 function findFirstReactDOMImpl(node) {
@@ -10927,7 +10927,7 @@ function findFirstReactDOMImpl(node) {
     var reactRootID = ReactInstanceHandles.getReactRootIDFromNodeID(nodeID);
 
     // If containersByReactRootID contains the container we find by crawling up
-    // the tree, we know that this instance of React rendered the node.
+    // the tree, we know that This instance of React rendered the node.
     // nb. isValid's strategy (with containsNode) does not work because render
     // trees may be nested and we don't want a false positive in that case.
     var current = node;
@@ -10960,7 +10960,7 @@ if ("development" !== 'production') {
   TopLevelWrapper.displayName = 'TopLevelWrapper';
 }
 TopLevelWrapper.prototype.render = function () {
-  // this.props is actually a ReactElement
+  // This.props is actually a ReactElement
   return this.props;
 };
 
@@ -11074,11 +11074,11 @@ var ReactMount = {
   /**
    * Renders a React component into the DOM in the supplied `container`.
    *
-   * If the React component was previously rendered into `container`, this will
+   * If the React component was previously rendered into `container`, This will
    * perform an update on it and only mutate the DOM as necessary to reflect the
    * latest React component.
    *
-   * @param {ReactComponent} parentComponent The conceptual parent of this render tree.
+   * @param {ReactComponent} parentComponent The conceptual parent of This render tree.
    * @param {ReactElement} nextElement Component element to render.
    * @param {DOMElement} container DOM element to render into.
    * @param {?function} callback function triggered on completion
@@ -11115,7 +11115,7 @@ var ReactMount = {
     var containerHasNonRootReactChild = hasNonRootReactChild(container);
 
     if ("development" !== 'production') {
-      "development" !== 'production' ? warning(!containerHasNonRootReactChild, 'render(...): Replacing React-rendered children with a new root ' + 'component. If you intended to update the children of this node, ' + 'you should instead have the existing children update their state ' + 'and render the new components instead of calling ReactDOM.render.') : undefined;
+      "development" !== 'production' ? warning(!containerHasNonRootReactChild, 'render(...): Replacing React-rendered children with a new root ' + 'component. If you intended to update the children of This node, ' + 'you should instead have the existing children update their state ' + 'and render the new components instead of calling ReactDOM.render.') : undefined;
 
       if (!containerHasReactMarkup || reactRootElement.nextSibling) {
         var rootElementSibling = reactRootElement;
@@ -11140,7 +11140,7 @@ var ReactMount = {
   /**
    * Renders a React component into the DOM in the supplied `container`.
    *
-   * If the React component was previously rendered into `container`, this will
+   * If the React component was previously rendered into `container`, This will
    * perform an update on it and only mutate the DOM as necessary to reflect the
    * latest React component.
    *
@@ -11203,7 +11203,7 @@ var ReactMount = {
       var isContainerReactRoot = containerID && containerID === ReactInstanceHandles.getReactRootIDFromNodeID(containerID);
 
       if ("development" !== 'production') {
-        "development" !== 'production' ? warning(!containerHasNonRootReactChild, 'unmountComponentAtNode(): The node you\'re attempting to unmount ' + 'was rendered by React and is not a top-level container. %s', isContainerReactRoot ? 'You may have accidentally passed in a React root node instead ' + 'of its container.' : 'Instead, have the parent component update its state and ' + 'rerender in order to remove this component.') : undefined;
+        "development" !== 'production' ? warning(!containerHasNonRootReactChild, 'unmountComponentAtNode(): The node you\'re attempting to unmount ' + 'was rendered by React and is not a top-level container. %s', isContainerReactRoot ? 'You may have accidentally passed in a React root node instead ' + 'of its container.' : 'Instead, have the parent component update its state and ' + 'rerender in order to remove This component.') : undefined;
       }
 
       return false;
@@ -11233,7 +11233,7 @@ var ReactMount = {
       if (rootElement && rootElement.parentNode !== container) {
         "development" !== 'production' ? warning(
         // Call internalGetID here because getID calls isValid which calls
-        // findReactContainerForID (this function).
+        // findReactContainerForID (This function).
         internalGetID(rootElement) === reactRootID, 'ReactMount: Root element ID differed from reactRootID.') : undefined;
         var containerChild = container.firstChild;
         if (containerChild && reactRootID === internalGetID(containerChild)) {
@@ -11264,7 +11264,7 @@ var ReactMount = {
 
   /**
    * Traverses up the ancestors of the supplied node to find a node that is a
-   * DOM representation of a React component rendered by this copy of React.
+   * DOM representation of a React component rendered by This copy of React.
    *
    * @param {*} node
    * @return {?DOMEventTarget}
@@ -11279,7 +11279,7 @@ var ReactMount = {
    * `ancestorNode`.  Exploits the ID naming scheme to perform the search
    * quickly.
    *
-   * @param {DOMEventTarget} ancestorNode Search from this root.
+   * @param {DOMEventTarget} ancestorNode Search from This root.
    * @pararm {string} targetID ID of the DOM representation of the component.
    * @return {DOMEventTarget} DOM node with the supplied `targetID`.
    * @internal
@@ -11292,7 +11292,7 @@ var ReactMount = {
 
     if ("development" !== 'production') {
       // This will throw on the next line; give an early warning
-      "development" !== 'production' ? warning(deepestAncestor != null, 'React can\'t find the root component node for data-reactid value ' + '`%s`. If you\'re seeing this message, it probably means that ' + 'you\'ve loaded two copies of React on the page. At this time, only ' + 'a single copy of React can be loaded at a time.', targetID) : undefined;
+      "development" !== 'production' ? warning(deepestAncestor != null, 'React can\'t find the root component node for data-reactid value ' + '`%s`. If you\'re seeing This message, it probably means that ' + 'you\'ve loaded two copies of React on the page. At This time, only ' + 'a single copy of React can be loaded at a time.', targetID) : undefined;
     }
 
     firstChildren[0] = deepestAncestor.firstChild;
@@ -11307,7 +11307,7 @@ var ReactMount = {
         if (childID) {
           // Even if we find the node we're looking for, we finish looping
           // through its siblings to ensure they're cached so that we don't have
-          // to revisit this node again. Otherwise, we make n^2 calls to getID
+          // to revisit This node again. Otherwise, we make n^2 calls to getID
           // when visiting the many children of a single node in order.
 
           if (targetID === childID) {
@@ -11315,16 +11315,16 @@ var ReactMount = {
           } else if (ReactInstanceHandles.isAncestorIDOf(childID, targetID)) {
             // If we find a child whose ID is an ancestor of the given ID,
             // then we can be sure that we only want to search the subtree
-            // rooted at this child, so we can throw out the rest of the
+            // rooted at This child, so we can throw out the rest of the
             // search state.
             firstChildren.length = childIndex = 0;
             firstChildren.push(child.firstChild);
           }
         } else {
-          // If this child had no ID, then there's a chance that it was
+          // If This child had no ID, then there's a chance that it was
           // injected automatically by the browser, as when a `<table>`
           // element sprouts an extra `<tbody>` child as a side effect of
-          // `.innerHTML` parsing. Optimistically continue down this
+          // `.innerHTML` parsing. Optimistically continue down This
           // branch, but not before examining the other siblings.
           firstChildren.push(child.firstChild);
         }
@@ -11384,7 +11384,7 @@ var ReactMount = {
         var diffIndex = firstDifferenceIndex(normalizedMarkup, rootMarkup);
         var difference = ' (client) ' + normalizedMarkup.substring(diffIndex - 20, diffIndex + 20) + '\n (server) ' + rootMarkup.substring(diffIndex - 20, diffIndex + 20);
 
-        !(container.nodeType !== DOC_NODE_TYPE) ? "development" !== 'production' ? invariant(false, 'You\'re trying to render a component to the document using ' + 'server rendering but the checksum was invalid. This usually ' + 'means you rendered a different component type or props on ' + 'the client from the one on the server, or your render() ' + 'methods are impure. React cannot handle this case due to ' + 'cross-browser quirks by rendering at the document root. You ' + 'should look for environment dependent code in your components ' + 'and ensure the props are the same client and server side:\n%s', difference) : invariant(false) : undefined;
+        !(container.nodeType !== DOC_NODE_TYPE) ? "development" !== 'production' ? invariant(false, 'You\'re trying to render a component to the document using ' + 'server rendering but the checksum was invalid. This usually ' + 'means you rendered a different component type or props on ' + 'the client from the one on the server, or your render() ' + 'methods are impure. React cannot handle This case due to ' + 'cross-browser quirks by rendering at the document root. You ' + 'should look for environment dependent code in your components ' + 'and ensure the props are the same client and server side:\n%s', difference) : invariant(false) : undefined;
 
         if ("development" !== 'production') {
           "development" !== 'production' ? warning(false, 'React attempted to reuse markup in a container but the ' + 'checksum was invalid. This generally means that you are ' + 'using server rendering and the markup generated on the ' + 'server was not what the client was expecting. React injected ' + 'new markup to compensate which works but you have lost many ' + 'of the benefits of server rendering. Instead, figure out ' + 'why the markup being generated is different on the client ' + 'or server:\n%s', difference) : undefined;
@@ -11392,7 +11392,7 @@ var ReactMount = {
       }
     }
 
-    !(container.nodeType !== DOC_NODE_TYPE) ? "development" !== 'production' ? invariant(false, 'You\'re trying to render a component to the document but ' + 'you didn\'t use server rendering. We can\'t do this ' + 'without using server rendering due to cross-browser quirks. ' + 'See ReactDOMServer.renderToString() for server rendering.') : invariant(false) : undefined;
+    !(container.nodeType !== DOC_NODE_TYPE) ? "development" !== 'production' ? invariant(false, 'You\'re trying to render a component to the document but ' + 'you didn\'t use server rendering. We can\'t do This ' + 'without using server rendering due to cross-browser quirks. ' + 'See ReactDOMServer.renderToString() for server rendering.') : invariant(false) : undefined;
 
     if (transaction.useCreateElement) {
       while (container.lastChild) {
@@ -11437,7 +11437,7 @@ module.exports = ReactMount;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactMultiChild
@@ -11772,7 +11772,7 @@ var ReactMultiChild = {
     },
 
     /**
-     * Improve performance by isolating this hot code path from the try/catch
+     * Improve performance by isolating This hot code path from the try/catch
      * block in `updateChildren`.
      *
      * @param {?object} nextNestedChildrenElements Nested child element maps.
@@ -11823,7 +11823,7 @@ var ReactMultiChild = {
 
     /**
      * Unmounts all rendered children. This should be used to clean up children
-     * when this component is unmounted.
+     * when This component is unmounted.
      *
      * @internal
      */
@@ -11872,7 +11872,7 @@ var ReactMultiChild = {
     },
 
     /**
-     * Sets this text content string.
+     * Sets This text content string.
      *
      * @param {string} textContent Text content to set.
      * @protected
@@ -11882,7 +11882,7 @@ var ReactMultiChild = {
     },
 
     /**
-     * Sets this markup string.
+     * Sets This markup string.
      *
      * @param {string} markup Markup to set.
      * @protected
@@ -11934,7 +11934,7 @@ module.exports = ReactMultiChild;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactMultiChildUpdateTypes
@@ -11967,7 +11967,7 @@ module.exports = ReactMultiChildUpdateTypes;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactNativeComponent
@@ -11996,7 +11996,7 @@ var ReactNativeComponentInjection = {
     textComponentClass = componentClass;
   },
   // This accepts a keyed object with classes as values. Each key represents a
-  // tag. That particular tag will use this class instead of the generic one.
+  // tag. That particular tag will use This class instead of the generic one.
   injectComponentClasses: function (componentClasses) {
     assign(tagToComponentClass, componentClasses);
   }
@@ -12062,7 +12062,7 @@ module.exports = ReactNativeComponent;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactNoopUpdateQueue
@@ -12084,7 +12084,7 @@ function warnTDZ(publicInstance, callerName) {
 var ReactNoopUpdateQueue = {
 
   /**
-   * Checks whether or not this composite component is mounted.
+   * Checks whether or not This composite component is mounted.
    * @param {ReactClass} publicInstance The instance we want to test.
    * @return {boolean} True if mounted, false otherwise.
    * @protected
@@ -12098,7 +12098,7 @@ var ReactNoopUpdateQueue = {
    * Enqueue a callback that will be executed after all the pending updates
    * have processed.
    *
-   * @param {ReactClass} publicInstance The instance to use as `this` context.
+   * @param {ReactClass} publicInstance The instance to use as `This` context.
    * @param {?function} callback Called after state is updated.
    * @internal
    */
@@ -12108,7 +12108,7 @@ var ReactNoopUpdateQueue = {
    * Forces an update. This should only be invoked when it is known with
    * certainty that we are **not** in a DOM transaction.
    *
-   * You may want to call this when you know that some deeper aspect of the
+   * You may want to call This when you know that some deeper aspect of the
    * component's state has changed but `setState` was not called.
    *
    * This will not invoke `shouldComponentUpdate`, but it will invoke
@@ -12122,11 +12122,11 @@ var ReactNoopUpdateQueue = {
   },
 
   /**
-   * Replaces all of the state. Always use this or `setState` to mutate state.
-   * You should treat `this.state` as immutable.
+   * Replaces all of the state. Always use This or `setState` to mutate state.
+   * You should treat `This.state` as immutable.
    *
-   * There is no guarantee that `this.state` will be immediately updated, so
-   * accessing `this.state` after calling this method may return the old value.
+   * There is no guarantee that `This.state` will be immediately updated, so
+   * accessing `This.state` after calling This method may return the old value.
    *
    * @param {ReactClass} publicInstance The instance that should rerender.
    * @param {object} completeState Next state.
@@ -12181,7 +12181,7 @@ module.exports = ReactNoopUpdateQueue;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactOwner
@@ -12203,16 +12203,16 @@ var invariant = _dereq_(143);
  *   var MyComponent = React.createClass({
  *     render: function() {
  *       return (
- *         <div onClick={this.handleClick}>
+ *         <div onClick={This.handleClick}>
  *           <CustomComponent ref="custom" />
  *         </div>
  *       );
  *     },
  *     handleClick: function() {
- *       this.refs.custom.handleClick();
+ *       This.refs.custom.handleClick();
  *     },
  *     componentDidMount: function() {
- *       this.refs.custom.initialize();
+ *       This.refs.custom.initialize();
  *     }
  *   });
  *
@@ -12273,7 +12273,7 @@ module.exports = ReactOwner;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactPerf
@@ -12295,7 +12295,7 @@ var ReactPerf = {
 
   /**
    * Holds onto the measure function in use. By default, don't measure
-   * anything, but we'll override this if we inject a measure function.
+   * anything, but we'll override This if we inject a measure function.
    */
   storedMeasure: _noMeasure,
 
@@ -12316,7 +12316,7 @@ var ReactPerf = {
   },
 
   /**
-   * Use this to wrap methods you want to measure. Zero overhead in production.
+   * Use This to wrap methods you want to measure. Zero overhead in production.
    *
    * @param {string} objName
    * @param {string} fnName
@@ -12370,7 +12370,7 @@ module.exports = ReactPerf;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactPropTypeLocationNames
@@ -12395,7 +12395,7 @@ module.exports = ReactPropTypeLocationNames;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactPropTypeLocations
@@ -12418,7 +12418,7 @@ module.exports = ReactPropTypeLocations;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactPropTypes
@@ -12739,7 +12739,7 @@ function getPropType(propValue) {
   }
   if (propValue instanceof RegExp) {
     // Old webkits (at least until Android 4.0) return 'function' rather than
-    // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+    // 'object' for typeof a RegExp. We'll normalize This here so that /bla/
     // passes PropTypes.object.
     return 'object';
   }
@@ -12775,7 +12775,7 @@ module.exports = ReactPropTypes;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactReconcileTransaction
@@ -12877,7 +12877,7 @@ var TRANSACTION_WRAPPERS = [SELECTION_RESTORATION, EVENT_SUPPRESSION, ON_DOM_REA
  */
 function ReactReconcileTransaction(forceHTML) {
   this.reinitializeTransaction();
-  // Only server-side rendering really needs this option (see
+  // Only server-side rendering really needs This option (see
   // `ReactServerRendering`), but server-side uses
   // `ReactServerRenderingTransaction` instead. This option is here so that it's
   // accessible and defaults to false when `ReactDOMComponent` and
@@ -12907,7 +12907,7 @@ var Mixin = {
   },
 
   /**
-   * `PooledClass` looks for this, and will invoke this before allowing this
+   * `PooledClass` looks for This, and will invoke This before allowing This
    * instance to be reused.
    */
   destructor: function () {
@@ -12927,7 +12927,7 @@ module.exports = ReactReconcileTransaction;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactReconciler
@@ -12938,7 +12938,7 @@ module.exports = ReactReconcileTransaction;
 var ReactRef = _dereq_(77);
 
 /**
- * Helper to call ReactRef.attachRefs with this composite component, split out
+ * Helper to call ReactRef.attachRefs with This composite component, split out
  * to avoid allocations in the transaction mount-ready queue.
  */
 function attachRefs() {
@@ -12990,7 +12990,7 @@ var ReactReconciler = {
 
     if (nextElement === prevElement && context === internalInstance._context) {
       // Since elements are immutable after the owner is rendered,
-      // we can do a cheap identity compare here to determine if this is a
+      // we can do a cheap identity compare here to determine if This is a
       // superfluous reconcile. It's possible for state to be mutable but such
       // change should trigger an update of the owner which would recreate
       // the element. We explicitly check for the existence of an owner since
@@ -13035,7 +13035,7 @@ module.exports = ReactReconciler;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactRef
@@ -13077,14 +13077,14 @@ ReactRef.attachRefs = function (instance, element) {
 
 ReactRef.shouldUpdateRefs = function (prevElement, nextElement) {
   // If either the owner or a `ref` has changed, make sure the newest owner
-  // has stored a reference to `this`, and the previous owner (if different)
-  // has forgotten the reference to `this`. We use the element instead
-  // of the public this.props because the post processing cannot determine
+  // has stored a reference to `This`, and the previous owner (if different)
+  // has forgotten the reference to `This`. We use the element instead
+  // of the public This.props because the post processing cannot determine
   // a ref. The ref conceptually lives on the element.
 
-  // TODO: Should this even be possible? The owner cannot change because
+  // TODO: Should This even be possible? The owner cannot change because
   // it's forbidden by shouldUpdateReactComponent. The ref can change
-  // if you swap the keys of but not the refs. Reconsider where this check
+  // if you swap the keys of but not the refs. Reconsider where This check
   // is made. It probably belongs where the key checking and
   // instantiateReactComponent is done.
 
@@ -13114,7 +13114,7 @@ module.exports = ReactRef;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactRootIndex
@@ -13144,7 +13144,7 @@ module.exports = ReactRootIndex;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactServerBatchingStrategy
@@ -13168,7 +13168,7 @@ module.exports = ReactServerBatchingStrategy;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @typechecks static-only
@@ -13252,7 +13252,7 @@ module.exports = {
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactServerRenderingTransaction
@@ -13320,7 +13320,7 @@ var Mixin = {
   },
 
   /**
-   * `PooledClass` looks for this, and will invoke this before allowing this
+   * `PooledClass` looks for This, and will invoke This before allowing This
    * instance to be reused.
    */
   destructor: function () {
@@ -13340,7 +13340,7 @@ module.exports = ReactServerRenderingTransaction;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactUpdateQueue
@@ -13387,7 +13387,7 @@ function getInternalInstanceReadyForUpdate(publicInstance, callerName) {
 var ReactUpdateQueue = {
 
   /**
-   * Checks whether or not this composite component is mounted.
+   * Checks whether or not This composite component is mounted.
    * @param {ReactClass} publicInstance The instance we want to test.
    * @return {boolean} True if mounted, false otherwise.
    * @protected
@@ -13397,15 +13397,15 @@ var ReactUpdateQueue = {
     if ("development" !== 'production') {
       var owner = ReactCurrentOwner.current;
       if (owner !== null) {
-        "development" !== 'production' ? warning(owner._warnedAboutRefsInRender, '%s is accessing isMounted inside its render() function. ' + 'render() should be a pure function of props and state. It should ' + 'never access something that requires stale data from the previous ' + 'render, such as refs. Move this logic to componentDidMount and ' + 'componentDidUpdate instead.', owner.getName() || 'A component') : undefined;
+        "development" !== 'production' ? warning(owner._warnedAboutRefsInRender, '%s is accessing isMounted inside its render() function. ' + 'render() should be a pure function of props and state. It should ' + 'never access something that requires stale data from the previous ' + 'render, such as refs. Move This logic to componentDidMount and ' + 'componentDidUpdate instead.', owner.getName() || 'A component') : undefined;
         owner._warnedAboutRefsInRender = true;
       }
     }
     var internalInstance = ReactInstanceMap.get(publicInstance);
     if (internalInstance) {
-      // During componentWillMount and render this will still be null but after
+      // During componentWillMount and render This will still be null but after
       // that will always render to something. At least for now. So we can use
-      // this hack.
+      // This hack.
       return !!internalInstance._renderedComponent;
     } else {
       return false;
@@ -13416,7 +13416,7 @@ var ReactUpdateQueue = {
    * Enqueue a callback that will be executed after all the pending updates
    * have processed.
    *
-   * @param {ReactClass} publicInstance The instance to use as `this` context.
+   * @param {ReactClass} publicInstance The instance to use as `This` context.
    * @param {?function} callback Called after state is updated.
    * @internal
    */
@@ -13459,7 +13459,7 @@ var ReactUpdateQueue = {
    * Forces an update. This should only be invoked when it is known with
    * certainty that we are **not** in a DOM transaction.
    *
-   * You may want to call this when you know that some deeper aspect of the
+   * You may want to call This when you know that some deeper aspect of the
    * component's state has changed but `setState` was not called.
    *
    * This will not invoke `shouldComponentUpdate`, but it will invoke
@@ -13481,11 +13481,11 @@ var ReactUpdateQueue = {
   },
 
   /**
-   * Replaces all of the state. Always use this or `setState` to mutate state.
-   * You should treat `this.state` as immutable.
+   * Replaces all of the state. Always use This or `setState` to mutate state.
+   * You should treat `This.state` as immutable.
    *
-   * There is no guarantee that `this.state` will be immediately updated, so
-   * accessing `this.state` after calling this method may return the old value.
+   * There is no guarantee that `This.state` will be immediately updated, so
+   * accessing `This.state` after calling This method may return the old value.
    *
    * @param {ReactClass} publicInstance The instance that should rerender.
    * @param {object} completeState Next state.
@@ -13598,7 +13598,7 @@ module.exports = ReactUpdateQueue;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactUpdates
@@ -13676,8 +13676,8 @@ assign(ReactUpdatesFlushTransaction.prototype, Transaction.Mixin, {
   },
 
   perform: function (method, scope, a) {
-    // Essentially calls `this.reconcileTransaction.perform(method, scope, a)`
-    // with this transaction's wrappers around it.
+    // Essentially calls `This.reconcileTransaction.perform(method, scope, a)`
+    // with This transaction's wrappers around it.
     return Transaction.Mixin.perform.call(this, this.reconcileTransaction.perform, this.reconcileTransaction, method, scope, a);
   }
 });
@@ -13801,7 +13801,7 @@ var ReactUpdatesInjection = {
 
 var ReactUpdates = {
   /**
-   * React references `ReactReconcileTransaction` using this property in order
+   * React references `ReactReconcileTransaction` using This property in order
    * to allow dependency injection.
    *
    * @internal
@@ -13822,7 +13822,7 @@ module.exports = ReactUpdates;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ReactVersion
@@ -13837,7 +13837,7 @@ module.exports = '0.14.0';
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule SVGDOMPropertyConfig
@@ -13965,7 +13965,7 @@ module.exports = SVGDOMPropertyConfig;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule SelectEventPlugin
@@ -14003,7 +14003,7 @@ var activeElementID = null;
 var lastSelection = null;
 var mouseDown = false;
 
-// Track whether a listener exists for this plugin. If none exist, we do
+// Track whether a listener exists for This plugin. If none exist, we do
 // not extract events.
 var hasListener = false;
 var ON_SELECT_KEY = keyOf({ onSelect: null });
@@ -14050,7 +14050,7 @@ function getSelection(node) {
  */
 function constructSelectEvent(nativeEvent, nativeEventTarget) {
   // Ensure we have the right element, and that the user is not dragging a
-  // selection (this matches native `select` event behavior). In HTML5, select
+  // selection (This matches native `select` event behavior). In HTML5, select
   // fires only on input and textarea thus if there's no focused element we
   // won't dispatch.
   if (mouseDown || activeElement == null || activeElement !== getActiveElement()) {
@@ -14167,7 +14167,7 @@ module.exports = SelectEventPlugin;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ServerReactRootIndex
@@ -14180,7 +14180,7 @@ module.exports = SelectEventPlugin;
  * Size of the reactRoot ID space. We generate random numbers for React root
  * IDs and if there's a collision the events and DOM update system will
  * get confused. In the future we need a way to generate GUIDs but for
- * now this will work on a smaller scale.
+ * now This will work on a smaller scale.
  */
 var GLOBAL_MOUNT_POINT_MAX = Math.pow(2, 53);
 
@@ -14197,7 +14197,7 @@ module.exports = ServerReactRootIndex;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule SimpleEventPlugin
@@ -14759,7 +14759,7 @@ var SimpleEventPlugin = {
   didPutListener: function (id, registrationName, listener) {
     // Mobile Safari does not fire properly bubble click events on
     // non-interactive elements, which means delegated click listeners do not
-    // fire. The workaround for this bug involves attaching an empty click
+    // fire. The workaround for This bug involves attaching an empty click
     // listener on the target node.
     if (registrationName === ON_CLICK_KEY) {
       var node = ReactMount.getNode(id);
@@ -14785,7 +14785,7 @@ module.exports = SimpleEventPlugin;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule SyntheticClipboardEvent
@@ -14807,7 +14807,7 @@ var ClipboardEventInterface = {
 };
 
 /**
- * @param {object} dispatchConfig Configuration used to dispatch this event.
+ * @param {object} dispatchConfig Configuration used to dispatch This event.
  * @param {string} dispatchMarker Marker identifying the event target.
  * @param {object} nativeEvent Native browser event.
  * @extends {SyntheticUIEvent}
@@ -14825,7 +14825,7 @@ module.exports = SyntheticClipboardEvent;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule SyntheticCompositionEvent
@@ -14845,7 +14845,7 @@ var CompositionEventInterface = {
 };
 
 /**
- * @param {object} dispatchConfig Configuration used to dispatch this event.
+ * @param {object} dispatchConfig Configuration used to dispatch This event.
  * @param {string} dispatchMarker Marker identifying the event target.
  * @param {object} nativeEvent Native browser event.
  * @extends {SyntheticUIEvent}
@@ -14863,7 +14863,7 @@ module.exports = SyntheticCompositionEvent;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule SyntheticDragEvent
@@ -14883,7 +14883,7 @@ var DragEventInterface = {
 };
 
 /**
- * @param {object} dispatchConfig Configuration used to dispatch this event.
+ * @param {object} dispatchConfig Configuration used to dispatch This event.
  * @param {string} dispatchMarker Marker identifying the event target.
  * @param {object} nativeEvent Native browser event.
  * @extends {SyntheticUIEvent}
@@ -14901,7 +14901,7 @@ module.exports = SyntheticDragEvent;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule SyntheticEvent
@@ -14945,9 +14945,9 @@ var EventInterface = {
  *
  * Synthetic events (and subclasses) implement the DOM Level 3 Events API by
  * normalizing browser quirks. Subclasses do not necessarily have to implement a
- * DOM interface; custom application-specific events can also subclass this.
+ * DOM interface; custom application-specific events can also subclass This.
  *
- * @param {object} dispatchConfig Configuration used to dispatch this event.
+ * @param {object} dispatchConfig Configuration used to dispatch This event.
  * @param {string} dispatchMarker Marker identifying the event target.
  * @param {object} nativeEvent Native browser event.
  */
@@ -14986,7 +14986,7 @@ assign(SyntheticEvent.prototype, {
     this.defaultPrevented = true;
     var event = this.nativeEvent;
     if ("development" !== 'production') {
-      "development" !== 'production' ? warning(event, 'This synthetic event is reused for performance reasons. If you\'re ' + 'seeing this, you\'re calling `preventDefault` on a ' + 'released/nullified synthetic event. This is a no-op. See ' + 'https://fb.me/react-event-pooling for more information.') : undefined;
+      "development" !== 'production' ? warning(event, 'This synthetic event is reused for performance reasons. If you\'re ' + 'seeing This, you\'re calling `preventDefault` on a ' + 'released/nullified synthetic event. This is a no-op. See ' + 'https://fb.me/react-event-pooling for more information.') : undefined;
     }
     if (!event) {
       return;
@@ -15003,7 +15003,7 @@ assign(SyntheticEvent.prototype, {
   stopPropagation: function () {
     var event = this.nativeEvent;
     if ("development" !== 'production') {
-      "development" !== 'production' ? warning(event, 'This synthetic event is reused for performance reasons. If you\'re ' + 'seeing this, you\'re calling `stopPropagation` on a ' + 'released/nullified synthetic event. This is a no-op. See ' + 'https://fb.me/react-event-pooling for more information.') : undefined;
+      "development" !== 'production' ? warning(event, 'This synthetic event is reused for performance reasons. If you\'re ' + 'seeing This, you\'re calling `stopPropagation` on a ' + 'released/nullified synthetic event. This is a no-op. See ' + 'https://fb.me/react-event-pooling for more information.') : undefined;
     }
     if (!event) {
       return;
@@ -15027,9 +15027,9 @@ assign(SyntheticEvent.prototype, {
   },
 
   /**
-   * Checks if this event should be released back into the pool.
+   * Checks if This event should be released back into the pool.
    *
-   * @return {boolean} True if this should not be released, false otherwise.
+   * @return {boolean} True if This should not be released, false otherwise.
    */
   isPersistent: emptyFunction.thatReturnsFalse,
 
@@ -15079,7 +15079,7 @@ module.exports = SyntheticEvent;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule SyntheticFocusEvent
@@ -15099,7 +15099,7 @@ var FocusEventInterface = {
 };
 
 /**
- * @param {object} dispatchConfig Configuration used to dispatch this event.
+ * @param {object} dispatchConfig Configuration used to dispatch This event.
  * @param {string} dispatchMarker Marker identifying the event target.
  * @param {object} nativeEvent Native browser event.
  * @extends {SyntheticUIEvent}
@@ -15117,7 +15117,7 @@ module.exports = SyntheticFocusEvent;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule SyntheticInputEvent
@@ -15138,7 +15138,7 @@ var InputEventInterface = {
 };
 
 /**
- * @param {object} dispatchConfig Configuration used to dispatch this event.
+ * @param {object} dispatchConfig Configuration used to dispatch This event.
  * @param {string} dispatchMarker Marker identifying the event target.
  * @param {object} nativeEvent Native browser event.
  * @extends {SyntheticUIEvent}
@@ -15156,7 +15156,7 @@ module.exports = SyntheticInputEvent;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule SyntheticKeyboardEvent
@@ -15204,7 +15204,7 @@ var KeyboardEventInterface = {
     // The actual meaning of the value depends on the users' keyboard layout
     // which cannot be detected. Assuming that it is a US keyboard layout
     // provides a surprisingly accurate mapping for US and European users.
-    // Due to this, it is left to the user to implement at this time.
+    // Due to This, it is left to the user to implement at This time.
     if (event.type === 'keydown' || event.type === 'keyup') {
       return event.keyCode;
     }
@@ -15224,7 +15224,7 @@ var KeyboardEventInterface = {
 };
 
 /**
- * @param {object} dispatchConfig Configuration used to dispatch this event.
+ * @param {object} dispatchConfig Configuration used to dispatch This event.
  * @param {string} dispatchMarker Marker identifying the event target.
  * @param {object} nativeEvent Native browser event.
  * @extends {SyntheticUIEvent}
@@ -15242,7 +15242,7 @@ module.exports = SyntheticKeyboardEvent;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule SyntheticMouseEvent
@@ -15298,7 +15298,7 @@ var MouseEventInterface = {
 };
 
 /**
- * @param {object} dispatchConfig Configuration used to dispatch this event.
+ * @param {object} dispatchConfig Configuration used to dispatch This event.
  * @param {string} dispatchMarker Marker identifying the event target.
  * @param {object} nativeEvent Native browser event.
  * @extends {SyntheticUIEvent}
@@ -15316,7 +15316,7 @@ module.exports = SyntheticMouseEvent;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule SyntheticTouchEvent
@@ -15345,7 +15345,7 @@ var TouchEventInterface = {
 };
 
 /**
- * @param {object} dispatchConfig Configuration used to dispatch this event.
+ * @param {object} dispatchConfig Configuration used to dispatch This event.
  * @param {string} dispatchMarker Marker identifying the event target.
  * @param {object} nativeEvent Native browser event.
  * @extends {SyntheticUIEvent}
@@ -15363,7 +15363,7 @@ module.exports = SyntheticTouchEvent;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule SyntheticUIEvent
@@ -15406,7 +15406,7 @@ var UIEventInterface = {
 };
 
 /**
- * @param {object} dispatchConfig Configuration used to dispatch this event.
+ * @param {object} dispatchConfig Configuration used to dispatch This event.
  * @param {string} dispatchMarker Marker identifying the event target.
  * @param {object} nativeEvent Native browser event.
  * @extends {SyntheticEvent}
@@ -15424,7 +15424,7 @@ module.exports = SyntheticUIEvent;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule SyntheticWheelEvent
@@ -15462,7 +15462,7 @@ var WheelEventInterface = {
 };
 
 /**
- * @param {object} dispatchConfig Configuration used to dispatch this event.
+ * @param {object} dispatchConfig Configuration used to dispatch This event.
  * @param {string} dispatchMarker Marker identifying the event target.
  * @param {object} nativeEvent Native browser event.
  * @extends {SyntheticMouseEvent}
@@ -15480,7 +15480,7 @@ module.exports = SyntheticWheelEvent;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule Transaction
@@ -15553,10 +15553,10 @@ var invariant = _dereq_(143);
  */
 var Mixin = {
   /**
-   * Sets up this instance so that it is prepared for collecting metrics. Does
-   * so such that this setup method may be used on an instance that is already
+   * Sets up This instance so that it is prepared for collecting metrics. Does
+   * so such that This setup method may be used on an instance that is already
    * initialized, in a way that does not consume additional memory upon reuse.
-   * That can be useful if you decide to make your subclass of this mixin a
+   * That can be useful if you decide to make your subclass of This mixin a
    * "PooledClass".
    */
   reinitializeTransaction: function () {
@@ -15582,7 +15582,7 @@ var Mixin = {
   },
 
   /**
-   * Executes the function within a safety window. Use this for the top level
+   * Executes the function within a safety window. Use This for the top level
    * methods that result in large amounts of computation/mutations that would
    * need to be safety checked. The optional arguments helps prevent the need
    * to bind in many cases.
@@ -15657,8 +15657,8 @@ var Mixin = {
   },
 
   /**
-   * Invokes each of `this.transactionWrappers.close[i]` functions, passing into
-   * them the respective return values of `this.transactionWrappers.init[i]`
+   * Invokes each of `This.transactionWrappers.close[i]` functions, passing into
+   * them the respective return values of `This.transactionWrappers.init[i]`
    * (`close`rs that correspond to initializers that failed will not be
    * invoked).
    */
@@ -15712,7 +15712,7 @@ module.exports = Transaction;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ViewportMetrics
@@ -15740,7 +15740,7 @@ module.exports = ViewportMetrics;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule accumulateInto
@@ -15755,7 +15755,7 @@ var invariant = _dereq_(143);
  * Accumulates items that must not be null or undefined into the first one. This
  * is used to conserve memory by avoiding array allocations, and thus sacrifices
  * API cleanness. Since `current` can be null before being passed in and not
- * null after this function, make sure to assign it back to `current`:
+ * null after This function, make sure to assign it back to `current`:
  *
  * `a = accumulateInto(a, b);`
  *
@@ -15800,7 +15800,7 @@ module.exports = accumulateInto;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule adler32
@@ -15843,7 +15843,7 @@ module.exports = adler32;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule dangerousStyleValue
@@ -15869,7 +15869,7 @@ function dangerousStyleValue(name, value) {
   // Note that we've removed escapeTextForBrowser() calls here since the
   // whole string will be escaped when the attribute is injected into
   // the markup. If you provide unsafe user data here they can inject
-  // arbitrary CSS which may be problematic (I couldn't repro this):
+  // arbitrary CSS which may be problematic (I couldn't repro This):
   // https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet
   // http://www.thespanner.co.uk/2007/11/26/ultimate-xss-css-injection/
   // This is not an XSS hole but instead a potential CSS injection issue
@@ -15899,7 +15899,7 @@ module.exports = dangerousStyleValue;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule deprecated
@@ -15917,7 +15917,7 @@ var warning = _dereq_(154);
  * @param {string} fnName The name of the function
  * @param {string} newModule The module that fn will exist in
  * @param {string} newPackage The module that fn will exist in
- * @param {*} ctx The context this forwarded call should run in
+ * @param {*} ctx The context This forwarded call should run in
  * @param {function} fn The function to forward on to
  * @return {function} The function that will warn once and then call fn
  */
@@ -15926,7 +15926,7 @@ function deprecated(fnName, newModule, newPackage, ctx, fn) {
   if ("development" !== 'production') {
     var newFn = function () {
       "development" !== 'production' ? warning(warned,
-      // Require examples in this string must be split to prevent React's
+      // Require examples in This string must be split to prevent React's
       // build tools from mistaking them for real requires.
       // Otherwise the build tools will attempt to build a '%s' module.
       'React.%s is deprecated. Please use %s.%s from require' + '(\'%s\') ' + 'instead.', fnName, newModule, fnName, newPackage) : undefined;
@@ -15934,7 +15934,7 @@ function deprecated(fnName, newModule, newPackage, ctx, fn) {
       return fn.apply(ctx, arguments);
     };
     // We need to make sure all properties of the original fn are copied over.
-    // In particular, this is needed to support PropTypes
+    // In particular, This is needed to support PropTypes
     return assign(newFn, fn);
   }
 
@@ -15948,7 +15948,7 @@ module.exports = deprecated;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule escapeTextContentForBrowser
@@ -15987,7 +15987,7 @@ module.exports = escapeTextContentForBrowser;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule findDOMNode
@@ -16004,16 +16004,16 @@ var invariant = _dereq_(143);
 var warning = _dereq_(154);
 
 /**
- * Returns the DOM node rendered by this element.
+ * Returns the DOM node rendered by This element.
  *
  * @param {ReactComponent|DOMElement} componentOrElement
- * @return {?DOMElement} The root node of this element.
+ * @return {?DOMElement} The root node of This element.
  */
 function findDOMNode(componentOrElement) {
   if ("development" !== 'production') {
     var owner = ReactCurrentOwner.current;
     if (owner !== null) {
-      "development" !== 'production' ? warning(owner._warnedAboutRefsInRender, '%s is accessing getDOMNode or findDOMNode inside its render(). ' + 'render() should be a pure function of props and state. It should ' + 'never access something that requires stale data from the previous ' + 'render, such as refs. Move this logic to componentDidMount and ' + 'componentDidUpdate instead.', owner.getName() || 'A component') : undefined;
+      "development" !== 'production' ? warning(owner._warnedAboutRefsInRender, '%s is accessing getDOMNode or findDOMNode inside its render(). ' + 'render() should be a pure function of props and state. It should ' + 'never access something that requires stale data from the previous ' + 'render, such as refs. Move This logic to componentDidMount and ' + 'componentDidUpdate instead.', owner.getName() || 'A component') : undefined;
       owner._warnedAboutRefsInRender = true;
     }
   }
@@ -16037,7 +16037,7 @@ module.exports = findDOMNode;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule flattenChildren
@@ -16086,7 +16086,7 @@ module.exports = flattenChildren;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule forEachAccumulated
@@ -16116,7 +16116,7 @@ module.exports = forEachAccumulated;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule getEventCharCode
@@ -16128,7 +16128,7 @@ module.exports = forEachAccumulated;
 /**
  * `charCode` represents the actual "character code" and is safe to use with
  * `String.fromCharCode`. As such, only keys that correspond to printable
- * characters produce a valid `charCode`, the only exception to this is Enter.
+ * characters produce a valid `charCode`, the only exception to This is Enter.
  * The Tab-key is considered non-printable and does not have a `charCode`,
  * presumably because it does not produce a tab-character in browsers.
  *
@@ -16167,7 +16167,7 @@ module.exports = getEventCharCode;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule getEventKey
@@ -16271,7 +16271,7 @@ module.exports = getEventKey;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule getEventModifierState
@@ -16316,7 +16316,7 @@ module.exports = getEventModifierState;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule getEventTarget
@@ -16346,7 +16346,7 @@ module.exports = getEventTarget;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule getIteratorFn
@@ -16387,7 +16387,7 @@ module.exports = getIteratorFn;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule getNodeForCharacterOffset
@@ -16461,7 +16461,7 @@ module.exports = getNodeForCharacterOffset;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule getTextContentAccessor
@@ -16495,7 +16495,7 @@ module.exports = getTextContentAccessor;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule instantiateReactComponent
@@ -16512,7 +16512,7 @@ var assign = _dereq_(23);
 var invariant = _dereq_(143);
 var warning = _dereq_(154);
 
-// To avoid a cyclic dependency, we create the final class in this module
+// To avoid a cyclic dependency, we create the final class in This module
 var ReactCompositeComponentWrapper = function () {};
 assign(ReactCompositeComponentWrapper.prototype, ReactCompositeComponent.Mixin, {
   _instantiateReactComponent: instantiateReactComponent
@@ -16533,7 +16533,7 @@ function getDeclarationErrorAddendum(owner) {
  * provided composite type.
  *
  * @param {function} type
- * @return {boolean} Returns true if this is a valid internal type.
+ * @return {boolean} Returns true if This is a valid internal type.
  */
 function isInternalComponentType(type) {
   return typeof type === 'function' && typeof type.prototype !== 'undefined' && typeof type.prototype.mountComponent === 'function' && typeof type.prototype.receiveComponent === 'function';
@@ -16561,7 +16561,7 @@ function instantiateReactComponent(node) {
     } else if (isInternalComponentType(element.type)) {
       // This is temporarily available for custom components that are not string
       // representations. I.e. ART. Once those are updated to use the string
-      // representation, we can drop this code path.
+      // representation, we can drop This code path.
       instance = new element.type(element);
     } else {
       instance = new ReactCompositeComponentWrapper();
@@ -16590,8 +16590,8 @@ function instantiateReactComponent(node) {
     instance._warnedAboutRefsInRender = false;
   }
 
-  // Internal instances should fully constructed at this point, so they should
-  // not get any new fields added to them at this point.
+  // Internal instances should fully constructed at This point, so they should
+  // not get any new fields added to them at This point.
   if ("development" !== 'production') {
     if (Object.preventExtensions) {
       Object.preventExtensions(instance);
@@ -16608,7 +16608,7 @@ module.exports = instantiateReactComponent;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule isEventSupported
@@ -16669,7 +16669,7 @@ module.exports = isEventSupported;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule isTextInputElement
@@ -16710,7 +16710,7 @@ module.exports = isTextInputElement;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule onlyChild
@@ -16723,9 +16723,9 @@ var invariant = _dereq_(143);
 
 /**
  * Returns the first child in a collection of children and verifies that there
- * is only one child in the collection. The current implementation of this
+ * is only one child in the collection. The current implementation of This
  * function assumes that a single child gets passed without a wrapper, but the
- * purpose of this helper function is to abstract away the particular structure
+ * purpose of This helper function is to abstract away the particular structure
  * of children.
  *
  * @param {?object} children Child collection structure.
@@ -16744,7 +16744,7 @@ module.exports = onlyChild;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule quoteAttributeValueForBrowser
@@ -16771,7 +16771,7 @@ module.exports = quoteAttributeValueForBrowser;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
 * @providesModule renderSubtreeIntoContainer
@@ -16788,7 +16788,7 @@ module.exports = ReactMount.renderSubtreeIntoContainer;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule setInnerHTML
@@ -16830,14 +16830,14 @@ if (ExecutionEnvironment.canUseDOM) {
   // whitespace in root TextNodes is also collapsed.
   // @see quirksmode.org/bugreports/archives/2004/11/innerhtml_and_t.html
 
-  // Feature detection; only IE8 is known to behave improperly like this.
+  // Feature detection; only IE8 is known to behave improperly like This.
   var testElement = document.createElement('div');
   testElement.innerHTML = ' ';
   if (testElement.innerHTML === '') {
     setInnerHTML = function (node, html) {
       // Magic theory: IE8 supposedly differentiates between added and updated
       // nodes when processing innerHTML, innerHTML on updated nodes suffers
-      // from worse whitespace behavior. Re-adding a node like this triggers
+      // from worse whitespace behavior. Re-adding a node like This triggers
       // the initial and more favorable whitespace behavior.
       // TODO: What to do on a detached node?
       if (node.parentNode) {
@@ -16845,20 +16845,20 @@ if (ExecutionEnvironment.canUseDOM) {
       }
 
       // We also implement a workaround for non-visible tags disappearing into
-      // thin air on IE8, this only happens if there is no visible text
+      // thin air on IE8, This only happens if there is no visible text
       // in-front of the non-visible tags. Piggyback on the whitespace fix
       // and simply check if any non-visible tags appear in the source.
       if (WHITESPACE_TEST.test(html) || html[0] === '<' && NONVISIBLE_TEST.test(html)) {
         // Recover leading whitespace by temporarily prepending any character.
         // \uFEFF has the potential advantage of being zero-width/invisible.
         // UglifyJS drops U+FEFF chars when parsing, so use String.fromCharCode
-        // in hopes that this is preserved even if "\uFEFF" is transformed to
+        // in hopes that This is preserved even if "\uFEFF" is transformed to
         // the actual Unicode character (by Babel, for example).
         // https://github.com/mishoo/UglifyJS2/blob/v2.4.20/lib/parse.js#L216
         node.innerHTML = String.fromCharCode(0xFEFF) + html;
 
         // deleteData leaves an empty `TextNode` which offsets the index of all
-        // children. Definitely want to avoid this.
+        // children. Definitely want to avoid This.
         var textNode = node.firstChild;
         if (textNode.data.length === 1) {
           node.removeChild(textNode);
@@ -16879,7 +16879,7 @@ module.exports = setInnerHTML;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule setTextContent
@@ -16920,7 +16920,7 @@ module.exports = setTextContent;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule shouldUpdateReactComponent
@@ -16932,7 +16932,7 @@ module.exports = setTextContent;
 /**
  * Given a `prevElement` and `nextElement`, determines if the existing
  * instance should be updated as opposed to being destroyed or replaced by a new
- * instance. Both arguments are elements. This ensures that this logic can
+ * instance. Both arguments are elements. This ensures that This logic can
  * operate on stateless trees without any backing instance.
  *
  * @param {?object} prevElement
@@ -16964,7 +16964,7 @@ module.exports = shouldUpdateReactComponent;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule traverseAllChildren
@@ -17045,7 +17045,7 @@ function wrapUserProvidedKey(key) {
  * @param {!function} callback Callback to invoke with each child found.
  * @param {?*} traverseContext Used to pass information throughout the traversal
  * process.
- * @return {!number} The number of children in this subtree.
+ * @return {!number} The number of children in This subtree.
  */
 function traverseAllChildrenImpl(children, nameSoFar, callback, traverseContext) {
   var type = typeof children;
@@ -17127,8 +17127,8 @@ function traverseAllChildrenImpl(children, nameSoFar, callback, traverseContext)
  * Traverses children that are typically specified as `props.children`, but
  * might also be specified through attributes:
  *
- * - `traverseAllChildren(this.props.children, ...)`
- * - `traverseAllChildren(this.props.leftPanelChildren, ...)`
+ * - `traverseAllChildren(This.props.children, ...)`
+ * - `traverseAllChildren(This.props.leftPanelChildren, ...)`
  *
  * The `traverseContext` is an optional argument that is passed through the
  * entire traversal. It can be used to store accumulations or anything else that
@@ -17137,7 +17137,7 @@ function traverseAllChildrenImpl(children, nameSoFar, callback, traverseContext)
  * @param {?*} children Children tree object.
  * @param {!function} callback To invoke upon traversing each child.
  * @param {?*} traverseContext Context for traversal.
- * @return {!number} The number of children in this subtree.
+ * @return {!number} The number of children in This subtree.
  */
 function traverseAllChildren(children, callback, traverseContext) {
   if (children == null) {
@@ -17154,7 +17154,7 @@ module.exports = traverseAllChildren;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule validateDOMNesting
@@ -17172,7 +17172,7 @@ if ("development" !== 'production') {
   // This validation code was written based on the HTML5 parsing spec:
   // https://html.spec.whatwg.org/multipage/syntax.html#has-an-element-in-scope
   //
-  // Note: this does not catch all invalid nesting, nor does it try to (as it's
+  // Note: This does not catch all invalid nesting, nor does it try to (as it's
   // not clear what practical benefit doing so provides); instead, we warn only
   // for cases where the parser will give a parse tree differing from what React
   // intended. For example, <b><div></div></b> is invalid but we don't warn
@@ -17404,7 +17404,7 @@ if ("development" !== 'production') {
 
       case 'a':
         // Spec says something about storing a list of markers, but it sounds
-        // equivalent to this check.
+        // equivalent to This check.
         return ancestorInfo.aTagInScope;
 
       case 'nobr':
@@ -17517,7 +17517,7 @@ module.exports = validateDOMNesting;
  * Copyright 2013-2015, Facebook, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
+ * you may not use This file except in compliance with the License.
  * You may obtain a copy of the License at
  *
  * http://www.apache.org/licenses/LICENSE-2.0
@@ -17603,7 +17603,7 @@ module.exports = EventListener;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule ExecutionEnvironment
@@ -17629,7 +17629,7 @@ var ExecutionEnvironment = {
 
   canUseViewport: canUseDOM && !!window.screen,
 
-  isInWorker: !canUseDOM // For now, this is true - might change in the future.
+  isInWorker: !canUseDOM // For now, This is true - might change in the future.
 
 };
 
@@ -17640,7 +17640,7 @@ module.exports = ExecutionEnvironment;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule camelize
@@ -17673,7 +17673,7 @@ module.exports = camelize;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule camelizeStyleName
@@ -17714,7 +17714,7 @@ module.exports = camelizeStyleName;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule containsNode
@@ -17770,7 +17770,7 @@ module.exports = containsNode;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule createArrayFromMixed
@@ -17856,7 +17856,7 @@ module.exports = createArrayFromMixed;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule createNodesFromMarkup
@@ -17941,7 +17941,7 @@ module.exports = createNodesFromMarkup;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule emptyFunction
@@ -17980,7 +17980,7 @@ module.exports = emptyFunction;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule emptyObject
@@ -18001,7 +18001,7 @@ module.exports = emptyObject;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule focusNode
@@ -18028,7 +18028,7 @@ module.exports = focusNode;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule getActiveElement
@@ -18062,7 +18062,7 @@ module.exports = getActiveElement;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule getMarkupWrap
@@ -18158,7 +18158,7 @@ module.exports = getMarkupWrap;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule getUnboundedScrollPosition
@@ -18197,7 +18197,7 @@ module.exports = getUnboundedScrollPosition;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule hyphenate
@@ -18231,7 +18231,7 @@ module.exports = hyphenate;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule hyphenateStyleName
@@ -18271,7 +18271,7 @@ module.exports = hyphenateStyleName;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule invariant
@@ -18321,7 +18321,7 @@ module.exports = invariant;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule isNode
@@ -18345,7 +18345,7 @@ module.exports = isNode;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule isTextNode
@@ -18371,7 +18371,7 @@ module.exports = isTextNode;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule keyMirror
@@ -18420,7 +18420,7 @@ module.exports = keyMirror;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule keyOf
@@ -18456,7 +18456,7 @@ module.exports = keyOf;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule mapObject
@@ -18508,7 +18508,7 @@ module.exports = mapObject;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule memoizeStringOnly
@@ -18540,7 +18540,7 @@ module.exports = memoizeStringOnly;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule performance
@@ -18564,7 +18564,7 @@ module.exports = performance || {};
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule performanceNow
@@ -18594,7 +18594,7 @@ module.exports = performanceNow;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule shallowEqual
@@ -18645,7 +18645,7 @@ module.exports = shallowEqual;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule toArray
@@ -18703,7 +18703,7 @@ module.exports = toArray;
  * All rights reserved.
  *
  * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
+ * LICENSE file in the root directory of This source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  *
  * @providesModule warning
@@ -18746,8 +18746,8 @@ if ("development" !== 'production') {
       }
       try {
         // --- Welcome to debugging React ---
-        // This error was thrown as a convenience so that you can use this stack
-        // to find the callsite that caused this warning to fire.
+        // This error was thrown as a convenience so that you can use This stack
+        // to find the callsite that caused This warning to fire.
         throw new Error(message);
       } catch (x) {}
     }

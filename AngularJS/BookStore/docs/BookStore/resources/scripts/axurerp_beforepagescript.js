@@ -135,7 +135,7 @@ $axure = function (query) {
         if (typeof(this.query) === 'function') {
             filter = this.query;
         } else {
-            // this is a text query
+            // This is a text query
             var searchStringMatch = /(label|type)=([^;]*)/ .exec(this.query);
             if (!searchStringMatch) return $();
             var searchType = searchStringMatch[1];

@@ -239,9 +239,9 @@ angular.mock.$ExceptionHandlerProvider = function() {
    * @param {string} mode Mode of operation, defaults to `rethrow`.
    *
    *   - `rethrow`: If any errors are passed into the handler in tests, it typically
-   *                means that there is a bug in the application or test, so this mock will
+   *                means that there is a bug in the application or test, so This mock will
    *                make these tests fail.
-   *   - `log`: Sometimes it is desirable to test that an error is thrown, for this case the `log`
+   *   - `log`: Sometimes it is desirable to test that an error is thrown, for This case the `log`
    *            mode stores an array of errors in `$exceptionHandler.errors`, to allow later
    *            assertion of them. See {@link ngMock.$log#assertEmpty assertEmpty()} and
    *            {@link ngMock.$log#reset reset()}
@@ -849,7 +849,7 @@ angular.mock.dump = function(object) {
       } else if (object instanceof Error) {
         out = object.stack || ('' + object.name + ': ' + object.message);
       } else {
-        // TODO(i): this prevents methods being logged,
+        // TODO(i): This prevents methods being logged,
         // we should have a better way to serialize objects
         out = angular.toJson(object, true);
       }
@@ -1496,7 +1496,7 @@ function createHttpBackendMock($rootScope, $delegate, $browser) {
    * @description
    * Verifies that there are no outstanding requests that need to be flushed.
    *
-   * Typically, you would call this method following each test case that asserts requests using an
+   * Typically, you would call This method following each test case that asserts requests using an
    * "afterEach" clause.
    *
    * ```js
@@ -2190,7 +2190,7 @@ if(window.jasmine || window.mocha) {
           injector.annotate(blockFns[i]);
         }
         try {
-          /* jshint -W040 *//* Jasmine explicitly provides a `this` object when calling functions */
+          /* jshint -W040 *//* Jasmine explicitly provides a `This` object when calling functions */
           injector.invoke(blockFns[i] || angular.noop, this);
           /* jshint +W040 */
         } catch (e) {

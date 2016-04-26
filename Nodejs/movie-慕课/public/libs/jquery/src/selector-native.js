@@ -5,7 +5,7 @@ define([
 /*
  * Optional (non-Sizzle) selector module for custom builds.
  *
- * Note that this DOES NOT SUPPORT many documented jQuery
+ * Note that This DOES NOT SUPPORT many documented jQuery
  * features in exchange for its smaller size:
  *
  * Attribute not equal selector
@@ -24,7 +24,7 @@ define([
  * querySelectorAll bug fixes (e.g., unreliable :focus on WebKit)
  *
  * If any of these are unacceptable tradeoffs, either use Sizzle or
- * customize this stub for the project's specific needs.
+ * customize This stub for the project's specific needs.
  */
 
 var docElem = window.document.documentElement,
